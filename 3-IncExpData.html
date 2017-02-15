@@ -1,0 +1,190 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>AOTC</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../AOTC_ORG/assets/css/bootstrap.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../AOTC_ORG/assets/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../AOTC_ORG/assets/css/main.css">
+<script src="../AOTC_ORG/js/vendor/modernizr-2.8.3.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+<nav class="navbar" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#"><img src="../AOTC_ORG/assets/img/logo.png"></a> </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <div class="header-btn">
+        <ul>
+          <li id="prp" class="metro-header"> <a href="#"> <span class="image-pr"></span> </span><span>Property</span></a> </li>
+          <li class="metro-header"> <a href="#"> <span class="image-de"></span> </span><span>Designee</span></a> </li>
+          <li class="metro-header"> <a href="#"> <span class="image-no"></span> </span><span>Notification</span></a> </li>
+          <li class="metro-header"> <a href="#"> <span class="image-lg"></span> </span><span>Logs</span></a> </li>
+          <li class="metro-header welcome"> <a href="#" style="color: #fff;     padding: 0px 15px 0px 15px;"> <span class="image-ph"></span> </span><span>Welcome Annie</span></a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div class='breadcrumbs'>
+  <div class='inner'>
+    <ul class='cf' style="    margin-top: 0px;">
+      <li> <a href="../AOTC_ORG/3-IncExpData.html"  class='active'> <span>1</span> <span>Income/Expense Data </span> </a> </li>
+      <li> <a href="../AOTC_ORG/4-LeaseData.html" > <span>2</span> <span> Lease Data</span> </a> </li>
+      <li> <a href="../AOTC_ORG/5-AttestData.html"  > <span>3</span> <span>Review & Attest Data</span> </a> </li>
+      <li> <a href="../AOTC_ORG/6-AttestData2.html"   > <span>4</span> <span>Attest to Agency</span> </a> </li>
+      <li> <a href="../AOTC_ORG/7-AppealVal.html"  > <span>5</span> <span>Initiate Appeal</span> </a> </li>
+      <li> <a href="../AOTC_ORG/8-ConfirmApp.html"  > <span>6</span> <span>Confirm  Appeal Data </span> </a> </li>
+      <li> <a href="../AOTC_ORG/9-Success.html"> <span>7</span> <span>Appeal Status</span> </a> </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<br>
+
+
+
+
+
+
+<div class="container">
+  <div class="row ">
+    <div class="col-md-offset-3 col-md-6 col-md-offset-3 submit-data">
+      <div class="welll">
+        <div class="row" >
+          <div class="col-md-7" style="padding: 0px;">
+            <h4>Enter Income and Expense Data </h4>
+          </div>
+          <div class="col-md-1" style="padding: 0px;">
+            <h4 style="text-align: right;">OR </h4>
+          </div>
+          <div class="col-md-4" style="padding: 0px;">
+            <button  type="button" id="avc" class="btn btn-danger anOtherButton" style=" float: right;">Upload file &nbsp <i class="fa fa-upload" aria-hidden="true"></i></button>
+          </div>
+          <br>
+        </div>
+        <br>
+        <div id="item" class="well">
+          <h4>Upload a file </h4>
+          <div class="input-group">
+            <input type="text" class="form-control" read only>
+            <label class="input-group-btn"> <span class="btn btn-primary"> Browse&hellip;
+              <input type="file" style="display: none;" multiple>
+              </span> </label>
+          </div>
+          <br>
+          <label>Source of Data:</label>
+          <br>
+          <label class="radio-inline">
+            <input type="radio" name="optradio">
+            Yardi </label>
+          <br>
+          <label class="radio-inline">
+            <input type="radio" name="optradio">
+            Solomons </label>
+          <br>
+          <label class="radio-inline">
+            <input type="radio" name="optradio">
+            Other </label>
+        </div>
+        <form>
+          <div id="sandbox-container">
+            <label>Closing Date</label>
+            <div class='input-group date'>
+              <input type='text' placeholder="Click here to choose date"  class="form-control alldisable" />
+              <span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span> </span> </div>
+          </div>
+          <br>
+          <label>Duration</label>
+          <br>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" class="alldisable">
+            Annual&nbsp;&nbsp;&nbsp; </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" class="alldisable">
+            Semi-Annual </label>
+          <br>
+          <br>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" class="alldisable">
+            Quarterly </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" class="alldisable">
+            Monthly </label>
+          <br>
+          <br>
+          <div class='form-group required'>
+            <label>Rental Income</label>
+            <input class='form-control alldisable'   type='text' placeholder="Enter Rental Income">
+          </div>
+          <div class='form-group required'>
+            <label> Other Income</label>
+            <input class='form-control alldisable'   type='text' placeholder="Enter Other Income">
+          </div>
+          <div class='form-group required'>
+            <label>Total Income</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Income">
+          </div>
+          <div class='form-group required'>
+            <label>Total Expenses</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Expenses">
+          </div>
+          <div class='form-group required'>
+            <label>Real Estate Taxes</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Real Estate Taxes">
+          </div>
+          <label>Do you include Real Estate taxes in your total expenses ?</label>
+          <br>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" class="alldisable">
+            Yes </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" class="alldisable">
+            No </label>
+          <br>
+          <br>
+          <div class='form-group required'>
+            <label>Property Net Operating Income</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Property Net Operating Income">
+          </div>
+          <div class='form-group required'>
+            <label>Vacancy % (Percent)</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Vacancy % (Percent)">
+          </div>
+          <div class='text-center'>
+            <button  type="button" class="btn btn-danger" style="width: 49%;">Clear Data</button>
+            <button onclick="location.href = '4-LeaseData.html';"  type="button" class="btn btn-success" style="width: 49%;">Submit Data</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="text-center">Copyrights - 2017</footer>
+
+<!-- /container --> 
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> 
+<script src="../AOTC_ORG/assets/js/vendor/bootstrap.min.js"></script> 
+<script src="../AOTC_ORG/assets/js/main.js"></script> 
+</body>
+</html>

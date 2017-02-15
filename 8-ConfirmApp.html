@@ -1,0 +1,257 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>AOTC</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+
+<!--
+
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/dataTables.jqueryui.min.css">
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.dataTables.min.css">
+
+
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.jqueryui.min.css">
+-->
+
+<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<nav class="navbar" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#"><img src="assets/img/logo.png"></a> </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <div class="header-btn">
+        <ul>
+          <li id="prp" class="metro-header"> <a href="#"> <span class="image-pr"></span> </span><span>Property</span></a> </li>
+          <li class="metro-header"> <a href="#"> <span class="image-de"></span> </span><span>Designee</span></a> </li>
+          <li class="metro-header"> <a href="#"> <span class="image-no"></span> </span><span>Notification</span></a> </li>
+          <li class="metro-header"> <a href="#"> <span class="image-lg"></span> </span><span>Logs</span></a> </li>
+          <li class="metro-header welcome"> <a href="#" style="color: #fff;     padding: 0px 15px 0px 15px;"> <span class="image-ph"></span> </span><span>Welcome Annie</span></a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class='breadcrumbs'>
+  <div class='inner'>
+    <ul class='cf' style="    margin-top: 0px;">
+      <li> <a href="3-IncExpData.html"  class='activee'> <span>1</span> <span>Income/Expense Data </span> </a> </li>
+      <li> <a href="4-LeaseData.html"   class='activee' > <span>2</span> <span> Lease Data</span> </a> </li>
+      <li> <a href="5-AttestData.html" class='activee' > <span>3</span> <span>Review & Attest Data</span> </a> </li>
+      <li> <a href="6-AttestData2.html" class='activee' > <span>4</span> <span>Attest to Agency</span> </a> </li>
+      <li> <a href="7-AppealVal.html" class='activee' > <span>5</span> <span>Initiate Appeal</span> </a> </li>
+      <li> <a href="8-ConfirmApp.html" class='active' > <span>6</span> <span>Confirm  Appeal Data </span> </a> </li>
+      <li> <a href="9-Success.html"> <span>7</span> <span>Appeal Status</span> </a> </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<br>
+<div class="container">
+  <div class="row welll">
+    <div class="col-md-7">
+      <table class="table table-bordered table-striped">
+        <h4>Appeal Property Valuation </h4>
+        <thead>
+          <tr>
+            <th>Factors</th>
+            <th>Jurisdiction Values </th>
+            <th>Appeal Values </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Leasable Square Feet</td>
+            <td>129,878 sqft</td>
+            <td>129,878 sqft</td>
+          </tr>
+          <tr>
+            <td>Market Rent per Square Foot</td>
+            <td style="color: red;">$40.00</td>
+            <td style="color: red;">$26.00</td>
+          </tr>
+          <tr>
+            <td>Annual Rent</td>
+            <td>$5,195,120</td>
+            <td>$3,344,276</td>
+          </tr>
+          <tr>
+            <td>Gross Potential Rent</td>
+            <td>$5,195,20</td>
+            <td>$3,344,276</td>
+          </tr>
+          <tr>
+            <td>Vacancy percentage (%)</td>
+            <td> 9%</td>
+            <td> 4%</td>
+          </tr>
+          <tr>
+            <td>Vacancy Amount ($)</td>
+            <td style="color: red;">($ 467,561)</td>
+            <td style="color: red;">($ 133,771)</td>
+          </tr>
+          <tr>
+            <td>Effective Rent ($)</td>
+            <td>($ 4,727,559)</td>
+            <td>($ 3,210,505)</td>
+          </tr>
+          <tr>
+            <td>Expenses</td>
+            <td style="color: red;">($ 2,127,402)</td>
+            <td style="color: red;">($ 1,400,000)</td>
+          </tr>
+          <tr>
+            <td>Expense Ratio</td>
+            <td>-45 %</td>
+            <td>-44 %</td>
+          </tr>
+          <tr>
+            <td>Net Operating income</td>
+            <td>($ 2,600,157)</td>
+            <td>($ 1,810,505)</td>
+          </tr>
+          <tr>
+            <td>Base Cap Rate</td>
+            <td>7.0000 %</td>
+            <td>7.0000 %</td>
+          </tr>
+          <tr>
+            <td>Effective Tax Rate</td>
+            <td>1.2830 %</td>
+            <td>1.2830 %</td>
+          </tr>
+          <tr>
+            <td>Overall Cap Rate</td>
+            <td>8.2830 %</td>
+            <td>8.2830 %</td>
+          </tr>
+          <tr>
+            <td>Direct Cap Valuation</td>
+            <td>$31,391,491</td>
+            <td>$21,858,082</td>
+          </tr>
+          <tr>
+            <td>Real Estate Taxes</td>
+            <td>$313,915</td>
+            <td>$218,588</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-5">
+      <div class="row" >
+        <div class="col-md-12">
+          <div class="form-group">
+            <h5 for="comment">Appeal Explanation </h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="border-bottom: 1px solid #ccc;">
+        <div class="col-md-12">
+          <h5>Supporting Documents and Files</h5>
+          <div class="row">
+            <div class="col-md-12"> <span> ◉ income-expense-data.ext</span> <span> <i class="fa fa-times" aria-hidden="true"></i> </span></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-12"> <span> ◉ Lease-data.ext</span> <span> <i class="fa fa-times" aria-hidden="true"></i> </span></div>
+          </div>
+          <br>
+        
+        </div>
+      </div>
+     
+      <div class="up-sec">
+        <h4>Confirm Appeal</h4>
+        <p>Click <b style="color: #500080"> Confirmation of Appeal</b> to certify that you wish to appeal the valuation for purposes of taxation of the following property:<br>
+          <br>
+          <span> Account Number: 219541</span><br>
+          <span> Owner: MARLBORO INVESTORS LLC</span><br>
+          <span> Address:5700, CRAIN HYW, SE. Upper Marlboro MD 20772 </span><br>
+        </p>
+        <p>Upon submission you also certify that you have an interest in the valuation of property for the purpose of taxation  and your submission is not frivilous nor arbitrary.</p>
+        <br>
+        <div class='text-center'>
+          <button onclick="location.href = '9-Success.html'; "type="button" class="btn btn-success" style="width: 49%;">Confirmation of Appeal</button>
+          <button type="button" class="btn btn-info" style="width: 49%;">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="text-center">Copyrights - 2017</footer>
+
+<!-- /container --> 
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> 
+<script src="assets/js/vendor/bootstrap.min.js"></script> 
+<script src="assets/js/main.js"></script> 
+<script src="https:////code.jquery.com/jquery-1.12.4.js"></script> 
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script> 
+
+<!--
+
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+<script src="https://cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.min.js"></script>
+
+
+
+
+<script src="https://cdn.datatables.net/1.10.13/js/dataTables.jqueryui.min.js"></script>
+
+
+<script src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
+
+<script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.jqueryui.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.print.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.colVis.min.js"></script>
+
+
+
+
+-->
+
+</body>
+</html>

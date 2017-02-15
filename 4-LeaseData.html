@@ -1,0 +1,335 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>AOTC</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+
+
+<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<nav class="navbar" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#"><img src="assets/img/logo.png"></a> </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <div class="header-btn">
+        <ul>
+          <li id="prp" class="metro-header"> <a href="#"> <span class="image-pr"></span> </span><span>Property</span></a> </li>
+          <li class="metro-header"> <a href="#"> <span class="image-de"></span> </span><span>Designee</span></a> </li>
+          <li class="metro-header"> <a href="#"> <span class="image-no"></span> </span><span>Notification</span></a> </li>
+          <li class="metro-header"> <a href="#"> <span class="image-lg"></span> </span><span>Logs</span></a> </li>
+          <li class="metro-header welcome"> <a href="#" style="color: #fff;     padding: 0px 15px 0px 15px;"> <span class="image-ph"></span> </span><span>Welcome Annie</span></a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div class='breadcrumbs'>
+  <div class='inner'>
+    <ul class='cf' style="    margin-top: 0px;">
+      <li> <a href="3-IncExpData.html"  class='activee'> <span>1</span> <span>Income/Expense Data </span> </a> </li>
+      <li> <a href="4-LeaseData.html"   class='active' > <span>2</span> <span> Lease Data</span> </a> </li>
+      <li> <a href="5-AttestData.html"  > <span>3</span> <span>Review & Attest Data</span> </a> </li>
+      <li> <a href="6-AttestData2.html"   > <span>4</span> <span>Attest to Agency</span> </a> </li>
+      <li> <a href="7-AppealVal.html"  > <span>5</span> <span>Initiate Appeal</span> </a> </li>
+      <li> <a href="8-ConfirmApp.html"  > <span>6</span> <span>Confirm  Appeal Data </span> </a> </li>
+      <li> <a href="9-Success.html"> <span>7</span> <span>Appeal Status</span> </a> </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+<br>
+<div class="container">
+  <div class="row submit-data">
+   
+    
+
+       
+         <div class="col-md-offset-3 col-md-6 col-md-offset-3 submit-data">
+      <div class="welll">
+       
+        
+
+         
+              <div class="row" >
+       <div class="col-md-7" style="padding: 0px;"><h4>Enter Lease Information </h4></div>
+       
+       <div class="col-md-1" style="padding: 0px;"><h4 style="text-align: right;">OR </h4></div>
+        <div class="col-md-4" style="padding: 0px;"> <button  type="button" id="avc" class="btn btn-danger" style=" float: right;">Upload file &nbsp <i class="fa fa-upload" aria-hidden="true"></i></button></div>
+        
+        <br>
+        
+        </div>             
+                                    
+                                             
+                                                      
+            
+           <div id="item" class="well"> 
+         <h4>Upload a file <small> (Spreadsheet, CSV, or other data file)</small> </h4>
+      <div class="input-group">
+        <input type="text" class="form-control" rea donly>
+        <label class="input-group-btn"> <span class="btn btn-primary"> Browse&hellip;
+          <input type="file" style="display: none;" multiple>
+          </span> </label>
+      </div>
+      <br>
+      <label>Source of Data:</label>
+      <br>
+      <label class="radio-inline">
+        <input type="radio" name="optradio">
+        Yardi </label>
+      <br>
+      <label class="radio-inline">
+        <input type="radio" name="optradio">
+        Solomons </label>
+      <br>
+      <label class="radio-inline">
+        <input type="radio" name="optradio">
+        Other </label>
+     </div>
+                                                            
+                                                                        
+                                                                                 
+                                                                                          
+                                                                                                            
+        <br>
+ 
+         <form>
+         
+           <div id="sandbox-container">
+    <label>Closing Date</label>
+			 <div class='input-group date'>
+                  
+                    <input type='text' placeholder="Click here to choose date" class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+			 
+			 
+			 
+</div>
+         
+         
+         <br>
+ 
+ <button data-toggle="modal" data-target="#myModal" type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                Add Lease Information  <span class="glyphicon glyphicon-plus"></span>
+              </button>
+          
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add Lease information</h4>
+      </div>
+      <div class="modal-body">
+       
+		  
+		  
+		  
+		  
+         <form>
+         
+         
+         
+         
+          <div class='form-group required'>
+            <label>Lease Name</label>
+            <input class='form-control'  type='text' placeholder="Enter Lease Name">
+          </div>
+          
+          
+          
+          
+            <div class='form-group required'>
+            <label> Lease Size Sqft</label>
+            <input class='form-control'  type='text' placeholder="Enter Lease Size Sqft">
+          </div>
+          
+          
+          
+            <div class='form-group required'>
+            <label>Lease Amount (Annualized)</label>
+            <input class='form-control'  type='text' placeholder="Enter Lease Amount (Annualized">
+          </div>
+          
+          
+          
+            <div class='form-group required'>
+            <label>Lease Adjustments (Annualized)</label>
+            <input class='form-control'  type='text' placeholder="Enter Lease Adjustments (Annualized)">
+          </div>
+          
+          <br>
+          
+          
+          
+          
+          
+          <div class='text-center'>
+          <button type="button" class="btn btn-danger" style="width: 49%;">Cancel</button>
+          <button type="button" class="btn btn-success" style="width: 49%;">Add Lease</button>
+             </div>
+          
+        </form>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+      </div>
+     
+    </div>
+
+  </div>
+</div>                    
+                                        
+                                                            
+      <br><br>
+    
+         
+         
+         
+         
+        <table class="table table-bordered table-striped">
+          <h3>Rent Roll </h3>
+          
+    <thead>
+      <tr>
+        <th>Lease Name</th>
+        <th>Lease Size Sqft</th>
+        <th>Lease Ammount</th>
+        <th>Adjustment</th>
+      </tr>
+    </thead>
+
+          <tbody>
+            <tr>
+              <td>Mom & pops</td>
+              <td>1,500</td>
+              <td>$3,000.00</td>
+              <td>$1,500.00</td>
+            </tr>
+            
+            
+            
+            <tr>
+              <td>Pepsco</td>
+              <td>10,000</td>
+              <td>$2,500.00</td>
+              <td>$15,000.00</td>
+            </tr>
+            
+            
+            <tr>
+              <td>Target</td>
+              <td>50,000</td>
+              <td>$15,000.00</td>
+              <td>$1,500.00</td>
+            </tr>
+            
+          
+            
+              
+                
+                    
+          </tbody>
+          
+          
+          
+        </table>
+         
+         <button type="button" class="btn btn-default" style="margin: 0px auto;     display: block;"> Update Data Mapping</button>
+          <br><br><br>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+          
+          
+          <div class='text-center'>
+          <button type="button" class="btn btn-danger" style="width: 49%;">Clear Data</button>
+          <button onclick="location.href = '5-AttestData.html';" type="button" class="btn btn-success" style="width: 49%;">Submit Data</button>
+             </div>
+          
+        </form>
+        
+        
+        
+        
+      </div>
+    </div>
+    
+    
+ 
+</div>
+</div>
+<footer class="text-center">Copyrights - 2017</footer>
+
+<!-- /container --> 
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> 
+<script src="assets/js/vendor/bootstrap.min.js"></script> 
+<script src="assets/js/main.js"></script> 
+
+</body>
+</html>
