@@ -1392,3 +1392,11 @@ ul {
 
 
 .prp-details-tabs table td {width: 50%;}
+
+
+
+.appeal-status h5 {color: #3c763d; margin-bottom: 18px !important;}
+
+
+.appeal-status {    margin: -17px;
+    margin-bottom: 7px; border-bottom: 1px solid #ccc;}
