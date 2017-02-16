@@ -1389,3 +1389,6 @@ ul {
     border-color: #ddd;
     border-bottom-color: transparent;
 }
+
+
+.prp-details-tabs table td {width: 50%;}

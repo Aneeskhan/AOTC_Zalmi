@@ -9,254 +9,344 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>AOTC</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="assets/css/main.css">
-<script src="js/vendor/modernizr-2.8.3.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <title>AOTC</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
-<!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
 
-<nav class="navbar" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="#"><img src="assets/img/logo.png"></a> </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <div class="header-btn">
-        <ul>
-          <li id="prp" class="metro-header"> <a href="#"> <span class="image-pr"></span> </span><span>Property</span></a> </li>
-          <li class="metro-header"> <a href="#"> <span class="image-de"></span> </span><span>Designee</span></a> </li>
-          <li class="metro-header"> <a href="#"> <span class="image-no"></span> </span><span>Notification</span></a> </li>
-          <li class="metro-header"> <a href="#"> <span class="image-lg"></span> </span><span>Logs</span></a> </li>
-          <li class="metro-header welcome"> <a href="#" style="color: #fff;     padding: 0px 15px 0px 15px;"> <span class="image-ph"></span> </span><span>Welcome Annie</span></a> </li>
-        </ul>
+  <nav class="navbar" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"><img src="assets/img/logo.png"></a> </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="header-btn">
+            <ul>
+              <li id="prp" class="metro-header"> <a href="#"> <span class="image-pr"></span> </span><span>Property</span></a> </li>
+              <li class="metro-header"> <a href="#"> <span class="image-de"></span> </span><span>Designee</span></a> </li>
+              <li class="metro-header"> <a href="#"> <span class="image-no"></span> </span><span>Notification</span></a> </li>
+              <li class="metro-header"> <a href="#"> <span class="image-lg"></span> </span><span>Logs</span></a> </li>
+              <li class="metro-header welcome"> <a href="#" style="color: #fff;     padding: 0px 15px 0px 15px;"> <span class="image-ph"></span> </span><span>Welcome Annie</span></a> </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>
 
-<h4 class="text-center table-head"> Property Details</h4>
+    <h4 class="text-center table-head"> Property Details</h4>
 
 
-        <div class="row prp-details-tabs">
-    	<div class="col-md-12">
-            <div class="panel with-nav-tabs panel-default">
-                <div class="panel-heading">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#tab1default" data-toggle="tab">PRIOR ASSMT YEAR </a></li>
-                            <li><a href="#tab2default" data-toggle="tab">CURRENT CYCLE DATA </a></li>
-                            <li><a href="#tab3default" data-toggle="tab">CURRENT ASSESSMENT YEAR </a></li>
-                            <li><a href="#tab4default" data-toggle="tab">PRIOR CYCLE DATA </a></li>
-                            
+    <div class="row container">
+      <div class="col-md-12">
 
-                        </ul>
-                </div>
-                <div class="panel-body">
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="tab1default">
-                          <table class="table table-bordered table-striped">
-                            <!-- <h3>PRIOR ASSMT YEAR </h3> -->
 
-                                <thead>
-                                <tr>
-                                <th>PRIOR TOTAL ASSMT</th>
-                                <th>PRIOR PREFERENTIAL LAND VALUE</th>
-                                <th>PRIOR CIRCUIT BREAKER ASSMT</th>
+        <h5>Property</h5>
+        <span> Account Number: 219541</span><br>
+        <span> Owner: MARLBORO INVESTORS LLC</span><br>
+        <span> Address:5700, CRAIN HYW, SE. Upper Marlboro MD 20772 </span><br>
 
-                              </tr>
-                              </thead>
+      </div></div>
 
-                            <tbody>
-                              <tr>
-                                <td> </td>
-                                <td>11028 9</td>
-                                <td>1037 9</td>
+      <br> <br>
 
-                              </tr>
 
+      <div class="row prp-details-tabs">
+        <div class="col-md-12">
+          <div class="panel with-nav-tabs panel-default">
+            <div class="panel-heading">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab1default" data-toggle="tab" style="text-transform: uppercase;">Jurisdiction Valuation </a></li>
+                <li><a href="#tab2default" data-toggle="tab">CURRENT CYCLE DATA </a></li>
+                <li><a href="#tab3default" data-toggle="tab">CURRENT ASSESSMENT YEAR </a></li>
+                <li><a href="#tab4default" data-toggle="tab">PRIOR CYCLE DATA </a></li>
+                <li><a href="#tab5default" data-toggle="tab">FILLER </a></li>
+                <li><a href="#tab6default" data-toggle="tab">CURRENT YEAR </a></li>
 
 
 
 
 
 
-
-                            </tbody>
-                          </table>
-
-
-
-
-                        </div>
-                        <div class="tab-pane fade" id="tab2default">
-
-
-                          <table class="table table-bordered table-striped table-responsive">
-                            <!-- <h3>PRIOR ASSMT YEAR </h3> -->
-
-                                <thead>
-                                <tr>
-                                <th>CUR.LAND.VALUE</th>
-                                <th>CUR.IMPROVEMENTS.VALUE</th>
-                                <th>CUR.PREFERENTIAL.LAND.VALUE</th>
-                                  <th>CUR.CIRCUIT.BREAKER.VALUE</th>
-                                  <th>CUR.DATE.INSPECTED</th>
-                                  <th>CUR.DATE.ASSESSED</th>
-                                  <th>CUR.ASSESSOR.CODE</th>
-
-                              </tr>
-                              </thead>
-
-                            <tbody>
-                              <tr>
-                                <td> </td>
-                                <td>1064     9</td>
-                                <td>1073     9</td>
-                                <td> </td>
-                                <td>1064     9</td>
-                                <td>1073     9</td>
-                                <td>1073     9</td>
-
-
-                              </tr>
-                            </tbody>
-                          </table>
-
-
-
-
-                        </div>
-                        <div class="tab-pane fade" id="tab3default">
-
-
-                          <table class="table table-bordered table-striped table-responsive">
-                            <!-- <h3>PRIOR ASSMT YEAR </h3> -->
-
-                                <thead>
-                                <tr>
-                                <th>CUR.TOTAL.PHASE.IN.VALUE</th>
-                                <th>CUR.TOTAL.ASSMT</th>
-                                <th>CUR.PREF.LAND.PHASE.IN.VALUE</th>
-                                  <th>CUR.PREFERENTIAL.LAND</th>
-                                  <th>CUR.CIRCUIT.BREAKER.PHASE.IN</th>
-                                  <th>CUR.CIRCUIT.BREAKER.ASSMT</th>
-
-                              </tr>
-                              </thead>
-
-                            <tbody>
-                              <tr>
-                                <td>1098     9</td>
-                                <td>     </td>
-                                <td> </td>
-                                <td>1116     9</td>
-                                <td>1134     9</td>
-                                <td>1143     9</td>
-
-
-                              </tr>
-                            </tbody>
-                          </table>
-
-
-                        </div>
-                        <div class="tab-pane fade" id="tab4default">
-
-                          <table class="table table-bordered table-striped table-responsive">
-                            <!-- <h3>PRIOR ASSMT YEAR </h3> -->
-
-                                <thead>
-                                <tr>
-                                <th>PRIOR.LAND.VALUE</th>
-                                <th>PRIOR.IMPROVEMENTS.VALUE</th>
-                                <th>PRIOR.PREFERENTIAL.LAND.VALUE</th>
-                                  <th>PRIOR.CIRCUIT.BREAKER.VALUE</th>
-
-
-                              </tr>
-                              </thead>
-
-                            <tbody>
-                              <tr>
-
-                                <td> </td>
-                                <td>1170     9</td>
-                                <td>1179     9</td>
-                                <td>1143     9</td>
-
-
-                              </tr>
-                            </tbody>
-                          </table>
-
-
-
-
-                        </div>
-                        <div class="tab-pane fade" id="tab5default">
-
-
-
-                          <table class="table table-bordered table-striped table-responsive">
-                            <!-- <h3>PRIOR ASSMT YEAR </h3> -->
-
-                                <thead>
-                                <tr>
-                                <th>PRIOR.LAND.VALUE</th>
-                                <th>PRIOR.IMPROVEMENTS.VALUE</th>
-                                <th>PRIOR.PREFERENTIAL.LAND.VALUE</th>
-                                  <th>PRIOR.CIRCUIT.BREAKER.VALUE</th>
-
-
-                              </tr>
-                              </thead>
-
-                            <tbody>
-                              <tr>
-
-                                <td> </td>
-                                <td>1170     9</td>
-                                <td>1179     9</td>
-                                <td>1143     9</td>
-
-
-                              </tr>
-                            </tbody>
-                          </table>
-
-
-
-                        </div>
-                    </div>
-                </div>
+              </ul>
             </div>
+            <div class="panel-body">
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="tab1default">
+
+                  <table class="table table-bordered table-striped">
+                    <br>
+                    <tbody>
+                      <tr>
+                        <td>Leasable Square Feet</td>
+                        <td>129,878 sqft</td>
+                      </tr>
+                      <tr>
+                        <td>Market Rent per Square Foot</td>
+                        <td>$40.00</td>
+                      </tr>
+                      <tr>
+                        <td>Annual Rent</td>
+                        <td>$5,195,120</td>
+                      </tr>
+                      <tr>
+                        <td>Gross Potential Rent</td>
+                        <td>$5,195,20</td>
+                      </tr>
+                      <tr>
+                        <td>Vacancy percentage (%)</td>
+                        <td> 9%</td>
+                      </tr>
+                      <tr>
+                        <td>Vacancy percentage ($)</td>
+                        <td>($ 467,561)</td>
+                      </tr>
+                      <tr>
+                        <td>Expense Ratio</td>
+                        <td>-45 %</td>
+                      </tr>
+                      <tr>
+                        <td>EBase Cap Rate</td>
+                        <td>7.0000 %</td>
+                      </tr>
+                      <tr>
+                        <td>Effective Tax Rate</td>
+                        <td>1.2830 %</td>
+                      </tr>
+                      <tr>
+                        <td>Overall Cap Rate</td>
+                        <td>8.2830 %</td>
+                      </tr>
 
 
-             <button onclick="location.href = '2-PrpValuation.html';" type="button" class="btn btn-success pull-right">Submit Data</button>
+                      <tr>
+                        <td>Real Estate Taxes</td>
+                        <td>$313,915</td>
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-pane fade" id="tab2default">
+                  <table class="table table-bordered table-striped">
+                    <br>
+                    <tbody>
+                      <tr>
+                        <td>CUR.LAND.VALUE</td>
+                        <td>1064 9</td>
+                      </tr>
+                      <tr>
+                        <td>CUR.IMPROVEMENTS.VALUE</td>
+                        <td>	 </td>
+                      </tr>
+                      <tr>
+                        <td>CUR.PREFERENTIAL.LAND.VALUE</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>CUR.CIRCUIT.BREAKER.VALUE</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>CUR.DATE.INSPECTED	</td>
+                        <td>	1064 9</td>
+                      </tr>
+                      <tr>
+                        <td>CUR.DATE.ASSESSED</td>
+                        <td>	1073 9</td>
+                      </tr>
+                      <tr>
+                        <td>	CUR.ASSESSOR.CODE</td>
+                        <td>1073 9</td>
+                      </tr>
+
+
+
+
+
+
+
+                    </tbody>
+                  </table>
+                  </div>
+                <div class="tab-pane fade" id="tab3default">
+                  <table class="table table-bordered table-striped">
+                    <br>
+                    <tbody>
+                      <tr>
+                        <td>CUR.TOTAL.PHASE.IN.VALUE</td>
+                        <td>1098 9</td>
+                      </tr>
+                      <tr>
+                        <td>CUR.TOTAL.ASSMT</td>
+                        <td>	 </td>
+                      </tr>
+                      <tr>
+                        <td>CUR.PREFERENTIAL.LAND</td>
+                        <td>	1116 9 </td>
+                      </tr>
+                      <tr>
+                        <td>CUR.CIRCUIT.BREAKER.PHASE.IN</td>
+                        <td> 1134 9</td>
+                      </tr>
+                      <tr>
+                        <td>CUR.CIRCUIT.BREAKER.ASSMT	</td>
+                        <td>	 	1143 9</td>
+                      </tr>
+
+
+
+
+
+
+
+
+                    </tbody>
+                  </table>
+                  </div>
+                <div class="tab-pane fade" id="tab4default">
+                  <table class="table table-bordered table-striped">
+                    <br>
+                    <tbody>
+                      <tr>
+                        <td>PRIOR.LAND.VALUE</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>PRIOR.IMPROVEMENTS.VALUE</td>
+                        <td>	 	1170 9</td>
+                      </tr>
+                      <tr>
+                        <td>PRIOR.PREFERENTIAL.LAND.VALUE</td>
+                        <td>	1179 9</td>
+                      </tr>
+                      <tr>
+                        <td>PRIOR.CIRCUIT.BREAKER.VALUE</td>
+                        <td>1143 9</td>
+                      </tr>
+
+
+
+
+
+
+
+
+
+                    </tbody>
+                  </table>
+
+                </div>
+                <div class="tab-pane fade" id="tab5default">
+                  <table class="table table-bordered table-striped">
+                    <br>
+                    <tbody>
+                      <tr>
+                        <td>PARENT.DISTRICT.WARD</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td>PARENT.ACCOUNT.NUMBER</td>
+                        <td>	N/A</td>
+                      </tr>
+                      <tr>
+                        <td>EXTRACT.SEQUENCE.NO</td>
+                        <td>	N/A</td>
+                      </tr>
+                      <tr>
+                        <td>EXTRACT.REPORT.NO</td>
+                        <td>N/A</td>
+                      </tr>
+
+                      <tr>
+                        <td>LAST.ACTIVITY.TYPE</td>
+                        <td>N/A</td>
+                      </tr>
+
+                      <tr>
+                        <td>LAST.ACTIVITY.DATE</td>
+                        <td>N/A</td>
+                      </tr>
+
+
+
+
+
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane fade" id="tab6default">
+                  <table class="table table-bordered table-striped">
+                    <br>
+                    <tbody>
+                      <tr>
+                        <td>CUR.TAX.YEAR.AS.OF.JULY</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td>CUR.COUNTY.ASSESSMENT</td>
+                        <td>	N/A</td>
+                      </tr>
+                      <tr>
+                        <td>CUR.STATE.ASSESSMENT</td>
+                        <td>	N/A</td>
+                      </tr>
+                      <tr>
+                        <td>CUR.MUNICIPAL.ASSESSMENT</td>
+                        <td>N/A</td>
+                      </tr>
+
+                      <tr>
+                        <td>CUR.STATE.ASSESSMENT.CREDIT</td>
+                        <td>N/A</td>
+                      </tr>
+
+                      <tr>
+                        <td>CUR.COUNTY.ASSESSMENT.CREDIT</td>
+                        <td>N/A</td>
+                      </tr>
+
+
+
+
+
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <button onclick="location.href = '3-IncExpData.html';" type="button" class="btn btn-success pull-right">Initiate Appeal</button>
 
 
         </div>
-	</div>
+      </div>
 
 
 
 
-<!-- /container -->
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-<script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
+      <!-- /container -->
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      <script src="assets/js/vendor/bootstrap.min.js"></script>
+      <script src="assets/js/main.js"></script>
 
 
-</body>
-</html>
+    </body>
+    </html>
