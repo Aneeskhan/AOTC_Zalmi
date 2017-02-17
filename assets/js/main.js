@@ -37,9 +37,35 @@ function formatDT(__dt) {
     var minutes = zeroPad(__dt.getMinutes(), 2);
     var seconds = zeroPad(__dt.getSeconds(), 2);
     return date + '-' + month + '-' + year ;
-};
+}
 
 
+
+$(document).ready(function(){
+
+    //this will hold reference to the tr we have dragged and its helper
+    var c = {};
+
+    $("#inventor tr").draggable({
+            helper: "clone",
+            start: function(event, ui) {
+                c.tr = this;
+                c.helper = ui.helper;
+            }
+    });
+
+
+    $("#invention tr").droppable({
+        drop: function(event, ui) {
+            var inventor = ui.draggable.text();
+            $(this).find("input").val(inventor);
+
+            $(c.tr).add();
+            $(c.helper).add();
+        }
+    });
+
+});
 
 
 
@@ -252,7 +278,7 @@ $(function() {
 
       });
   });
-  
+
 });
 
 
@@ -267,7 +293,7 @@ $('#sandbox-container input').datepicker({
 
 $('#sandbox-container input').on('show', function(e){
     console.debug('show', e.date, $(this).data('stickyDate'));
-    
+
     if ( e.date ) {
          $(this).data('stickyDate', e.date);
     }
@@ -279,7 +305,7 @@ $('#sandbox-container input').on('show', function(e){
 $('#sandbox-container input').on('hide', function(e){
     console.debug('hide', e.date, $(this).data('stickyDate'));
     var stickyDate = $(this).data('stickyDate');
-    
+
     if ( !e.date && stickyDate ) {
         console.debug('restore stickyDate', stickyDate);
         $(this).datepicker('setDate', stickyDate);
@@ -289,11 +315,11 @@ $('#sandbox-container input').on('hide', function(e){
 
 
 jQuery(document).ready(function(){
-    jQuery('#hideshow').live('click', function(event) {        
+    jQuery('#hideshow').live('click', function(event) {
          jQuery('#content').toggle('show');
     });
 });
-			  
+
 
 
 
@@ -312,11 +338,3 @@ $( "#item" ).toggle(400);
 $(".anOtherButton").click(function() {
   $(".alldisable").attr('disabled', !$(".alldisable").attr('disabled'));
 });
-
-
-
-
-
-
-
-			  

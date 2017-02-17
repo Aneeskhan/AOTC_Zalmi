@@ -1443,3 +1443,19 @@ padding: 0px 40px 0 40px;
 
 
   }
+
+
+
+
+.aaa td { padding:2px; border:1px solid black }
+
+
+.aaa td input { width: 100%;}
+
+
+.mapping {    background-color: #ff4757;
+    color: #fff;}
+
+
+
+    .ui-draggable {z-index: 1111;}
