@@ -70,6 +70,12 @@ $(document).ready(function(){
 
 
 
+
+
+
+
+
+
 $("#slider-range").slider({
     range: true,
     min: min_val,
