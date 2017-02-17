@@ -713,7 +713,7 @@ a#clickme {
     color: #fff;
     font-weight: 300;
     text-align: left;
-    margin: 0px 0px 17px 0px;
+    margin: 0px 0px 0px 0px;
 }
 /*
  .dataTables_filter, .dataTables_wrapper .dataTables_info  {
@@ -1406,16 +1406,27 @@ ul {
 
 .prop-fixd ul li {
   display: block;
-  margin-right: 0px;
-  padding: 3px;
-  margin-left: 0px;
-
+margin-right: 0px;
+font-weight: 400;
+margin-left: 0px;
+color: #00568a;
+padding: 0px 40px 0 40px;
 }
 
 
 .prop-fixd ul  {
 
   margin: 0px;
-  padding: 0px;;
+  padding: 0px;
+  display: inline-flex;
 
+}
+
+
+
+
+.prop-fixd  {
+    border: 1px solid #ddd;
+  background: #e6ebfb;
+  padding: 10px;
 }
