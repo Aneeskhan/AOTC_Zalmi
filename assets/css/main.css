@@ -1471,12 +1471,86 @@ padding: 0px 40px 0 40px;
 
 
 
+/*
+
+
+#field {
+    margin-bottom:20px;
+}
+
+.user-reg .form-control {
+    display: block;
+    width: 151px;
+    float: left;
+}
+
+*/
+
+
+#drop-zone {
+    /*Sort of important*/
+    width: 100%;
+    /*Sort of important*/
+    height: 200px;
+  margin: 0px auto;
+
+    border: 2px dashed rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    font-family: Arial;
+    text-align: center;
+    position: relative;
+    line-height: 180px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .3);
+}
+
+#drop-zone input {
+    /*Important*/
+    position: absolute;
+    /*Important*/
+    cursor: pointer;
+    left: 0px;
+    top: 0px;
+    /*Important This is only comment out for demonstration purpeses.
+    opacity:0; */
+}
+
+
+/*Important*/
+
+#drop-zone.mouse-over {
+    border: 2px dashed rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .5);
+}
+
+
+.user-reg .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    color: #fff;
+}
 
 
 
 
 
+/* layout.css Style */
+.upload-drop-zone {
+    height: 200px;
+    border-width: 2px;
+    margin-bottom: 20px;
+}
 
-
-
-
+/* skin.css Style*/
+.upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 200px;
+    text-align: center
+}
+.upload-drop-zone.drop {
+    color: #222;
+    border-color: #222;
+}
