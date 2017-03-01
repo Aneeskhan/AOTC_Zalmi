@@ -38,21 +38,10 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
 </head>
 
 <body>
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+   
 
     <nav class="navbar" role="navigation">
         <div class="container-fluid">
@@ -91,70 +80,20 @@
 
 
 
-<br>
 
-
-
-
-<div class="container user-reg">
+<div class="container">
     
     <br> <br>
     
     <div class="row">
     
-        <p> Add Individual User by clicking here   <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#myModal">Add New User</button></p>
         
-        
-        <br>
-        
-        <div class="col-md-4 well">
-          
-            <form>
 
-                <div class='form-group required'>
-                    <label>Last Name</label>
-                    <input class='form-control alldisable'   type='text' placeholder="Last Name">
-                </div>
-                <div class='form-group required'>
-                    <label> First Name</label>
-                    <input class='form-control alldisable'   type='text' placeholder="First Name">
-                </div>
-                <div class='form-group required'>
-                    <label>Company</label>
-                    <input class='form-control alldisable'  type='text' placeholder="Company">
-                </div>
-                <div class='form-group required'>
-                    <label>City</label>
-                    <input class='form-control alldisable'  type='text' placeholder="City">
-                </div>
-                <div class='form-group required'>
-                    <label>Email</label>
-                    <input class='form-control alldisable'  type='text' placeholder="Email">
-                </div>
-                <div class='form-group required'>
-                    <label>Customer type</label>
-                    <input class='form-control alldisable'  type='text' placeholder="Customer type">
-                </div>
-                <div class='form-group required'>
-                    <label>Role</label>
-                    <input class='form-control alldisable'  type='text' placeholder="Role">
-                </div>
-
-
-
-                <button onclick="location.href = '#';"  type="button" class="btn btn-success" >Add User</button>
-
-            </form>
+        <div class="col-md-12">
             
             
-            
-        </div>
-
-        <div class="col-md-8">
-            
-            
-                <div class="panel panel-default">
-                    <div class="panel-heading"><strong>Upload File</strong> </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><strong>Add multiple users by uploading file</strong> </div>
                     <div class="panel-body">
 
                         <!-- Standar Form -->
@@ -174,16 +113,113 @@
                             Just drag and drop file here
                         </div>
 
-                        
+                        <br>
 
                         <!-- Upload Finished -->
                         <div class="js-upload-finished">
-                            <h3>Processed files</h3>
+                            <h4>Processed Files</h4>
                             <div class="list-group">
                                 <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>AOTC_Name.pdf</a>
                              
                             </div>
                         </div>
+
+
+
+
+<div class="alert-box success"> Invitation sent successfully </div>
+
+
+
+
+
+
+
+
+<div class="user-reg">
+        <div class="row">
+
+                <h4>Data from Processed File</h4>
+            
+            <div class="col-md-12 well  up-sec">
+               
+                
+             
+                <table id="example" datatable="" dt-options="main.dtOptions" dt-column-defs="main.dtColumnDefs" class="display responsive no-wrap" cellspacing="0" width="100%">    
+                            <thead>
+                                <tr>
+                                    <th>User Name</th>
+                                    <th>User Email</th>
+                                    <th>Date of Invite sent</th>
+                                    <th>Status</th>
+                                    
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Alvi Sadiq</td>
+                                    <td>alvi@gmail.com</td>
+                                    <td>22/2/2017</td>
+                                    <td>pending</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Hamza</td>
+                                    <td>hamza@gmail.com</td>
+                                    <td>22/2/2017</td>
+                                    <td>Accepted</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Najam Bahi</td>
+                                    <td>najam.bahi@live.com</td>
+                                    <td>22/2/2017</td>
+                                    <td>pending</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>M. Daniyal</td>
+                                    <td>daniyal@spsnet.com</td>
+                                    <td>22/2/2017</td>
+                                    <td>pending</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>M.Gull</td>
+                                    <td>Gull.sir@gmail.com</td>
+                                    <td>22/2/2017</td>
+                                    <td>pending</td>
+                                   
+                                </tr>
+                                
+                                
+                                <tr>
+                                    <td>Hamza</td>
+                                    <td>hamza@gmail.com</td>
+                                    <td>22/2/2017</td>
+                                    <td>Accepted</td>
+
+                                </tr>
+                               
+                                
+                                
+                            </tbody>
+                </table>
+
+      
+                
+
+            </div>
+
+             <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-success pull-right">Add all User</button>
+
+ </div>
+
+
+
+
+
                     </div>
                 </div>
            
@@ -203,77 +239,6 @@
     
     
     
-    
-    <div class="row">
-
-      
-        <br>
-
-        <div class="col-md-12  up-sec">
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        
-                        <div class="modal-body">
-                        <form>
-
-
-
-                            <div class='form-group required'>
-                                <label>Last Name</label>
-                                <input class='form-control alldisable'   type='text' placeholder="Last Name">
-                            </div>
-                            <div class='form-group required'>
-                                <label> First Name</label>
-                                <input class='form-control alldisable'   type='text' placeholder="First Name">
-                            </div>
-                            <div class='form-group required'>
-                                <label>Company</label>
-                                <input class='form-control alldisable'  type='text' placeholder="Company">
-                            </div>
-                            <div class='form-group required'>
-                                <label>City</label>
-                                <input class='form-control alldisable'  type='text' placeholder="City">
-                            </div>
-                            <div class='form-group required'>
-                                <label>Email</label>
-                                <input class='form-control alldisable'  type='text' placeholder="Email">
-                            </div>
-                            <div class='form-group required'>
-                                <label>Customer type</label>
-                                <input class='form-control alldisable'  type='text' placeholder="Customer type">
-                            </div>
-                            <div class='form-group required'>
-                                <label>Role</label>
-                                <input class='form-control alldisable'  type='text' placeholder="Role">
-                            </div>
-
-
-
-                            <button onclick="location.href = '#';"  type="button" class="btn btn-success" >Review</button>
-
-                        </form>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-            
-            
-            
-            
-            
-            
-
-
-
-        </div>
 
     </div>
 
@@ -287,99 +252,6 @@
 
 
 
-
-
-
-
-
-<div class="container user-reg">
-        <div class="row">
-
-            
-            
-            <div class="col-md-12 well  up-sec">
-               
-                
-                <table  id="example" datatable="" dt-options="main.dtOptions" dt-column-defs="main.dtColumnDefs" class="display responsive no-wrap" cellspacing="0" width="100%">
-                    <thead>
-                        <tr>
-                            <th>User Name</th>
-                            <th>User Email</th>
-                            <th>Date of Invite sent</th>
-                            <th>Status</th>
-                            
-                        </tr>
-                    </thead>
-<!--
-                    <tfoot>
-                        <tr>
-                            <th>User Name</th>
-                            <th>User Email</th>
-                            <th>Date of Invite sent</th>
-                            <th>Status</th>
-                        </tr>
-                    </tfoot>
--->
-                    <tbody>
-                        <tr>
-                            <td>Alvi Sadiq</td>
-                            <td>alvi@gmail.com</td>
-                            <td>22/2/2017</td>
-                            <td>pending</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Hamza</td>
-                            <td>hamza@gmail.com</td>
-                            <td>22/2/2017</td>
-                            <td>Accepted</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Najam Bahi</td>
-                            <td>najam.bahi@live.com</td>
-                            <td>22/2/2017</td>
-                            <td>pending</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>M. Daniyal</td>
-                            <td>daniyal@spsnet.com</td>
-                            <td>22/2/2017</td>
-                            <td>pending</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>M.Gull</td>
-                            <td>Gull.sir@gmail.com</td>
-                            <td>22/2/2017</td>
-                            <td>pending</td>
-                           
-                        </tr>
-                        
-                        
-                        <tr>
-                            <td>Hamza</td>
-                            <td>hamza@gmail.com</td>
-                            <td>22/2/2017</td>
-                            <td>Accepted</td>
-
-                        </tr>
-                       
-                        
-                        
-                    </tbody>
-                </table>
-
-      
-                
-
-            </div>
-
- </div>
-
-
-    </div>
 
 
 
