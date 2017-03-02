@@ -1,48 +1,3 @@
-
-+ function($) {
-    'use strict';
-
-    // UPLOAD CLASS DEFINITION
-    // ======================
-
-    var dropZone = document.getElementById('drop-zone');
-    var uploadForm = document.getElementById('js-upload-form');
-
-    var startUpload = function(files) {
-        console.log(files)
-    }
-
-    uploadForm.addEventListener('submit', function(e) {
-        var uploadFiles = document.getElementById('js-upload-files').files;
-        e.preventDefault()
-
-        startUpload(uploadFiles)
-    })
-
-    dropZone.ondrop = function(e) {
-        e.preventDefault();
-        this.className = 'upload-drop-zone';
-
-        startUpload(e.dataTransfer.files)
-    }
-
-    dropZone.ondragover = function() {
-        this.className = 'upload-drop-zone drop';
-        return false;
-    }
-
-    dropZone.ondragleave = function() {
-        this.className = 'upload-drop-zone';
-        return false;
-    }
-
-}(jQuery);
-
-
-
-
-
-
 $(document).ready(function () {
     $('label.tree-toggler').click(function () {
         $(this).parent().children('ul.tree').toggle(500);
@@ -71,8 +26,8 @@ var min_val = Date.parse(dt_from)/1000;
 var max_val = Date.parse(dt_to)/1000;
 
 function zeroPad(num, places) {
-  var zero = places - num.toString().length + 1;
-  return Array(+(zero > 0 && zero)).join("0") + num;
+    var zero = places - num.toString().length + 1;
+    return Array(+(zero > 0 && zero)).join("0") + num;
 }
 function formatDT(__dt) {
     var year = __dt.getFullYear();
@@ -92,11 +47,11 @@ $(document).ready(function(){
     var c = {};
 
     $("#inventor tr").draggable({
-            helper: "clone",
-            start: function(event, ui) {
-                c.tr = this;
-                c.helper = ui.helper;
-            }
+        helper: "clone",
+        start: function(event, ui) {
+            c.tr = this;
+            c.helper = ui.helper;
+        }
     });
 
 
@@ -154,8 +109,8 @@ var min_val = Date.parse(dt_from)/1000;
 var max_val = Date.parse(dt_to)/1000;
 
 function zeroPad(num, places) {
-  var zero = places - num.toString().length + 1;
-  return Array(+(zero > 0 && zero)).join("0") + num;
+    var zero = places - num.toString().length + 1;
+    return Array(+(zero > 0 && zero)).join("0") + num;
 }
 function formatDT(__dt) {
     var year = __dt.getFullYear();
@@ -306,29 +261,29 @@ $(document).ready(function() {
 
 $(function() {
 
-  // We can attach the `fileselect` event to all file inputs on the page
-  $(document).on('change', ':file', function() {
-    var input = $(this),
-        numFiles = input.get(0).files ? input.get(0).files.length : 1,
-        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-    input.trigger('fileselect', [numFiles, label]);
-  });
+    // We can attach the `fileselect` event to all file inputs on the page
+    $(document).on('change', ':file', function() {
+        var input = $(this),
+            numFiles = input.get(0).files ? input.get(0).files.length : 1,
+            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        input.trigger('fileselect', [numFiles, label]);
+    });
 
-  // We can watch for our custom `fileselect` event like this
-  $(document).ready( function() {
-      $(':file').on('fileselect', function(event, numFiles, label) {
+    // We can watch for our custom `fileselect` event like this
+    $(document).ready( function() {
+        $(':file').on('fileselect', function(event, numFiles, label) {
 
-          var input = $(this).parents('.input-group').find(':text'),
-              log = numFiles > 1 ? numFiles + ' files selected' : label;
+            var input = $(this).parents('.input-group').find(':text'),
+                log = numFiles > 1 ? numFiles + ' files selected' : label;
 
-          if( input.length ) {
-              input.val(log);
-          } else {
-              if( log ) alert(log);
-          }
+            if( input.length ) {
+                input.val(log);
+            } else {
+                if( log ) alert(log);
+            }
 
-      });
-  });
+        });
+    });
 
 });
 
@@ -346,10 +301,10 @@ $('#sandbox-container input').on('show', function(e){
     console.debug('show', e.date, $(this).data('stickyDate'));
 
     if ( e.date ) {
-         $(this).data('stickyDate', e.date);
+        $(this).data('stickyDate', e.date);
     }
     else {
-         $(this).data('stickyDate', null);
+        $(this).data('stickyDate', null);
     }
 });
 
@@ -367,7 +322,7 @@ $('#sandbox-container input').on('hide', function(e){
 
 jQuery(document).ready(function(){
     jQuery('#hideshow').live('click', function(event) {
-         jQuery('#content').toggle('show');
+        jQuery('#content').toggle('show');
     });
 });
 
@@ -376,7 +331,7 @@ jQuery(document).ready(function(){
 
 
 $( "#avc" ).click(function() {
-$( "#item" ).toggle(400);
+    $( "#item" ).toggle(400);
 });
 
 
@@ -387,13 +342,5 @@ $( "#item" ).toggle(400);
 
 
 $(".anOtherButton").click(function() {
-  $(".alldisable").attr('disabled', !$(".alldisable").attr('disabled'));
+    $(".alldisable").attr('disabled', !$(".alldisable").attr('disabled'));
 });
-
-
-
-
-
-
-
-
