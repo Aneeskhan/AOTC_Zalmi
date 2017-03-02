@@ -14,7 +14,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     
@@ -77,16 +78,16 @@
          
 
 
-<div class="container">
+<div class="container sent-invite">
  <div class="panel panel-primary   user-reg">
       <div class="panel-heading">   <h5> <i class="fa fa-user" aria-hidden="true"></i> 
                               <strong>  Sent Invitations </strong>
 
                                
 
-  <button  onclick="location.href = '13-Userregistration.html';"   type="button" class="btn btn-user pull-right" style="margin-top: -6px;">Add File</button>
+          <button  onclick="location.href = '13-Userregistration.html';"   type="button" class="btn btn-user pull-right" style="margin-top: -6px; margin-right: 20px;"> <i class="fa fa-upload" aria-hidden="true"></i> Add File</button>
 
- <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-user pull-right" style="    margin-top: -6px;margin-right: 20px;">Add New User</button>
+          <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-user pull-right" style="    margin-top: -6px; margin-right: 20px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Add New User</button>
 
 
 
@@ -245,7 +246,7 @@
 
 
                              <div class='form-group required'>
-                                <label> User Email</label>
+                                 <label> <i class="fa fa-envelope" aria-hidden="true"></i> User Email</label>
                                 <input class='form-control alldisable'   type='text' placeholder="Enter User Email address">
                             </div>
 
@@ -265,29 +266,68 @@
 <br><br>
 <div id="filter-panel" class="collapse filter-panel">
 
-
-
+                                <div class='form-group required'>
+                                    <label> <i class="fa fa-user" aria-hidden="true"></i> Last Name</label>
+                                    <input class='form-control alldisable'  type='text' placeholder="Last Name">
+                                </div>
+    
+    <div class='form-group required'>
+        <label> <i class="fa fa-user" aria-hidden="true"></i> First Name</label>
+        <input class='form-control alldisable'  type='text' placeholder="First Name">
+    </div>
+    
                             <div class='form-group required'>
-                                <label>Company</label>
+                                <label> <i class="fa fa-building" aria-hidden="true"></i> Company</label>
                                 <input class='form-control alldisable'  type='text' placeholder="Company">
                             </div>
                             <div class='form-group required'>
-                                <label>City</label>
+                                <label> <i class="fa fa-map-marker" aria-hidden="true"></i> City</label>
                                 <input class='form-control alldisable'  type='text' placeholder="City">
                             </div>
-                            <div class='form-group required'>
-                                <label>Email</label>
-                                <input class='form-control alldisable'  type='text' placeholder="Email">
-                            </div>
-                            <div class='form-group required'>
-                                <label>Customer type</label>
-                                <input class='form-control alldisable'  type='text' placeholder="Customer type">
-                            </div>
-                            <div class='form-group required'>
-                                <label>Role</label>
-                                <input class='form-control alldisable'  type='text' placeholder="Role">
-                            </div>
+    
+    
+   
+                         
+    
+    <div class='form-group required'>
+        <label> <i class="fa fa-user-secret" aria-hidden="true"></i> Customer Type</label>
+        
+        <select class="form-control btn btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type">
 
+                <option>Paying</option>
+                <option>nonpaying</option>
+         
+            </select>
+       
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class='form-group required'>
+        <label> <i class="fa fa-cogs" aria-hidden="true"></i> Role</label>
+    <div class="input-group-btn">
+        <select class="form-control btn btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type">
+
+            <option>Owner</option>
+            <option>Agent</option>
+            <option>Asset Mngr</option>
+            <option>Taxing Authority</option>
+            <option>Assessing Authority</option>
+            <option>Petitioner</option>
+            <option>Respondent</option>
+        </select>
+    </div>
+    </div>
+    
+    
+    
+    
+    
 
 </div>
 

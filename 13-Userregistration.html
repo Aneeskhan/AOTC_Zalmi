@@ -94,18 +94,34 @@
             
                 <div class="panel panel-primary">
                     <div class="panel-heading"><h5> <i class="fa fa-group" aria-hidden="true"></i> <strong> Add multiple users by uploading file </strong></h5> </div>
-                    <div class="panel-body">
+                    <div class="panel-body drop-file">
 
                         <!-- Standar Form -->
                         <h5><strong>Select file from your computer</strong></h5>
                         <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
                             <div class="form-inline">
+<!--
                                 <div class="form-group">
                                 <label for="file-upload" class="custom-file-upload btn-user">
     <i class="fa fa-cloud-upload"></i> Custom Upload File
 </label>
                                     <input class="btn-user" type="file" name="files[]" id="js-upload-files" multiple>
                                 </div>
+-->
+                                
+                                
+                                
+
+                                <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple style="display: none;" />
+                                <label for="file-1"> <span> <i class="fa fa-upload" aria-hidden="true"></i> Upload a file&hellip;</span></label>
+
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                               
                             </div>
                         </form>
