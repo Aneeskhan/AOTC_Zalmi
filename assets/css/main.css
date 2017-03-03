@@ -1755,6 +1755,15 @@ svg:not(:root) {
 }
 
 
+#example tr td:nth-child(3) {
+    text-align: center;
+    
+}
 
+
+#example tr th:nth-child(3) {
+    text-align: center;
+
+}
 
 

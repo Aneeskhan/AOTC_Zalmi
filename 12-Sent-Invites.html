@@ -20,7 +20,11 @@
     <link rel="stylesheet" href="assets/css/main.css">
     
     
-    
+    <link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="//datatables.net/download/build/nightly/jquery.dataTables.js"></script>
+
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
 
@@ -94,14 +98,14 @@
                             <h5></div>
       <div class="panel-body">   <div class="col-md-12" style="padding: 0px;">
 
-                <table id="example" datatable="" dt-options="main.dtOptions" dt-column-defs="main.dtColumnDefs" class="display responsive no-wrap" cellspacing="0" width="100%">
+          <table id="example"  class="display" datatable="" dt-options="main.dtOptions" dt-column-defs="main.dtColumnDefs" class="display responsive no-wrap" cellspacing="0" width="100%">
                     <thead>
                         <tr>
                             <th>User Name</th>
                             <th>Email Address</th>
                             <th>Invite Sent On</th>
                             <th>Status</th>
-                             <th>Revoke Invite</th>
+                            <th>Actions</th>
 
                         </tr>
                     </thead>
@@ -111,7 +115,7 @@
                             <td>Alvi Sadiq</td>
                             <td>alvi@gmail.com</td>
                             <td>22/2/2017</td>
-                            <td>pending</td>
+                            <td>Pending</td>
                             <td> <a class="text-muted" href="#"> Resend </a></td>
 
                         </tr>
@@ -127,7 +131,7 @@
                             <td>Najam Bahi</td>
                             <td>najam.bahi@live.com</td>
                             <td>22/2/2017</td>
-                            <td>pending</td>
+                            <td>Pending</td>
                             <td class="text-muted"><a href="#"> Deactivate </a></td>
 
                         </tr>
@@ -135,14 +139,14 @@
                             <td>M. Daniyal</td>
                             <td>daniyal@spsnet.com</td>
                             <td>22/2/2017</td>
-                            <td>pending</td>
+                            <td>Pending</td>
                             <td><a href="#"> Deactivate </a></td>
                         </tr>
                         <tr>
                             <td>M.Gull</td>
                             <td>Gull.sir@gmail.com</td>
                             <td>22/2/2017</td>
-                            <td>pending</td>
+                            <td>Pending</td>
                             <td><a class="text-muted" href="#"> Resend </a></td>
                         </tr>
 
@@ -157,21 +161,21 @@
                             <td>Najam Bahi</td>
                             <td>najam.bahi@live.com</td>
                             <td>22/2/2017</td>
-                            <td>pending</td>
+                            <td>Pending</td>
                             <td><a class="text-muted" href="#"> Deactivate </a></td>
                         </tr>
                         <tr>
                             <td>M. Daniyal</td>
                             <td>daniyal@spsnet.com</td>
                             <td>22/2/2017</td>
-                            <td>pending</td>
+                            <td>Pending</td>
                             <td><a href="#"> Deactivate </a></td>
                         </tr>
                         <tr>
                             <td>M.Gull</td>
                             <td>Gull.sir@gmail.com</td>
                             <td>22/2/2017</td>
-                            <td>pending</td>
+                            <td>Pending</td>
                             <td><a href="#"> Deactivate </a></td>
                         </tr>
 
@@ -186,21 +190,21 @@
                             <td>Najam Bahi</td>
                             <td>najam.bahi@live.com</td>
                             <td>22/2/2017</td>
-                            <td>pending</td>
+                            <td>Pending</td>
                             <td><a href="#"> Deactivate </a></td>
                         </tr>
                         <tr>
                             <td>M. Daniyal</td>
                             <td>daniyal@spsnet.com</td>
                             <td>22/2/2017</td>
-                            <td>pending</td>
+                            <td>Pending</td>
                             <td><a href="#"> Deactivate </a></td>
                         </tr>
                         <tr>
                             <td>M.Gull</td>
                             <td>Gull.sir@gmail.com</td>
                             <td>22/2/2017</td>
-                            <td>pending</td>
+                            <td>Pending</td>
                             <td><a href="#"> Deactivate </a></td>    
                         </tr>
 
@@ -247,13 +251,13 @@
 
                              <div class='form-group required'>
                                  <label> <i class="fa fa-envelope" aria-hidden="true"></i> User Email</label>
-                                <input class='form-control alldisable'   type='text' placeholder="Enter User Email address">
+                                <input class='form-control alldisable'   type='text' placeholder="User email ">
                             </div>
 
 
 
             <button data-toggle="collapse" data-target="#filter-panel" type="button" class="btn btn-user  pushme btn-number" data-type="plus" data-field="quant[1]">
-                Add more info 
+                Add more information 
 <!--                <span class="glyphicon glyphicon-plus"></span>-->
               </button>
 
@@ -261,7 +265,7 @@
             <script>
                 $(".pushme").click(function () {
                     $(this).text(function(i, v){
-                        return v === 'Show less info' ? 'Add more info' : 'Show less info'
+                        return v === 'Show less information' ? 'Add more information' : 'Show less information'
                     })
                 });
             </script>
@@ -277,13 +281,13 @@
     
     <div class='form-group required'>
         <label> <i class="fa fa-user" aria-hidden="true"></i> First Name</label>
-        <input class='form-control alldisable'  type='text' placeholder="First Name">
+        <input class='form-control alldisable'  type='text' placeholder="First name">
     </div>
     
     
     <div class='form-group required'>
         <label> <i class="fa fa-user" aria-hidden="true"></i> Last Name</label>
-        <input class='form-control alldisable'  type='text' placeholder="Last Name">
+        <input class='form-control alldisable'  type='text' placeholder="Last name">
     </div>
     
     
@@ -307,7 +311,7 @@
         <select class="form-control btn btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type">
 
                 <option>Paying</option>
-                <option>nonpaying</option>
+                <option>Nonpaying</option>
          
             </select>
        

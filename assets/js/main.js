@@ -261,6 +261,13 @@ $(document).ready(function() {
     } );
 } );
 
+$(document).ready( function () {
+    var table = $('#example').DataTable();
+    $('div.dataTables_filter input').attr('placeholder', 'Search...');
+} );
+
+
+
 
 
 
