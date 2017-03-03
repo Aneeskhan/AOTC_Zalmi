@@ -2,6 +2,8 @@
     float: right;
 }
 
+
+
 .header-btn ul li {
     color: #ff4757;
     display: inline-flex;
@@ -1759,6 +1761,10 @@ svg:not(:root) {
     text-align: center;
     
 }
+
+
+
+
 
 
 .invite tr th:nth-child(3) {

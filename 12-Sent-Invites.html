@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="assets/css/main.css">
     
     
+    <style> .dataTables_wrapper .ui-toolbar {
+        padding: 0px;
+        BACKGROUND: #f5f5f5;
+        }</style>
+    
+    
+    
     <link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" />
 
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -42,6 +49,8 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+    
+    
 </head>
 
 
@@ -257,7 +266,7 @@
 
 
             <button data-toggle="collapse" data-target="#filter-panel" type="button" class="btn btn-user  pushme btn-number" data-type="plus" data-field="quant[1]">
-                Add more information 
+                Show more information 
 <!--                <span class="glyphicon glyphicon-plus"></span>-->
               </button>
 
@@ -265,7 +274,7 @@
             <script>
                 $(".pushme").click(function () {
                     $(this).text(function(i, v){
-                        return v === 'Show less information' ? 'Add more information' : 'Show less information'
+                        return v === 'Show less information' ? 'Show more information' : 'Show less information'
                     })
                 });
             </script>
@@ -331,7 +340,7 @@
 
             <option>Owner</option>
             <option>Agent</option>
-            <option>Asset Mngr</option>
+            <option>Asset Manager</option>
             <option>Taxing Authority</option>
             <option>Assessing Authority</option>
             <option>Petitioner</option>
