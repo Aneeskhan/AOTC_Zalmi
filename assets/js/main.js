@@ -5,8 +5,6 @@
 
 
 
-
-
 $(document).ready(function () {
     $('label.tree-toggler').click(function () {
         $(this).parent().children('ul.tree').toggle(500);
@@ -353,6 +351,8 @@ $( "#avc" ).click(function() {
 $(".anOtherButton").click(function() {
     $(".alldisable").attr('disabled', !$(".alldisable").attr('disabled'));
 });
+
+
 
 
 

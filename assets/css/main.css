@@ -555,9 +555,11 @@ a label {
     border-radius: 5px;
 }
 
+/*
 *:focus {
     outline: 0;
 }
+*/
 
 a#clickme {
     width: 20px;
@@ -683,10 +685,12 @@ a#clickme {
     border-radius: 8px;
     background: #a4a4a4;
 }
+/*
 
 *:focus {
     outline: 0 !important;
 }
+*/
 
 *:active {
     outline: 0 !important;
@@ -1749,3 +1753,8 @@ svg:not(:root) {
     margin-left: -20px;
     margin-top: 3px;
 }
+
+
+
+
+
