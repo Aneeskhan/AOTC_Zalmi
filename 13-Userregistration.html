@@ -93,11 +93,14 @@
             
             
                 <div class="panel panel-primary">
-                    <div class="panel-heading"><h5> <i class="fa fa-group" aria-hidden="true"></i> <strong> Add multiple users by uploading file </strong></h5> </div>
+                    <div class="panel-heading"><h5> <i class="fa fa-group" aria-hidden="true"></i> <strong> Invite multiple users by uploading a file </strong></h5> </div>
                     <div class="panel-body drop-file">
 
                         <!-- Standar Form -->
-                        <h5><strong>Select file from your computer</strong></h5>
+                        <h5>
+                            Upload an excel file or a csv file which contains these data fields about a user: (name of data fields). Only email address is mandatory. The order of the fields does not matter. <br><br>
+                            
+                            <strong>Select a file from your system</strong></h5>
                         <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
                             <div class="form-inline">
 <!--
@@ -127,9 +130,9 @@
                         </form>
 
                         <!-- Drop Zone -->
-                        <h5><strong>Or drag and drop file below</strong></h5>
+                        <h5><strong>Or drag and drop “a” file below</strong></h5>
                         <div class="upload-drop-zone" id="drop-zone">
-                            Just drag and drop file here
+                            Just drag and drop “a”  file here
                         </div>
 
                         <br>
@@ -138,7 +141,7 @@
                         <div class="js-upload-finished">
                             <h5><strong>Processed Files </strong></h5>
                             <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>AOTC_Name.pdf</a>
+                                <a href="#" class="list-group-item list-group-item-success">AOTC_Name.pdf</a>
                              
                             </div>
                         </div>
@@ -158,69 +161,87 @@
 <div class="user-reg">
         <div class="row">
 
-                <h5><strong>Data from Processed File </strong></h5>
+            <h5><strong>Please validate the data below </strong></h5>
             
-            <div class="col-md-12 well  up-sec">
+            <div class="col-md-12 well  up-sec parsefile">
                
                 
              
                 <table id="example" datatable="" dt-options="main.dtOptions" dt-column-defs="main.dtColumnDefs" class="display responsive no-wrap" cellspacing="0" width="100%">    
                             <thead>
                                 <tr>
+                                   
+                                    <th class="text-center"></th>
                                     <th>User Name</th>
                                     <th>User Email</th>
-                                    <th>Date of Invite sent</th>
-                                    <th>Status</th>
+                                   
+                                  
+                                   
                                     
                                 </tr>
                             </thead>
 
                             <tbody>
                                 <tr>
-                                    <td>Alvi Sadiq</td>
-                                    <td>alvi@gmail.com</td>
-                                    <td>22/2/2017</td>
-                                    <td>pending</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td>Hamza</td>
-                                    <td>hamza@gmail.com</td>
-                                    <td>22/2/2017</td>
-                                    <td>Accepted</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td>Najam Bahi</td>
-                                    <td>najam.bahi@live.com</td>
-                                    <td>22/2/2017</td>
-                                    <td>pending</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td>M. Daniyal</td>
-                                    <td>daniyal@spsnet.com</td>
-                                    <td>22/2/2017</td>
-                                    <td>pending</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td>M.Gull</td>
-                                    <td>Gull.sir@gmail.com</td>
-                                    <td>22/2/2017</td>
-                                    <td>pending</td>
-                                   
+                                    <td class="text-center">  <div class="checkbox">
+                                        <label><input type="checkbox" checked value=""></label>
+                                        </div> 
+                                    </td>
+                                    <td contenteditable="true">  Sadiq Alvi </td>
+                                    <td contenteditable='true'>alvi@gmail.com</td>
+                              
                                 </tr>
                                 
                                 
                                 <tr>
-                                    <td>Hamza</td>
-                                    <td>hamza@gmail.com</td>
-                                    <td>22/2/2017</td>
-                                    <td>Accepted</td>
+                                    <td class="text-center">  <div class="checkbox">
+                                        <label><input type="checkbox" checked value=""></label>
+                                        </div> 
+                                    </td>
+                                    <td contenteditable="true">  Sadiq Alvi </td>
+                                    <td contenteditable='true'>alvi@gmail.com</td>
 
                                 </tr>
-                               
+                                
+                                
+                                <tr>
+                                    <td class="text-center">  <div class="checkbox">
+                                        <label><input type="checkbox" checked value=""></label>
+                                        </div> 
+                                    </td>
+                                    <td contenteditable="true">  Sadiq Alvi </td>
+                                    <td contenteditable='true'>alvi@gmail.com</td>
+
+                                </tr>
+                                
+                                
+                                <tr>
+                                    <td class="text-center">  <div class="checkbox">
+                                        <label><input type="checkbox" checked value=""></label>
+                                        </div> 
+                                    </td>
+                                    <td contenteditable="true">  Sadiq Alvi </td>
+                                    <td contenteditable='true'>alvi@gmail.com</td>
+
+                                </tr>
+                                
+                                
+                                <tr>
+                                    <td class="text-center">  <div class="checkbox">
+                                        <label><input type="checkbox" checked value=""></label>
+                                        </div> 
+                                    </td>
+                                    <td contenteditable="true">  Sadiq Alvi </td>
+                                    <td contenteditable='true'>alvi@gmail.com</td>
+
+                                </tr>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                                 
                                 
                             </tbody>
@@ -231,7 +252,7 @@
 
             </div>
 
-            <button nclick="location.href = '12-Sent-Invites.html';" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-user pull-right" style="margin-right: 20px;">Add all User</button>
+            <button nclick="location.href = '12-Sent-Invites.html';" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-user pull-right" style="margin-right: 20px;">Invite</button>
 
  </div>
 
@@ -338,8 +359,6 @@
 
 <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js"></script>
 -->
-
-
 
 
 

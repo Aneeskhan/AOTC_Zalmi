@@ -1709,10 +1709,18 @@ svg:not(:root) {
 
 
 
+.parsefile .radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
+    position: absolute;
+    margin-top: 4px \9;
+    display: block;
+    margin-left: -20px;
+}
 
 
-
-
+.parsefile  label {
+    color: #333333;
+    font-weight: 400;
+}
 
 
 
@@ -1729,4 +1737,15 @@ svg:not(:root) {
 
 .panel-primary {
     border-color: #dddddd;
+}
+
+
+
+.parsefile .radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
+    position: absolute;
+    margin-top: 4px \9;
+    display: block;
+    MARGIN: -t;
+    margin-left: -20px;
+    margin-top: 3px;
 }

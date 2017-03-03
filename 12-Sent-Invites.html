@@ -81,11 +81,11 @@
 <div class="container sent-invite">
  <div class="panel panel-primary   user-reg">
       <div class="panel-heading">   <h5> <i class="fa fa-user" aria-hidden="true"></i> 
-                              <strong>  Sent Invitations </strong>
+                              <strong>  Users </strong>
 
                                
 
-          <button  onclick="location.href = '13-Userregistration.html';"   type="button" class="btn btn-user pull-right" style="margin-top: -6px; margin-right: 20px;"> <i class="fa fa-upload" aria-hidden="true"></i> Add File</button>
+          <button  onclick="location.href = '13-Userregistration.html';"   type="button" class="btn btn-user pull-right" style="margin-top: -6px; margin-right: 20px;"> <i class="fa fa-upload" aria-hidden="true"></i> Bulk Create </button>
 
           <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-user pull-right" style="    margin-top: -6px; margin-right: 20px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Add New User</button>
 
@@ -98,8 +98,8 @@
                     <thead>
                         <tr>
                             <th>User Name</th>
-                            <th>User Email</th>
-                            <th>Date of Invite sent</th>
+                            <th>Email Address</th>
+                            <th>Invite Sent On</th>
                             <th>Status</th>
                              <th>Revoke Invite</th>
 
@@ -112,7 +112,7 @@
                             <td>alvi@gmail.com</td>
                             <td>22/2/2017</td>
                             <td>pending</td>
-                             <td>Deactivate</td>
+                            <td> <a class="text-muted" href="#"> Resend </a></td>
 
                         </tr>
                         <tr>
@@ -120,7 +120,7 @@
                             <td>hamza@gmail.com</td>
                             <td>22/2/2017</td>
                             <td>Accepted</td>
-                              <td class="text-success">Resend</td>
+                            <td class="text-success"><a href="#">Deactivate </a></td>
 
                         </tr>
                         <tr>
@@ -128,7 +128,7 @@
                             <td>najam.bahi@live.com</td>
                             <td>22/2/2017</td>
                             <td>pending</td>
-                              <td class="text-muted">Deactivate</td>
+                            <td class="text-muted"><a href="#"> Deactivate </a></td>
 
                         </tr>
                         <tr>
@@ -136,14 +136,14 @@
                             <td>daniyal@spsnet.com</td>
                             <td>22/2/2017</td>
                             <td>pending</td>
-                            <td>Deactivate</td>
+                            <td><a href="#"> Deactivate </a></td>
                         </tr>
                         <tr>
                             <td>M.Gull</td>
                             <td>Gull.sir@gmail.com</td>
                             <td>22/2/2017</td>
                             <td>pending</td>
-                             <td>Deactivate</td>
+                            <td><a class="text-muted" href="#"> Resend </a></td>
                         </tr>
 
                         <tr>
@@ -151,28 +151,28 @@
                             <td>hamza@gmail.com</td>
                             <td>22/2/2017</td>
                             <td>Accepted</td>
-                             <td>Deactivate</td>
+                            <td><a href="#"> Deactivate </a></td>
                         </tr>
                         <tr>
                             <td>Najam Bahi</td>
                             <td>najam.bahi@live.com</td>
                             <td>22/2/2017</td>
                             <td>pending</td>
-                            <td>Deactivate</td>
+                            <td><a class="text-muted" href="#"> Deactivate </a></td>
                         </tr>
                         <tr>
                             <td>M. Daniyal</td>
                             <td>daniyal@spsnet.com</td>
                             <td>22/2/2017</td>
                             <td>pending</td>
-                            <td>Deactivate</td>
+                            <td><a href="#"> Deactivate </a></td>
                         </tr>
                         <tr>
                             <td>M.Gull</td>
                             <td>Gull.sir@gmail.com</td>
                             <td>22/2/2017</td>
                             <td>pending</td>
-                            <td>Deactivate</td>
+                            <td><a href="#"> Deactivate </a></td>
                         </tr>
 
                         <tr>
@@ -180,28 +180,28 @@
                             <td>hamza@gmail.com</td>
                             <td>22/2/2017</td>
                             <td>Accepted</td>
-                             <td>Deactivate</td>
+                            <td><a href="#"> Deactivate </a></td>
                         </tr>
                         <tr>
                             <td>Najam Bahi</td>
                             <td>najam.bahi@live.com</td>
                             <td>22/2/2017</td>
                             <td>pending</td>
-                            <td>Deactivate</td>
+                            <td><a href="#"> Deactivate </a></td>
                         </tr>
                         <tr>
                             <td>M. Daniyal</td>
                             <td>daniyal@spsnet.com</td>
                             <td>22/2/2017</td>
                             <td>pending</td>
-                             <td>Deactivate</td>
+                            <td><a href="#"> Deactivate </a></td>
                         </tr>
                         <tr>
                             <td>M.Gull</td>
                             <td>Gull.sir@gmail.com</td>
                             <td>22/2/2017</td>
                             <td>pending</td>
-                            <td>Deactivate</td>    
+                            <td><a href="#"> Deactivate </a></td>    
                         </tr>
 
                     </tbody>
@@ -252,12 +252,19 @@
 
 
 
- <button data-toggle="collapse" data-target="#filter-panel" type="button" class="btn btn-user btn-number" data-type="plus" data-field="quant[1]">
-                Add more info  <span class="glyphicon glyphicon-plus"></span>
+            <button data-toggle="collapse" data-target="#filter-panel" type="button" class="btn btn-user  pushme btn-number" data-type="plus" data-field="quant[1]">
+                Add more info 
+<!--                <span class="glyphicon glyphicon-plus"></span>-->
               </button>
 
 
-
+            <script>
+                $(".pushme").click(function () {
+                    $(this).text(function(i, v){
+                        return v === 'Show less info' ? 'Add more info' : 'Show less info'
+                    })
+                });
+            </script>
 
 
 
@@ -359,10 +366,21 @@
 
                         </form>
 
-
-<!-- Usage as a class -->
-<div class="clearfix">...</div>
-<button onclick="location.href = '#';"  type="button" class="btn btn-user pull-right" style="margin: 32px;     margin-top: -20px;" id="success-btn" >Invite</button>
+                        <!-- Usage as a class -->
+                        <div class="clearfix">...</div>
+                        
+                        <div class="checkbox" style="    position: relative;
+                                                     display: initial;
+                                                     right: -340px;
+                                                     top: -13px;
+                                                     width: 100%;
+                                                     margin-top: 10px;
+                                                     margin-bottom: 10px;">
+          <label><input class="pull-right" type="checkbox" value="">Create another</label>
+         </div>
+                        
+                        
+<button onclick="location.href = '#';"  type="button" class="btn btn-user pull-right" style="margin: 32px; z-index:111; margin-top: -20px;" id="success-btn">Invite</button>
 
 
 
