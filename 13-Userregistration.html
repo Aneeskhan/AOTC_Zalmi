@@ -17,20 +17,22 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-    
-    <style> .dataTables_wrapper .ui-toolbar {
-        padding: 0px;
-        BACKGROUND: #f5f5f5;
-        }</style>
-    
-    
+
+    <style>
+        .dataTables_wrapper .ui-toolbar {
+            padding: 0px;
+            BACKGROUND: #f5f5f5;
+        }
+    </style>
+
+
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  
-  
-  
-    
-    
+
+
+
+
+
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
 
@@ -48,11 +50,11 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    
+
 </head>
 
 <body style="    background-color: #f5f5f5;">
-   
+
 
     <nav class="navbar" role="navigation">
         <div class="container-fluid">
@@ -92,29 +94,31 @@
 
 
 
-<div class="container">
-    
-    <br> <br>
-    
-    <div class="row">
-    
-        
+    <div class="container">
 
-        <div class="col-md-12">
-            
-            
+        <br> <br>
+
+        <div class="row">
+
+
+
+            <div class="col-md-12">
+
+
                 <div class="panel panel-primary">
-                    <div class="panel-heading"><h5> <i class="fa fa-group" aria-hidden="true"></i> <strong> Invite multiple users by uploading a file </strong></h5> </div>
+                    <div class="panel-heading">
+                        <h5> <i class="fa fa-group" aria-hidden="true"></i> <strong> Invite multiple users by uploading a file </strong></h5>
+                    </div>
                     <div class="panel-body drop-file">
 
                         <!-- Standar Form -->
                         <h5>
                             Upload an excel file or a csv file which contains these data fields about a user: (User Email, First Name, Last Name, Company, City, Role). Only user email is mandatory. The order of the fields does not matter. <br><br>
-                            
+
                             <strong>Select a file from your system</strong></h5>
                         <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
                             <div class="form-inline">
-<!--
+                                <!--
                                 <div class="form-group">
                                 <label for="file-upload" class="custom-file-upload btn-user">
     <i class="fa fa-cloud-upload"></i> Custom Upload File
@@ -122,28 +126,28 @@
                                     <input class="btn-user" type="file" name="files[]" id="js-upload-files" multiple>
                                 </div>
 -->
-                                
-                                
-                                
+
+
+
 
                                 <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple style="display: none;" />
                                 <label for="file-1"> <span> <i class="fa fa-upload" aria-hidden="true"></i> Upload a file&hellip;</span></label>
 
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                              
+
+
+
+
+
+
+
+
                             </div>
                         </form>
 
                         <!-- Drop Zone -->
                         <h5><strong>Or drag and drop a file below</strong></h5>
                         <div class="upload-drop-zone" id="drop-zone">
-                            Just drag and drop a  file here
+                            Just drag and drop a file here
                         </div>
 
                         <br>
@@ -153,175 +157,184 @@
                             <h5><strong>Processed Files </strong></h5>
                             <div class="list-group">
                                 <a href="#" class="list-group-item list-group-item-success">AOTC_Name.pdf</a>
-                             
+
                             </div>
                         </div>
 
 
-                        
-                    
-
-
-<div class="alert-box success"> Invitation sent successfully </div>
 
 
 
+
+                        <div class="alert-box success"> Invitation sent successfully </div>
 
 
 
 
 
-<div class="user-reg">
-        <div class="row">
-
-            <h5><strong>Please validate the data below </strong></h5>
-            
-            <div class="col-md-12 well  up-sec parsefile">
-               
-                
-             
-                <table  id="example" datatable="" dt-options="main.dtOptions" dt-column-defs="main.dtColumnDefs" class="display responsive no-wrap" cellspacing="0" width="100%">    
-                            <thead>
-                                <tr>
-                                   
-                                    <th class="text-center"><div class="checkbox">
-                                        <label><input type="checkbox" checked value=""></label>
-                                        </div> </th>
-                                    <th>User Email</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Company</th>
-                                    <th>City</th>
-                                    <th>Role</th>
-                                    
-                                   
-                                  
-                                   
-                                    
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td class="text-center">  <div class="checkbox">
-                                        <label><input type="checkbox" checked value=""></label>
-                                        </div> 
-                                    </td>
-                                    <td contenteditable='true'>alvi@gmail.com</td>
-                                    <td contenteditable="true"> Alvi </td>
-                                    <td contenteditable="true"> Sadiq </td>
-                                    <td contenteditable="true"> Company </td>
-                                    <td contenteditable="true"> Lahore </td>
-                                    <td contenteditable="true"> Owner </td>
-                                    
-                              
-                                </tr>
-                                <tr>
-                                    <td class="text-center">  <div class="checkbox">
-                                        <label><input type="checkbox" checked value=""></label>
-                                        </div> 
-                                    </td>
-                                    <td contenteditable='true'>alvi@gmail.com</td>
-                                    <td contenteditable="true"> Alvi </td>
-                                    <td contenteditable="true"> Sadiq </td>
-                                    <td contenteditable="true"> Company </td>
-                                    <td contenteditable="true"> Lahore </td>
-                                    <td contenteditable="true"> Taxing Authority </td>
 
 
-                                </tr>
-                                <tr>
-                                    <td class="text-center">  <div class="checkbox">
-                                        <label><input type="checkbox" checked value=""></label>
-                                        </div> 
-                                    </td>
-                                    <td contenteditable='true'>alvi@gmail.com</td>
-                                    <td contenteditable="true"> Alvi </td>
-                                    <td contenteditable="true"> Sadiq </td>
-                                    <td contenteditable="true"> Company </td>
-                                    <td contenteditable="true"> Lahore </td>
-                                    <td contenteditable="true"> Assessing Authority </td>
+
+                        <div class="user-reg">
+                            <div class="row">
+
+                                <h5><strong>Please validate the data below </strong></h5>
+
+                                <div class="col-md-12 well  up-sec parsefile">
 
 
-                                </tr>
-                                <tr>
-                                    <td class="text-center">  <div class="checkbox">
-                                        <label><input type="checkbox" checked value=""></label>
-                                        </div> 
-                                    </td>
-                                    <td contenteditable='true'>alvi@gmail.com</td>
-                                    <td contenteditable="true"> Alvi </td>
-                                    <td contenteditable="true"> Sadiq </td>
-                                    <td contenteditable="true"> Company </td>
-                                    <td contenteditable="true"> Lahore </td>
-                                    <td contenteditable="true"> Asset Manager </td>
+
+                                    <table id="example" datatable="" dt-options="main.dtOptions" dt-column-defs="main.dtColumnDefs" class="display responsive no-wrap" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+
+                                                <th class="text-center">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox" checked value=""></label>
+                                                    </div>
+                                                </th>
+                                                <th>User Email</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Company</th>
+                                                <th>City</th>
+                                                <th>Role</th>
 
 
-                                </tr>
-                                <tr>
-                                    <td class="text-center">  <div class="checkbox">
-                                        <label><input type="checkbox" checked value=""></label>
-                                        </div> 
-                                    </td>
-                                    <td contenteditable='true'>alvi@gmail.com</td>
-                                    <td contenteditable="true"> Alvi </td>
-                                    <td contenteditable="true"> Sadiq </td>
-                                    <td contenteditable="true"> Company </td>
-                                    <td contenteditable="true"> Lahore </td>
-                                    <td contenteditable="true"> Agent </td>
 
 
-                                </tr>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                            </tbody>
-                </table>
 
-      
-                
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox" checked value=""></label>
+                                                    </div>
+                                                </td>
+                                                <td contenteditable='true'>alvi@gmail.com</td>
+                                                <td contenteditable="true"> Alvi </td>
+                                                <td contenteditable="true"> Sadiq </td>
+                                                <td contenteditable="true"> Company </td>
+                                                <td contenteditable="true"> Lahore </td>
+                                                <td contenteditable="true"> Owner </td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox" checked value=""></label>
+                                                    </div>
+                                                </td>
+                                                <td contenteditable='true'>alvi@gmail.com</td>
+                                                <td contenteditable="true"> Alvi </td>
+                                                <td contenteditable="true"> Sadiq </td>
+                                                <td contenteditable="true"> Company </td>
+                                                <td contenteditable="true"> Lahore </td>
+                                                <td contenteditable="true"> Taxing Authority </td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox" checked value=""></label>
+                                                    </div>
+                                                </td>
+                                                <td contenteditable='true'>alvi@gmail.com</td>
+                                                <td contenteditable="true"> Alvi </td>
+                                                <td contenteditable="true"> Sadiq </td>
+                                                <td contenteditable="true"> Company </td>
+                                                <td contenteditable="true"> Lahore </td>
+                                                <td contenteditable="true"> Assessing Authority </td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox" checked value=""></label>
+                                                    </div>
+                                                </td>
+                                                <td contenteditable='true'>alvi@gmail.com</td>
+                                                <td contenteditable="true"> Alvi </td>
+                                                <td contenteditable="true"> Sadiq </td>
+                                                <td contenteditable="true"> Company </td>
+                                                <td contenteditable="true"> Lahore </td>
+                                                <td contenteditable="true"> Asset Manager </td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox" checked value=""></label>
+                                                    </div>
+                                                </td>
+                                                <td contenteditable='true'>alvi@gmail.com</td>
+                                                <td contenteditable="true"> Alvi </td>
+                                                <td contenteditable="true"> Sadiq </td>
+                                                <td contenteditable="true"> Company </td>
+                                                <td contenteditable="true"> Lahore </td>
+                                                <td contenteditable="true"> Agent </td>
+
+
+                                            </tr>
+
+
+
+
+
+
+
+
+
+
+                                        </tbody>
+                                    </table>
+
+
+
+
+                                </div>
+
+                                <button nclick="location.href = '12-Sent-Invites.html';" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-user pull-right" style="margin-right: 20px;">Invite</button>
+
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
 
             </div>
 
-            <button nclick="location.href = '12-Sent-Invites.html';" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-user pull-right" style="margin-right: 20px;">Invite</button>
-
- </div>
 
 
 
 
-
-                    </div>
-                </div>
-           
-            
-            
-            
-            
 
         </div>
-    
-    
-    
-    
-    </div>
-    
-    
-    
-    
-    
+
 
     </div>
 
 
-</div>
 
 
 
@@ -330,22 +343,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Footer -->
-<footer class="text-center">Copyrights - 2017</footer>
+    <!-- Footer -->
+    <footer class="text-center">Copyrights - 2017</footer>
 
 
 
@@ -357,30 +356,30 @@
 
 
 
-<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 
 
 
 
 
 
-<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 
-<script src="https://cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.min.js"></script>
-
-
+    <script src="https://cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.min.js"></script>
 
 
-<script src="https://cdn.datatables.net/1.10.13/js/dataTables.jqueryui.min.js"></script>
 
 
-<!--
+    <script src="https://cdn.datatables.net/1.10.13/js/dataTables.jqueryui.min.js"></script>
+
+
+    <!--
 
 <script src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
 -->
 
-<!--<script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.jqueryui.min.js"></script>-->
-<!--
+    <!--<script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.jqueryui.min.js"></script>-->
+    <!--
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
 <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
