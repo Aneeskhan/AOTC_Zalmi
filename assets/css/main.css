@@ -1757,17 +1757,24 @@ svg:not(:root) {
 .sign-up .panel-body {
     padding: 15px;
     
+/*
     background: rgba(0, 13, 56, 0.77);
     color: white;
+*/
 }
 
 
-
+.sign-up .panel-default {
+    border-color: #000d36;
+}
+.sign-up .panel {
+    background-color: rgba(255, 255, 255, 0.62);
+}
 
 .sign-up .panel {
 
     
-    background-color: rgba(71, 188, 255, 0.29);
+/*    background-color: rgba(71, 188, 255, 0.29);*/
     
 }
 
@@ -1782,8 +1789,16 @@ svg:not(:root) {
 }
 
 
-.signup-heading {    color: #47bcff;
+.signup-heading {        color: #000d36;
     font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+
+.signup-heading label {
+    color: #000d36;
 }
 
 
@@ -1803,7 +1818,7 @@ svg:not(:root) {
 
 
 
-
+.header-signup label {color: red !important;}
 
 
 
