@@ -1756,7 +1756,7 @@ svg:not(:root) {
 
 .sign-up .panel-body {
     padding: 15px;
-    
+
 /*
     background: rgba(0, 13, 56, 0.77);
     color: white;
@@ -1773,20 +1773,24 @@ svg:not(:root) {
 
 .sign-up .panel {
 
-    
+
 /*    background-color: rgba(71, 188, 255, 0.29);*/
-    
+
 }
 
+.sign-up .panel-default {
+    border-color: #3277b3;
+}
 
 .panel-default>.panel-heading {
-    background-image: -webkit-linear-gradient(top,#000d36 0,#000d36 100%);
-    background-image: -o-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#000d36),to(#e8e8e8));
-    background-image: linear-gradient(to bottom,#000d36 0,#000d36 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+    background-image: -webkit-linear-gradient(top,#337ab7 0,#2e6da4 100%);
+    background-image: -o-linear-gradient(top,#337ab7 0,#2e6da4 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#2e6da4));
+    background-image: linear-gradient(to bottom,#337ab7 0,#2e6da4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
     background-repeat: repeat-x;
 }
+
 
 
 .signup-heading {        color: #000d36;
@@ -1822,6 +1826,7 @@ svg:not(:root) {
 
 
 
+.mandatory {color:red; font-size: 17px; float: left;}
 
 
 
@@ -1836,3 +1841,124 @@ svg:not(:root) {
 
 
 
+
+
+
+
+
+.container-login {
+    min-height: 0;
+    width: 70%;
+    color: #333333;
+    margin-top: 40px;
+    padding: 0;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-login > section {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10px;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+#top-bar {
+    display: inherit;
+}
+.nav-tabs.nav-justified {
+    border-bottom: 0 none;
+    width: 100%;
+}
+.nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+.container-login .nav-tabs.nav-justified > li > a,
+.container-login .nav-tabs.nav-justified > li > a:hover,
+.container-login .nav-tabs.nav-justified > li > a:focus {
+    background: #2f71ab;
+    border: medium none;
+    color: #ffffff;
+    margin-bottom: 0;
+    margin-right: 0;
+    border-radius: 0;
+}
+.container-login .nav-tabs.nav-justified > .active > a,
+.container-login .nav-tabs.nav-justified > .active > a:hover,
+.container-login .nav-tabs.nav-justified > .active > a:focus {
+    background: #ffffff;
+    color: #333333;
+}
+.container-login .nav-tabs.nav-justified > li > a:hover,
+.container-login .nav-tabs.nav-justified > li > a:focus {
+    background: #de2f18;
+}
+.tabs-login {
+    background: #ffffff;
+    border: medium none;
+    margin-top: -1px;
+    padding: 10px 30px;
+}
+.container-login h2 {
+    color: #000d36;
+    font-size: 22px;
+}
+.form-control {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #999999;
+    border-radius: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #333333;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+.container-login .checkbox {
+    margin-top: -15px;
+}
+.container-login button {
+    background-color: #47bcff;
+    border-color: #47bcff;
+    color: #ffffff;
+    border-radius: 0;
+    font-size: 18px;
+    line-height: 1.33;
+    padding: 10px 16px;
+    width: 100%;
+}
+.container-login button:hover, .container-login button:focus {
+    background: #000d36;
+    border-color: #000d36;
+    color: #fff;
+}
+
+
+.container-login .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 6px 16px;
+    color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #ff4757;
+    margin: 0px auto;
+}
+
+
+
+
+
+
+
+#myTabContent {    margin-left: 0;
+    background: rgba(255, 255, 255, 0.18);
+    margin-right: 0;
+    padding: 29px;
+    padding-bottom: 10px;}

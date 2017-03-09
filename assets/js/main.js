@@ -358,9 +358,3 @@ $( "#avc" ).click(function() {
 $(".anOtherButton").click(function() {
     $(".alldisable").attr('disabled', !$(".alldisable").attr('disabled'));
 });
-
-
-
-
-
-
