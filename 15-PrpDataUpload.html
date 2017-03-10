@@ -130,17 +130,42 @@
                     <div class="panel-body drop-file">
 
                         <!-- Standar Form -->
-                        <h5>
+                        <!-- <h5>
                             Upload file (excel, csv) which contains data about property including following data fields:<br>
                             <ul><br> <li>Property Number</li> <li>Tax Dist. Number</li> <li>Property</li> <li>*Address (Mandatory)</li> <li>Reval Year</li> <li>Type</li> <li>Number of Tenants</li>  <li>Project Size</li>   <li>Owner</li> <li>Property Manager</li>   </ul>
 
-                            <strong>Select a file from your system </strong></h5>
+                            </h5> -->
+
+
+
+<ul style="padding: 12px;">
+
+<li>  Upload an <span style="color:green;">Excel File <i class="fa fa-file-excel-o" aria-hidden="true"></i></span> detailing the information of at least one property.</li>
+ <li>  Before the details of the properties are listed down, a row should contain headers for each data field.</li>
+ <li>  Property information should be in one & only one row spanning as many data fields columns as may be needed.</li>
+  <br><i>*Only the address data field of a property is mandatory.</i> <br>
+
+
+
+</ul>
+
+<strong>Select a file from your system </strong><br><br>
+
+
+
+
+
+
+
+
+
+
                         <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
                             <div class="form-inline">
 
 
                                 <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple style="display: none;" />
-                                <label for="file-1"> <span> <i class="fa fa-upload" aria-hidden="true"></i> Upload a file&hellip;</span></label>
+                                <label for="file-1"> <span> <i class="fa fa-upload" aria-hidden="true"></i> Upload an excel file &hellip;</span></label>
 
 
 
