@@ -1826,8 +1826,7 @@ svg:not(:root) {
 
 
 
-.mandatory {color:red; font-size: 17px; float: left;}
-
+.mandatory {color:red; font-size: 19px; float: left;}
 
 
 
@@ -1892,9 +1891,8 @@ svg:not(:root) {
     background: #ffffff;
     color: #333333;
 }
-.container-login .nav-tabs.nav-justified > li > a:hover,
-.container-login .nav-tabs.nav-justified > li > a:focus {
-    background: #de2f18;
+.container-login .nav-tabs.nav-justified > li > a:hover, .container-login .nav-tabs.nav-justified > li > a:focus {
+    background: rgba(47, 113, 171, 0.88);
 }
 .tabs-login {
     background: #ffffff;
@@ -1909,7 +1907,6 @@ svg:not(:root) {
 .form-control {
     background-color: #ffffff;
     background-image: none;
-    border: 1px solid #999999;
     border-radius: 0;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
     color: #333333;
@@ -1962,3 +1959,15 @@ svg:not(:root) {
     margin-right: 0;
     padding: 29px;
     padding-bottom: 10px;}
+
+
+
+
+
+.sign-up label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    color: #337ab7;
+    font-weight: 700;
+}
