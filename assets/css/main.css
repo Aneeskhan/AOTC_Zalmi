@@ -1971,3 +1971,44 @@ svg:not(:root) {
     color: #337ab7;
     font-weight: 700;
 }
+
+.btn-viewIERR {
+       background: #47bcff;
+    color: #fff;
+    font-size: 12px !important;
+    font-weight: 400;
+    padding: 6px;
+    border: none !important;
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    width: 80px;
+}
+
+
+
+.btn-uploadIERR {
+       background: #47bcff;
+    color: #fff;
+    font-size: 12px !important;
+    font-weight: 400;
+    padding: 6px;
+    border: none !important;
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    width: 80px;
+}
+
+
+
+
+.IE_RR .prop-fixd ul li {
+    display: block;
+    margin-right: 0px;
+    font-weight: 400;
+    padding: 0px 0px 0px 30px !important;
+    margin-left: 0px;
+    text-align: left;
+    color: #00568a; 
+}
