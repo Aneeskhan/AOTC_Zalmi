@@ -2067,3 +2067,66 @@ svg:not(:root) {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
     background-repeat: repeat-x;
 }
+
+
+
+
+.up-prp-btn {background: #fff;
+    color: #47bcff;
+    padding: 4px;
+    border-radius: 3px;}
+
+
+
+.modal   .form-control {
+    display: block;
+    width: 100% !important;
+}
+
+
+
+
+
+
+
+.RR-Table tr td:nth-child(1) {
+    color:  #00568a;
+    
+}
+ 
+.RR-Table tr td:nth-child(3) {
+    color:  #00568a;
+}
+ 
+
+
+.RR-Table tr td:nth-child(2) {
+       color: #1e7cb3;
+    background: #dcf2ff;
+}
+ 
+.RR-Table tr td:nth-child(4) {
+      color: #1e7cb3;
+    background: #dcf2ff;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.RR-Table  th:nth-child(2) {
+    color: #43b2f3;
+}
+ 
+.RR-Table  th:nth-child(4) {
+    color: #43b2f3;
+}*/
