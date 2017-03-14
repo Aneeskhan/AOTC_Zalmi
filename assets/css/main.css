@@ -2115,8 +2115,11 @@ svg:not(:root) {
 
 
 
+#inventor {overflow-y: scroll; height: 700px;}
 
 
+
+#invention {overflow-y: scroll; height: 700px;}
 
 
 
