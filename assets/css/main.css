@@ -2015,4 +2015,55 @@ svg:not(:root) {
 
 
 
- 
+ .IE_RRR .nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+
+ .IE_RRR .panel.with-nav-tabs .panel-heading {
+    padding: 0px 0px 0 0px;
+}
+
+
+
+ .IE_RRR .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 6px 16px;
+    color: #fff;
+    width: 90%;
+    border-bottom: none;
+    margin: 0px auto;
+}
+
+
+
+
+
+
+ .IE_RRR .with-nav-tabs.panel-primary .nav-tabs>li.active>a, .with-nav-tabs.panel-primary .nav-tabs>li.active>a:hover, .with-nav-tabs.panel-primary .nav-tabs>li.active>a:focus {
+    color: #428bca;
+    margin: 0px;
+         width: 100%;
+    background-color: #fff;
+    border-color: #fff;
+    border-bottom-color: transparent;
+}
+
+
+
+
+
+.IE_RRR .panel-default>.panel-heading {
+    background-image: -webkit-linear-gradient(top,#337ab7 0,#2e6da4 100%);
+    background-image: -o-linear-gradient(top,#337ab7 0,#2e6da4 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#2e6da4));
+    background-image: linear-gradient(to bottom,#47bcff 0,#41aaea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
+    background-repeat: repeat-x;
+}
