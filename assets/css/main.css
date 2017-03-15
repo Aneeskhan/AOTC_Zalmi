@@ -1513,9 +1513,7 @@ fieldset[disabled] .form-control {
     color: #fff;
 }
 
-.ui-draggable {
-    z-index: 1111;
-}
+
 
 .agree input[type="checkbox"] {
     display: block;
@@ -2181,23 +2179,35 @@ svg:not(:root) {
  
  
 
-.mapping-table tr td:nth-child(1) {
+.mapping-table1 tr td:nth-child(2) {
    padding: 2px;
     
     
 }
 
+ 
+.mapping-table {height: 600px; overflow-y: auto;}
 
 
-.mapping-table {height: 600px; overflow: auto;}
-
-
-.mapping-table1 {height: 600px; overflow: auto;}
+.mapping-table1 {height: 600px; overflow-y: auto;}
 
 
 
-.mapping-table tr td:nth-child(1) input {
+.mapping-table1 tr td:nth-child(2) input {
   
     height: 36px;
     border: 1px solid #ccc;
 }
+
+
+.ui-draggable {
+    z-index: 1111;
+}
+
+
+.inventor {    background: #ddf3ff;
+    border: 1px solid #fff !important;
+    color: #000d36;}
+       
+ 
+ 
