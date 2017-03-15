@@ -2209,5 +2209,17 @@ svg:not(:root) {
     border: 1px solid #fff !important;
     color: #000d36;}
        
+.AJ-form .panel-title>a {
+    color: inherit;
+    color: #fff;
+}
  
- 
+
+.AJ-form .panel-default>.panel-heading {
+    background-image: -webkit-linear-gradient(top, #337ab7 0, #2e6da4 100%);
+    background-image: -o-linear-gradient(top, #337ab7 0, #2e6da4 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2e6da4));
+    background-image: linear-gradient(to bottom, #47bcff 0, #47bcff 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
+    background-repeat: repeat-x;
+}

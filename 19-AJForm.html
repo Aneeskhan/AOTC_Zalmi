@@ -34,7 +34,59 @@
             margin-bottom: 20px;
             border: 0;
             border-top: 1px solid #d2d2d2;
-     } </style>
+     } </style> <style>
+        .dataTables_wrapper .ui-toolbar {
+            padding: 0px;
+            BACKGROUND: #f5f5f5;
+        }
+        
+        
+        /*******************************
+* Does not work properly if "in" is added after "collapse".
+* Get free snippets on bootpen.com
+*******************************/
+    .panel-group .panel {
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #EEEEEE;
+    }
+
+    .panel-default > .panel-heading {
+        padding: 0;
+        border-radius: 0;
+        color: #212121;
+        background-color: #FAFAFA;
+        border-color: #EEEEEE;
+    }
+
+    .panel-title {
+        font-size: 14px;
+    }
+
+    .panel-title > a {
+        display: block;
+        
+    color: #fff;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    .more-less {
+        float: right;
+       
+    color: #fff;
+    }
+
+    .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #EEEEEE;
+    }
+
+ 
+ 
+        
+        
+        
+    </style>
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
 
@@ -78,7 +130,7 @@
 
     <!-- Page Content -->
 
-    <div class="container-fluid sign-up" style="padding:0px 40px 0 40px;">
+    <div class="container-fluid" style="padding:0px 40px 0 40px;">
         <div class="row centered-form">
 
 
@@ -86,153 +138,1341 @@
 
 
             <div class="col-md-10 col-md-offset-1">
-  <div class="demo">
- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                
+                
+              
                 <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a href="" class="text-center"  >
+                        
+                        Assessment  Jurisdiction Form
+                    </a>
+                </h4>
+            </div>
+               <div class="panel-body">
+       
+                    
+                 <p>Please fill out the form below:</p>   
+                 
+                    
+                    
+  <div class="demo AJ-form">
+ <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+     
+     
+     
+      <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading1">
+                <h4 class="panel-title">
+                    <a  href="#collapse1" >
+                        
+                       Intro
+                    </a>
+                </h4>
+            </div>
+                 <div class="panel-body">
+       
+                    
+                    
+                    
+                    
+                          
+           <form role="form">
+                     
+                         
+
+
+
+                          
+  <div class="row">
+                             
+
+                                <div class="col-xs-6 col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <label>Assessing Authority Name</label>
+                                        <input placeholder=" " type="text" name="first_name" id="first_name" class="form-control input-sm">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <label>Interviewer</label>
+                                        <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder=" ">
+                                    </div>
+                                </div>
+      
+      
+          <div class="col-xs-6 col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <label>Interviewee</label>
+                                        <input placeholder=" " type="text" name="password_confirmation" id="password_confirmation" class="form-control input-sm">
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-4">
+
+                                    <div class="form-group">
+                                        <label>Date Called</label>
+                                        <input type="text" placeholder=" " name="email" id="email" class="form-control input-sm" />
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-xs-6 col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="text" placeholder=" " name="email" id="email" class="form-control input-sm" />
+                                    </div>
+
+                                </div>
+
+                                <div class="col-xs-6 col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <label>Phone Number Called</label>
+                                        <input placeholder=" " type="text" name="password" id="password" class="form-control input-sm">
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-8">
+                                    <div class="form-group">
+                                        <label>Interviewee Offfice Address </label>
+                                        <input placeholder=" " type="text" name="password" id="password" class="form-control input-sm">
+                                    </div>
+                                </div>
+
+                            
+                           
+               
+               
+               
+                 
+                                <div class="col-xs-6 col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <label>List Relevant web sites </label>
+                                        <input placeholder=" " type="text" name="password" id="password" class="form-control input-sm">
+                                    </div>
+                                </div>
+ 
+                     </div>
+                    
+                    </form>  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+ 
+ </div> 
+        </div>
+     
+      
+       <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingThree">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <i class="more-less glyphicon glyphicon-plus"></i>
-                        Income Expense Statement 3 Data
+                        Assessment 
                     </a>
                 </h4>
             </div>
             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
        
-
-        <table class="table table-bordered table-striped" >
-                  
                     
-              <thead class="thead-inverse">
-                <tr>
-                  <th>Data Field</th>
-                  <th>Value</th>
-                  <th>Data Field</th>
-                  <th>Value</th>
-                </tr>
-              </thead>
-          
-                    <tbody>
-                      <tr>
-                        <td>Base Rent</td>
-                        <td>543646.54</td>
-                           <td> Rental Income </td>
-                        <td>670327.22  </td>
-                      </tr>
-                        
-                        
-                       
-                        
-                        
-                           <tr>
-                        <td>Miscellaneous Income  </td>
-                        <td> 1194.22 </td>
-                                  <td>Parking Income  </td>
-                        <td>23409.61  </td>
-                      </tr>
-                        
-                        
-                       
-                        
-                        
-                           <tr>
-                        <td>Total Income  </td>
-                        <td>694931.05  </td>
-                                  <td>Total Personnel  </td>
-                        <td>66617.3 </td>
-                      </tr>
+                    
+                    
+                  
+                          
+           <form role="form">
                      
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                            <tr>
-                        <td>Total Utilities  </td>
-                        <td>68958.66  </td>
-                                   <td>Total Contracted Services  </td>
-                        <td>46055.38  </td>
-                      </tr>
-                     
-                        
-                        
-                        
-                     
-                        
-                        
-                            <tr>
-                        <td>Total Maintenance  </td>
-                        <td>11418.16  </td>
-                                     <td>Total Administrative  </td>
-                        <td>23717.09  </td>
-                      </tr>
-                     
-                        
-                        
-                        
+                         
+
+
+
+                          
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">How often is real property re-assessed (or revalued)? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+                   <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">When are New Assessment Notices sent out? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+
                       
-                        
-                        
-                        
-                        
-                             <tr>
-                        <td>Real Estate Taxes  </td>
-                        <td>92077.71 </td>
-                                     <td>Total Taxes and Insurance  </td>
-                        <td>105828.64  </td>
-                      </tr>
-                     
-                        
-                        
-                        
-                       
-                     
-                        
-                        
-                        
-                        
-                            <tr>
-                        <td>Total Operating Exp-recoverable  </td>
-                        <td>322595.23 </td>
-                                        <td>Total Operating Exp-unrecoverable  </td>
-                        <td>101773.37 </td>
-                      </tr>
-                     
-                        
-                      
-                        
-                             <tr>
-                        <td>Total Expenses  </td>
-                        <td>424368.6 </td>
-                                        <td>Cash Flow - Net Income </td>
-                        <td>270562.46</td>
-                      </tr>
-                     
-                        
-                        
-                        
-             
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                    </tbody>
-        </table>
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">What is the valuation date regarding the value on the New Notice? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+                   <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">What is the Tax Bill Due Date relative to the value on the New Notice? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+
+
+
+                         
+                    
+                    
+                    </form>  
+                    
+                    
+                    
+                             
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+ 
  </div>
             </div>
         </div>
+      
+     
+       <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading2">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        <i class="more-less glyphicon glyphicon-plus"></i>
+                     Income Survey
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="panel-body">
+       
+       
+                          
+           <form role="form">
+                     
+                         
+
+
+
+                          
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">Does the Jurisdiction have an Income Survey process? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+
+                      
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">Is there a survey form? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+                   <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">How can we obtain a copy? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+
+
+
+
+                          
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">Is a survey form sent out to each taxpayer? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">How is it sent? (mail, email, other) </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+
+                      
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">When is it sent? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+                   <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">When is it due? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+
+
+
+      
+
+                         
+                           
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">Is there a penalty to the taxpayer for not returning a timely response? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+                   <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">What is the penalty? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+
+
+
+                     
+         
+                               
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">How can the taxpayer submit the survey response package? (mail, email, other)</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+             
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+
+                         
+                    
+                    
+                    </form>  
+                    
+                    
+                    
+ </div>
+            </div>
+        </div>
+      
+     
+       <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading3">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        <i class="more-less glyphicon glyphicon-plus"></i>
+                   Appeal Process
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                <div class="panel-body">
+                     
+       
+                 <h4> First Level Appeal</h4>
+                    
+                    
+                    
+                          
+           <form role="form">
+                     
+                         
+
+
+
+                          
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">What is the 1st level of appeal (perhaps to the Assessor)? </label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">When is the appeal deadline for the 1st level of appeal?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                    
+                    
+                    
+         
+                          
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">If the taxpayer wishes to obtain from the Assessor the Assessor’s income approach derivation, how does the taxpayer do that?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">If the taxpayer wishes to obtain from the Assessor the Assessor’s comparable sales, how does the taxpayer do that?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                    
+                    
+                    
+                    
+                    
+                    
+        
+                          
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">What is due for submission on this deadline (perhaps just a form notifying of the petitioner’s appeal or more)?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">How can we obtain a copy of the 1st level appeal form (email, fax, mail, posted on web)?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                    
+                    
+                        
+                    
+                            
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">When is the evidence related to the appeal due?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">When is the appeal decision rendered by the 1st level?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                    
+                  
+                    
+                    
+                    
+                              
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">How is the appeal decision communicated to the Appellant?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">How is it sent?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                    
+                  
+                      
+                    
+        <hr>
+               
+               
+               
+               <h4>2nd Level Appeal</h4>
+                              
+  <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">What is the 2nd level of appeal called (assuming there is one)?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">When is the appeal deadline for the 2nd level of appeal?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                    
+                  
+        <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">What is due for submission on this deadline (perhaps just a form notifying of the petitioner’s appeal or more)?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">How can we obtain a copy of the 2nd level appeal form (email, fax, mail, posted on web)?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                    
+                        
+                    
+                    
+                    
+                  
+        <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">When is the evidence related to the appeal due?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">Are there special rules related to evidence at the board?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                    
+                     
+                      
+        <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">What are the special rules?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">How is the appeal decision communicated to the Appellant?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                    
+             <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">How is it sent?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">What is the 3rd level of appeal called (assuming there is one)?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                    
+                 
+                <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">When is the appeal deadline for the 3rd level of appeal?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">Is it required that an attorney file to this level?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                    
+                 <hr>
+               <h4>3rd Level Appeal</h4>
+                   
+                <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">When is the appeal deadline for the 3rd level of appeal?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">Is it required that an attorney file to this level?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                    
+                    
+                    
+                    </form>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+ 
+ </div>
+            </div>
+        </div>
+      
+     
+       <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading4">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        <i class="more-less glyphicon glyphicon-plus"></i>
+                     Tax Authority
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                <div class="panel-body">
+       <form role="form">
+                    
+                    
+                    
+                <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">Who sends tax bills ?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">When is tax bill due?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+                      
+                           
+                <div class="row">
+                             
+
+                                       <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">What is on bill ?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+                
+                         <div class="col-md-6" style="text-align: left;">
+                                    
+                                     <div class="form-group">
+  <label for="comment">What is fiscal year?</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+                            </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               </div>
+              
+                    
+                    
+                    
+                    
+                    
+                    </form> 
+ </div>
+            </div>
+        </div>
+     
+      
+     
+       <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading5">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        <i class="more-less glyphicon glyphicon-plus"></i>
+                     Contact Information
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                <div class="panel-body">
+                    
+                          
+           <form role="form">
+                     
+                         
+   <div class="row">
+
+ 
+
+                                <div class="col-xs-6 col-sm-6 col-md-4">
+                                    <div class='form-group required'>
+                                        <label>    Number of Assessor Offices</label>
+                                        <div class="input-group-btn">
+                                            <select class="form-control btn btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type">
+
+                                            <option>1</option>
+                                            <option>2</option>
+                                          <option>n</option>
+                                        </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+ 
+
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label> Address of Assessor Offices </label>
+                                        <input placeholder=" " type="text" name="password" id="password" class="form-control input-sm">
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                                 <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <div class="form-group">
+                                        <label> Email </label>
+                                        <input placeholder=" " type="text" name="password" id="password" class="form-control input-sm">
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <div class="form-group">
+                                        <label> Phone </label>
+                                        <input placeholder=" " type="text" name="password" id="password" class="form-control input-sm">
+                                    </div>
+                                </div>
+
+                            
+                            </div> 
+               
+               
+               
+               <hr>
+               
+               
+      
+<h4>Assessor Offices</h4>         
+                   
+   <div class="row">
+
+ 
+
+                                <div class="col-xs-6 col-sm-6 col-md-4">
+                                    <div class='form-group required'>
+                                        <label>    Number of Assessor Offices</label>
+                                        <div class="input-group-btn">
+                                            <select class="form-control btn btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type">
+
+                                            <option>1</option>
+                                            <option>2</option>
+                                          <option>n</option>
+                                        </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+ 
+<h4>Board Offices</h4>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label> Address of Board  Offices </label>
+                                        <input placeholder=" " type="text" name="password" id="password" class="form-control input-sm">
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                                 <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <div class="form-group">
+                                        <label> Email </label>
+                                        <input placeholder=" " type="text" name="password" id="password" class="form-control input-sm">
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <div class="form-group">
+                                        <label> Phone </label>
+                                        <input placeholder=" " type="text" name="password" id="password" class="form-control input-sm">
+                                    </div>
+                                </div>
+
+                            
+                            </div>   
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+                    
+                    </form>  
+                    
+        
+ 
+ </div>
+            </div>
+        </div>
+     
+      
                 </div>
             </div>
+                    
+                             
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+ 
+ </div>
+             
+        </div>
+     
+       
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
         </div>
     </div></div>
 
