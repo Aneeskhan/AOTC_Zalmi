@@ -2,7 +2,7 @@
 
 
 
-
+ 
 
 
 $(document).ready(function () {
@@ -53,7 +53,7 @@ $(document).ready(function(){
     //this will hold reference to the tr we have dragged and its helper
     var c = {};
 
-    $("#inventor tr").draggable({
+    $(".inventor  ").draggable({
         helper: "clone",
         start: function(event, ui) {
             c.tr = this;
@@ -62,7 +62,7 @@ $(document).ready(function(){
     });
 
 
-    $("#invention tr").droppable({
+    $(".invention  ").droppable({
         drop: function(event, ui) {
             var inventor = ui.draggable.text();
             $(this).find("input").val(inventor);
@@ -369,3 +369,26 @@ function toggleIcon(e) {
 }
 $('.panel-group').on('hidden.bs.collapse', toggleIcon);
 $('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

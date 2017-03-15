@@ -1,3 +1,37 @@
+.dt-button-collection a.buttons-columnVisibility:before,
+.dt-button-collection a.buttons-columnVisibility.active span:before {
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+}
+
+.dt-button-collection a.buttons-columnVisibility:before {
+    content: ' ';
+    margin-top: -6px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.dt-button-collection a.buttons-columnVisibility.active span:before {
+    content: '\2714';
+    margin-top: -11px;
+    margin-left: 12px;
+    text-align: center;
+    text-shadow: 1px 1px #DDD, -1px -1px #DDD, 1px -1px #DDD, -1px 1px #DDD;
+}
+
+.dt-button-collection a.buttons-columnVisibility span {
+    margin-left: 20px;
+}
+
+
+/*//////////////daniyal css////////////////////////////////*/
+
 .header-btn {
     float: right;
 }
@@ -687,9 +721,10 @@ a#clickme {
     outline: 0 !important;
 }
 
-#example_length {
+
+/*#example_length {
     display: none;
-}
+}*/
 
 .modal-header {
     min-height: 16.43px;
@@ -788,27 +823,33 @@ a.dt-button.excelbtn span {
 .fa-file-pdf-o:before {
     content: "\f1c1";
     color: #ff0016;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .fa-file-text-o:before {
     content: "\f0f6";
     color: #ff4757;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .fa-file-excel-o:before {
     content: "\f1c3";
     color: #007100;
-    font-size: 21px;
+    font-size: 18px;
     /* width: 50px; */
 }
 
 .fa-copy:before,
 .fa-files-o:before {
     content: "\f0c5";
-    font-size: 20px;
+    font-size: 18px;
     color: #ff4757;
+}
+
+.fa-print:before {
+    content: "\f02f";
+    font-size: 18px;
+    color: #337ab7;
 }
 
 
@@ -1746,36 +1787,30 @@ svg:not(:root) {
     color: #EA9401;
 }
 
-
 .header-signup {
     background-color: #000d36;
     background-position: center center;
     bord er-bottom: 7px solid #47bcff;
 }
 
-
 .sign-up .panel-body {
     padding: 15px;
-
-/*
+    /*
     background: rgba(0, 13, 56, 0.77);
     color: white;
 */
 }
 
-
 .sign-up .panel-default {
     border-color: #000d36;
 }
+
 .sign-up .panel {
     background-color: rgba(255, 255, 255, 0.62);
 }
 
 .sign-up .panel {
-
-
-/*    background-color: rgba(71, 188, 255, 0.29);*/
-
+    /*    background-color: rgba(71, 188, 255, 0.29);*/
 }
 
 .sign-up .panel-default {
@@ -1783,31 +1818,26 @@ svg:not(:root) {
 }
 
 .panel-default>.panel-heading {
-    background-image: -webkit-linear-gradient(top,#337ab7 0,#2e6da4 100%);
-    background-image: -o-linear-gradient(top,#337ab7 0,#2e6da4 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#2e6da4));
-    background-image: linear-gradient(to bottom,#337ab7 0,#2e6da4 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
+    background-image: -webkit-linear-gradient(top, #337ab7 0, #2e6da4 100%);
+    background-image: -o-linear-gradient(top, #337ab7 0, #2e6da4 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2e6da4));
+    background-image: linear-gradient(to bottom, #337ab7 0, #2e6da4 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
     background-repeat: repeat-x;
 }
 
-
-
-.signup-heading {        color: #000d36;
+.signup-heading {
+    color: #000d36;
     font-weight: 400;
     font-size: 16px;
 }
-
-
-
 
 .signup-heading label {
     color: #000d36;
 }
 
-
-
-.aaa {    background: #47bcff;
+.aaa {
+    background: #47bcff;
     padding: 10px;
     display: inline-block;
     text-align: center;
@@ -1817,33 +1847,18 @@ svg:not(:root) {
     vertical-align: middle;
     font-size: 16px;
     height: 32px;
-    border-radius: 80%; }
+    border-radius: 80%;
+}
 
+.header-signup label {
+    color: red !important;
+}
 
-
-
-.header-signup label {color: red !important;}
-
-
-
-.mandatory {color:red; font-size: 19px; float: left;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.mandatory {
+    color: red;
+    font-size: 19px;
+    float: left;
+}
 
 .container-login {
     min-height: 0;
@@ -1852,29 +1867,35 @@ svg:not(:root) {
     margin-top: 40px;
     padding: 0;
 }
+
 .center-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .container-login > section {
     margin-left: 0;
     margin-right: 0;
     padding-bottom: 10px;
-     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
 #top-bar {
     display: inherit;
 }
+
 .nav-tabs.nav-justified {
     border-bottom: 0 none;
     width: 100%;
 }
+
 .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;
     float: none;
 }
+
 .container-login .nav-tabs.nav-justified > li > a,
 .container-login .nav-tabs.nav-justified > li > a:hover,
 .container-login .nav-tabs.nav-justified > li > a:focus {
@@ -1885,25 +1906,31 @@ svg:not(:root) {
     margin-right: 0;
     border-radius: 0;
 }
+
 .container-login .nav-tabs.nav-justified > .active > a,
 .container-login .nav-tabs.nav-justified > .active > a:hover,
 .container-login .nav-tabs.nav-justified > .active > a:focus {
     background: #ffffff;
     color: #333333;
 }
-.container-login .nav-tabs.nav-justified > li > a:hover, .container-login .nav-tabs.nav-justified > li > a:focus {
+
+.container-login .nav-tabs.nav-justified > li > a:hover,
+.container-login .nav-tabs.nav-justified > li > a:focus {
     background: rgba(47, 113, 171, 0.88);
 }
+
 .tabs-login {
     background: #ffffff;
     border: medium none;
     margin-top: -1px;
     padding: 10px 30px;
 }
+
 .container-login h2 {
     color: #000d36;
     font-size: 22px;
 }
+
 .form-control {
     background-color: #ffffff;
     background-image: none;
@@ -1918,9 +1945,11 @@ svg:not(:root) {
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
     width: 100%;
 }
+
 .container-login .checkbox {
     margin-top: -15px;
 }
+
 .container-login button {
     background-color: #47bcff;
     border-color: #47bcff;
@@ -1931,12 +1960,13 @@ svg:not(:root) {
     padding: 10px 16px;
     width: 100%;
 }
-.container-login button:hover, .container-login button:focus {
+
+.container-login button:hover,
+.container-login button:focus {
     background: #000d36;
     border-color: #000d36;
     color: #fff;
 }
-
 
 .container-login .nav>li>a {
     position: relative;
@@ -1948,21 +1978,13 @@ svg:not(:root) {
     margin: 0px auto;
 }
 
-
-
-
-
-
-
-#myTabContent {    margin-left: 0;
+#myTabContent {
+    margin-left: 0;
     background: rgba(255, 255, 255, 0.18);
     margin-right: 0;
     padding: 29px;
-    padding-bottom: 10px;}
-
-
-
-
+    padding-bottom: 10px;
+}
 
 .sign-up label {
     display: inline-block;
@@ -1973,7 +1995,7 @@ svg:not(:root) {
 }
 
 .btn-viewIERR {
-       background: #47bcff;
+    background: #47bcff;
     color: #fff;
     font-size: 12px !important;
     font-weight: 400;
@@ -1984,11 +2006,9 @@ svg:not(:root) {
     display: inline-block;
     width: 80px;
 }
-
-
 
 .btn-uploadIERR {
-       background: #47bcff;
+    background: #47bcff;
     color: #fff;
     font-size: 12px !important;
     font-weight: 400;
@@ -1999,9 +2019,6 @@ svg:not(:root) {
     display: inline-block;
     width: 80px;
 }
-
-
-
 
 .IE_RR .prop-fixd ul li {
     display: block;
@@ -2010,8 +2027,57 @@ svg:not(:root) {
     padding: 0px 0px 0px 30px !important;
     margin-left: 0px;
     text-align: left;
-    color: #00568a; 
+    color: #00568a;
 }
+
+#status {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+    padding: 0;
+}
+
+#preloader {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2222;
+    height: 100%;
+    background: rgba(221, 221, 221, 0.92);
+}
+
+.image-Us {
+    display: block;
+    background: url("../img/Us.png") no-repeat scroll center center transparent;
+    height: 40px;
+    width: 100px;
+}
+
+.up-prp-btn {
+    background: #fff;
+    color: #47bcff;
+    padding: 4px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.up-prp-btn {
+    background: #fff;
+    color: #326a9b;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
 
 
 
@@ -2111,25 +2177,27 @@ svg:not(:root) {
 }
  
 
-
-
-
-
-#inventor {overflow-y: scroll; height: 700px;}
-
-
-
-#invention {overflow-y: scroll; height: 700px;}
-
-
-
-
-
-/*
-.RR-Table  th:nth-child(2) {
-    color: #43b2f3;
-}
+.ui-droppable input {width:100%;}
  
-.RR-Table  th:nth-child(4) {
-    color: #43b2f3;
-}*/
+ 
+
+.mapping-table tr td:nth-child(1) {
+   padding: 2px;
+    
+    
+}
+
+
+
+.mapping-table {height: 600px; overflow: auto;}
+
+
+.mapping-table1 {height: 600px; overflow: auto;}
+
+
+
+.mapping-table tr td:nth-child(1) input {
+  
+    height: 36px;
+    border: 1px solid #ccc;
+}
