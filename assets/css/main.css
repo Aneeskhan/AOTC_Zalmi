@@ -2228,7 +2228,10 @@ svg:not(:root) {
 
 .survey{display: none;}
 
-
+.AJ-form input[type="radio"] {
+    display: block;
+    position: absolute;
+}
 
 .ap-head {    background: #000d36;
     padding: 10px;

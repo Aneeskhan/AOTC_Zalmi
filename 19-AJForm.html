@@ -351,8 +351,21 @@
 
                                                         <div class="checkbox">
                                                             <label style="padding-left:0px;">Does the Jurisdiction have an Income Survey process? </label> <BR>  <BR>
-                                                                <label><input type="checkbox"  id="yes"  value="">Yes</label> &nbsp &nbsp &nbsp
-                                                                <label><input type="checkbox" id="no" value="">No</label>
+
+
+                                                                <div class="radio">
+                                                                  <label><input type="radio" id="yes" name="optradio">Yes</label> &nbsp &nbsp &nbsp
+
+                                                                    <label><input type="radio" id="no" name="optradio">No</label>
+
+                                                                </div>
+
+
+
+
+
+
+
                                                             </div>
                                                         </div>
 
@@ -738,17 +751,16 @@
 
 
                                                             <div class="col-xs-6 col-sm-6 col-md-4">
-                                                                <div class='form-group required'>
-                                                                    <label>    Number of Assessor Offices</label>
-                                                                    <div class="input-group-btn">
-                                                                        <select class="form-control btn btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type">
-
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>n</option>
-                                                                        </select>
-                                                                    </div>
+                                                                <div class="form-group">
+                                                                    <label> Number of Assessor Offices </label>
+                                                                    <input placeholder=" " type="number" name="number" id="" class="form-control input-sm">
                                                                 </div>
+
+
+
+
+
+
 
                                                             </div>
 
@@ -798,16 +810,9 @@
 
 
                                                             <div class="col-xs-6 col-sm-6 col-md-4">
-                                                                <div class='form-group required'>
-                                                                    <label>    Number of Board  Offices</label>
-                                                                    <div class="input-group-btn">
-                                                                        <select class="form-control btn btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type">
-
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>n</option>
-                                                                        </select>
-                                                                    </div>
+                                                                <div class="form-group">
+                                                                    <label> Number of Board Offices </label>
+                                                                    <input placeholder=" " type="number" name="number" id="" class="form-control input-sm">
                                                                 </div>
 
                                                             </div>
