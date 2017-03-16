@@ -2155,37 +2155,37 @@ svg:not(:root) {
 
 .RR-Table tr td:nth-child(1) {
     color:  #00568a;
-    
+
 }
- 
+
 .RR-Table tr td:nth-child(3) {
     color:  #00568a;
 }
- 
+
 
 
 .RR-Table tr td:nth-child(2) {
        color: #1e7cb3;
     background: #dcf2ff;
 }
- 
+
 .RR-Table tr td:nth-child(4) {
       color: #1e7cb3;
     background: #dcf2ff;
 }
- 
+
 
 .ui-droppable input {width:100%;}
- 
- 
+
+
 
 .mapping-table1 tr td:nth-child(2) {
    padding: 2px;
-    
-    
+
+
 }
 
- 
+
 .mapping-table {height: 600px; overflow-y: auto;}
 
 
@@ -2194,7 +2194,7 @@ svg:not(:root) {
 
 
 .mapping-table1 tr td:nth-child(2) input {
-  
+
     height: 36px;
     border: 1px solid #ccc;
 }
@@ -2208,12 +2208,12 @@ svg:not(:root) {
 .inventor {    background: #ddf3ff;
     border: 1px solid #fff !important;
     color: #000d36;}
-       
+
 .AJ-form .panel-title>a {
     color: inherit;
     color: #fff;
 }
- 
+
 
 .AJ-form .panel-default>.panel-heading {
     background-image: -webkit-linear-gradient(top, #337ab7 0, #2e6da4 100%);
@@ -2223,3 +2223,14 @@ svg:not(:root) {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
     background-repeat: repeat-x;
 }
+
+
+
+.survey{display: none;}
+
+
+
+.ap-head {    background: #000d36;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;}
