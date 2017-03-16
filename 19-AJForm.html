@@ -350,7 +350,7 @@
                                                     <div class="form-group">
 
                                                         <div class="checkbox">
-                                                            <label style="padding-left:0px;">Does the Jurisdiction have an Income Survey process? </label> <BR>  <BR>
+                                                            <label style="padding-left:0px;">Does the Jurisdiction have an Income Survey process? </label>
 
 
                                                                 <div class="radio">
@@ -359,11 +359,6 @@
                                                                     <label><input type="radio" id="no" name="optradio">No</label>
 
                                                                 </div>
-
-
-
-
-
 
 
                                                             </div>
@@ -595,12 +590,61 @@
 
 
 
+
+
+
                                                         <div class="form-group">
-                                                            <label for="comment">Are there special rules related to evidence at the board?</label>
-                                                            <textarea class="form-control" rows="2" id="comment"></textarea>
-                                                        </div>
+
+                                                            <div class="checkbox">
+                                                                <label style="padding-left:0px;">Are there special rules related to evidence at the board? </label>
 
 
+                                                                    <div class="radio">
+                                                                      <label><input type="radio" id="yesrules" name="optradio">Yes</label> &nbsp &nbsp &nbsp
+
+                                                                        <label><input type="radio" id="norules" name="optradio">No</label>
+
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+
+                                                            <script>
+
+                                                            $("#yesrules").click(function(){
+                                                                $(".surveyrules").toggle();
+                                                            });
+
+                                                            $(document).ready(function(){
+                                                                $("#norules").click(function(){
+                                                                    $(".surveyrules").hide();
+                                                                });
+                                                                $("#yesrules").click(function(){
+                                                                    $(".surveyrules").show();
+                                                                });
+                                                            });
+
+
+                                                            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="surveyrules well">
 
                                                         <div class="form-group">
                                                             <label for="comment">What are the special rules?</label>
@@ -609,6 +653,7 @@
 
 
 
+                                                        </div>
 
                                                         <div class="form-group">
                                                             <label for="comment">How is the appeal decision communicated to the Appellant?</label>
@@ -621,6 +666,57 @@
                                                             <textarea class="form-control" rows="2" id="comment"></textarea>
                                                         </div>
 
+
+
+
+                                                        <h4 class="ap-head">3rd Level Appeal</h4>
+
+
+
+                                                        <div class="form-group">
+
+                                                            <div class="checkbox">
+                                                                <label style="padding-left:0px;">Is there a 3rd level of appeal? </label>
+
+
+                                                                    <div class="radio">
+                                                                      <label><input type="radio" id="yesap" name="optradio">Yes</label> &nbsp &nbsp &nbsp
+
+                                                                        <label><input type="radio" id="noap" name="optradio">No</label>
+
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+
+                                                            <script>
+
+                                                            $("#yesap").click(function(){
+                                                                $(".surveyap").toggle();
+                                                            });
+
+                                                            $(document).ready(function(){
+                                                                $("#noap").click(function(){
+                                                                    $(".surveyap").hide();
+                                                                });
+                                                                $("#yesap").click(function(){
+                                                                    $(".surveyap").show();
+                                                                });
+                                                            });
+
+
+
+
+
+
+                                                            </script>
+
+
+
+
+
+                                                            <div class="surveyap well">
 
                                                         <div class="form-group">
                                                             <label for="comment">What is the 3rd level of appeal called (assuming there is one)?</label>
@@ -641,11 +737,6 @@
                                                         </div>
 
 
-                                                        <h4 class="ap-head">3rd Level Appeal</h4>
-
-
-
-
                                                         <div class="form-group">
                                                             <label for="comment">When is the appeal deadline for the 3rd level of appeal?</label>
                                                             <textarea class="form-control" rows="2" id="comment"></textarea>
@@ -656,7 +747,7 @@
                                                             <label for="comment">Is it required that an attorney file to this level?</label>
                                                             <textarea class="form-control" rows="2" id="comment"></textarea>
                                                         </div>
-
+</div>
 
                                                     </form>
 
