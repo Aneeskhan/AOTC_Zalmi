@@ -157,7 +157,7 @@
                     
                     
                       <div class="panel-heading">   <h5> <i class="fa fa-user" aria-hidden="true"></i> 
-                              <strong>   Income and Expense Data </strong>
+                              <strong>   Tax Bill </strong>
 
   <button onclick="location.href = '22-UploadManual.html';" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-user pull-right" style="    margin-top: -6px; margin-right: 20px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Upload More Files Or Data</button>
 
@@ -247,46 +247,33 @@
         <form>
      
                   
-                   <div class="row">
-                            <div class="col-md-6"  style="padding: 0px;"> 
-                            
-                            
-                                 <div class=' col-md-12 form-group required'>
-        <label style="color:#555;"> <i class="fa fa-calendar" aria-hidden="true"></i> Entering IE Data for year?</label>
-    <div class="input-group-btn  ">
-        <select class="form-control btn btn-default" >
+                    
+            
+            
+            
+             <div class="row">
+              <div class="col-md-6">
+                             <div id="sandbox-container">
+    <label>Bill Date</label>
+			 <div class='input-group date'>
 
-            <option selected>2017</option>
-            <option>2016</option>
-            <option>2015</option>
-             
-            <option>2014</option>
-             
-            <option>2013</option>
-             
-            <option>2012</option>
-             
-             
-        </select>
-    </div>
-    </div><br>
-                            
-                            
-                            </div>
-                        
-                        
-                        </div>  
+                    <input type='text' placeholder="Click here to choose date" class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+
+
+
+</div>
             
             
+             </div> 
+            
+              </div>
             
             
-            
-            
-            
-            
-            
-            
-            
+<br>
             
             
             
@@ -298,8 +285,8 @@
           <div class="row">
               <div class="col-md-6">
           <div class='form-group required'>
-            <label>Base Rent</label>
-            <input class='form-control alldisable'   type='text' placeholder="Enter Base Rent">
+            <label>Property description</label>
+            <input class='form-control alldisable'   type='text' placeholder="Enter Property description">
           </div>
              </div> 
               
@@ -309,8 +296,8 @@
               
               <div class="col-md-6">
           <div class='form-group required'>
-            <label>Miscellaneous Income</label>
-            <input class='form-control alldisable'   type='text' placeholder="Enter Miscellaneous Income">
+            <label>Account Number</label>
+            <input class='form-control alldisable'   type='text' placeholder="Enter Account Number">
           </div></div>
             </div> 
             
@@ -322,16 +309,16 @@
             
             
           <div class='form-group required'>
-            <label>Total Income</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Total Income">
+            <label>Refuse Area</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Refuse Area">
           </div>
                   
                   
                   </div>
                    <div class="col-md-6"> 
           <div class='form-group required'>
-            <label>Total Utilities</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Total Utilities">
+            <label>Refuse Units</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Refuse Units">
           </div>
                </div>        </div>    
                        
@@ -340,14 +327,10 @@
               <div class="col-md-6">       
                        
           <div class='form-group required'>
-            <label>Total Maintenance</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Total Maintenance">
+            <label>Total Bill</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Bill">
           </div> </div>
-         <div class="col-md-6"> 
-          <div class='form-group required'>
-            <label>Real Estate Taxes</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Real Estate Taxes">
-          </div>  </div>
+         
                       </div>
                       
                       
@@ -355,118 +338,7 @@
                       
                       
                       
-                      
-                           <div class="row">
-              <div class="col-md-6"> 
-                      
-          <div class='form-group required'>
-            <label>Total Operating Exp-recoverable</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Total Operating Exp-recoverable">
-          </div> </div>
-            
-            
-            
-            
-            <div class="col-md-6"> 
-              <div class='form-group required'>
-            <label>Total Expenses</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Total Expenses">
-          </div></div></div>
-            
-            
-            
-            
-            
-            
-                        <div class="row">
-              <div class="col-md-6"> 
-                <div class='form-group required'>
-            <label>	Rental Income</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Rental Income">
-          </div> 
-             </div> 
-            
-            
-                  <div class="col-md-6"> 
-                <div class='form-group required'>
-            <label>	Parking Income</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Parking Income">
-          </div> 
-            </div> </div> 
-            
-            
-            
-            
-            
-            
-                        <div class="row">
-              <div class="col-md-6"> 
-            
-                <div class='form-group required'>
-            <label>Total Personnel</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Total Personnel">
-          </div>   </div> 
-            
-            
-            
-            
-            
-            
-            
-               <div class="col-md-6">
-                <div class='form-group required'>
-            <label>		Total Contracted Services</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Total Contracted Services">
-          </div>  </div>  </div> 
-            
-            
-            
-            
-                <div class="row">
-              <div class="col-md-6"> 
-            
-                <div class='form-group required'>
-            <label>	Total Administrative</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Total Administrative">
-          </div> </div> 
-            
-            
-            
-            
-            
-                  <div class="col-md-6"> 
-                <div class='form-group required'>
-            <label>	Total Taxes and Insurance</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Total Taxes and Insurance">
-          </div> 
-              </div>   </div> 
-            
-            
-            
-                
-                <div class="row">
-              <div class="col-md-6">
-                <div class='form-group required'>
-            <label>	Total Operating Exp-unrecoverable</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Total Operating Exp-unrecoverable">
-          </div> </div>
-             
-            
-            
-            
-              <div class="col-md-6">
-                    
-                <div class='form-group required'>
-            <label>	Cash Flow - Net Income</label>
-            <input class='form-control alldisable'  type='text' placeholder="Enter Cash Flow - Net Income">
-          </div> </div> </div> 
-             
-            
-            
-            
-            
-            
-            <br>
+                        
             
              <div class="clearfix"></div>
                         
