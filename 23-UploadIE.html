@@ -1,0 +1,633 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AOTC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+
+    <style>
+        .dataTables_wrapper .ui-toolbar {
+            padding: 0px;
+            BACKGROUND: #f5f5f5;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/dataTables.jqueryui.min.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.jqueryui.min.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<style>
+.drop-file ul { list-style: none;}
+
+.drop-file li { position: relative;}
+
+.drop-file li:before {
+    position: absolute;
+    top: -2px;
+    margin: 8px 0 0 -12px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: #ccc;
+    content: "";
+}
+
+    
+    .modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: 0.8;
+}
+    
+    
+/*
+    .modal-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #000d36;
+}
+*/
+
+</style>
+</head>
+
+<body style="    background-color: #f5f5f5;">
+
+
+    <nav class="navbar" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="http://aotc.mybluemix.net/#!/main"><img src="assets/img/logo.png"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="header-btn">
+                    <ul>
+                        
+                        <li   class="metro-header">
+                            <a href="24-TaskManager.html"> <span class="image-ts"></span>  <span>Task Manager</span></a>
+                        </li>
+                        
+                        
+                        
+                        <li id="prp" class="metro-header">
+                            <a href="#"> <span class="image-pr"></span>  <span>Property</span></a>
+                        </li>
+                        <li class="metro-header">
+                            <a href="#"> <span class="image-de"></span> <span>Designee</span></a>
+                        </li>
+                        <li class="metro-header">
+                            <a href="#"> <span class="image-no"></span>  <span>Notification</span></a>
+                        </li>
+                        <li class="metro-header">
+                            <a href="#"> <span class="image-lg"></span>  <span>Logs</span></a>
+                        </li>
+                        <li class="metro-header welcome">
+                            <a href="#" style="color: #fff;     padding: 0px 15px 0px 15px;"> <span class="image-ph"></span>  <span>Welcome Annie</span></a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+                   <div class="prop-fixd text-center">
+<ul>
+    <li> <i class="fa fa-dot-circle-o" aria-hidden="true"></i><b> Owner Name:</b> The Realty Associates Fund VIII</li>
+ 
+ <li> <i class="fa fa-dot-circle-o" aria-hidden="true"></i><b> Property Address:</b>	Research Plaza</li>
+     
+     <li> <i class="fa fa-dot-circle-o" aria-hidden="true"></i><b> Property Name:</b> 	Mary McCarthy</li>
+	 
+</ul>
+</div>
+ 
+        <br> 
+        <div class="row">
+
+
+
+            <div class="col-md-12">
+
+
+                <div class="panel panel-primary IE_RR">
+                
+                    
+                    
+                    
+                    
+                      <div class="panel-heading">   <h5> <i class="fa fa-user" aria-hidden="true"></i> 
+                              <strong>   Income and Expense Data </strong>
+
+          
+<!--
+
+          <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-user pull-right" style="    margin-top: -6px; margin-right: 20px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Add New User</button>
+-->
+
+
+
+                            <h5></div>
+       
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
+ 
+<body>
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #ffffff; color: #555;">
+            <div class="modal-header" style=" background: #000c35 !important;">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h5 class="modal-title text-ce nter" style="color:#fff;">Add one or more files or enter data manually</h5>
+            </div>
+            <div class="modal-body text -center">
+				 <br>
+        <div class="row">
+            <div class="col-md-5">
+     
+                  <div class="input-group" style="    width: 100%; background:#47bcff; 
+    border: none;">
+          
+            <label class="input-group-btn text-center"> <span class="btn" style="color:#fff; text-align: center;"> Upload File from System&hellip;
+              <input type="file" style="display: none;" multiple>
+              </span> </label>
+          </div>
+                
+             
+                </div> 
+                
+            <div class="col-md-2 text-center"> OR </div>
+                
+                
+                       <div class="col-md-5">
+     
+            <button  type="button" data-toggle="collapse" data-target="#filter-panel"  class="btn btn-success  " style="    width: 100%; background:#47bcff; 
+    border: none;">Enter Data Manually &nbsp  </button>
+                           
+                </div> 
+ 
+                
+                </div>     <br>
+                <div class="clearfix"></div>
+                              
+ 
+                
+                
+                 
+                      
+<div id="filter-panel" class="row collapse filter-panel" class="well">
+
+              
+           <div class=' col-md-12 form-group required'>
+        <label style="color:#555;"> <i class="fa fa-calendar" aria-hidden="true"></i> Entering IE Data for year?</label>
+    <div class="input-group-btn clearf">
+        <select class="form-control btn btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type">
+
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+             
+            <option>2014</option>
+             
+            <option>2013</option>
+             
+            <option>2012</option>
+             
+             
+        </select>
+    </div>
+    </div><br>
+                       <button data-dismiss="modal"  type="button" id="avc2" class="btn btn-success pull-right  " style="     background:#47bcff; 
+    border: none;">Ok  </button>
+                      
+    
+    
+    
+       
+                        <div class="clearfix"></div>
+                
+        </div>
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+                    <div class="panel-body drop-file">
+
+ 
+                        
+                             
+                        
+                        
+                        
+                        
+                        
+
+  <div class="row ">
+       
+    <div class="col-md-12 submit-data">
+
+<!--
+
+       <h5 class="text-left"> Upload data for year 2016.</h5>
+-->
+
+      <div class="welll">
+  
+  
+        <form>
+     
+                  
+                   <div class="row">
+                            <div class="col-md-6"  style="padding: 0px;"> 
+                            
+                            
+                                 <div class=' col-md-12 form-group required'>
+        <label style="color:#555;"> <i class="fa fa-calendar" aria-hidden="true"></i> Entering IE Data for year?</label>
+    <div class="input-group-btn  ">
+        <select class="form-control btn btn-default" >
+
+            <option selected>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+             
+            <option>2014</option>
+             
+            <option>2013</option>
+             
+            <option>2012</option>
+             
+             
+        </select>
+    </div>
+    </div><br>
+                            
+                            
+                            </div>
+                        
+                        
+                        </div>  
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          <div class="row">
+              <div class="col-md-6">
+          <div class='form-group required'>
+            <label>Base Rent</label>
+            <input class='form-control alldisable'   type='text' placeholder="Enter Base Rent">
+          </div>
+             </div> 
+              
+              
+              
+              
+              
+              <div class="col-md-6">
+          <div class='form-group required'>
+            <label>Miscellaneous Income</label>
+            <input class='form-control alldisable'   type='text' placeholder="Enter Miscellaneous Income">
+          </div></div>
+            </div> 
+            
+            
+            
+            
+              <div class="row">
+              <div class="col-md-6">
+            
+            
+          <div class='form-group required'>
+            <label>Total Income</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Income">
+          </div>
+                  
+                  
+                  </div>
+                   <div class="col-md-6"> 
+          <div class='form-group required'>
+            <label>Total Utilities</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Utilities">
+          </div>
+               </div>        </div>    
+                       
+                       
+                  <div class="row">
+              <div class="col-md-6">       
+                       
+          <div class='form-group required'>
+            <label>Total Maintenance</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Maintenance">
+          </div> </div>
+         <div class="col-md-6"> 
+          <div class='form-group required'>
+            <label>Real Estate Taxes</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Real Estate Taxes">
+          </div>  </div>
+                      </div>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                           <div class="row">
+              <div class="col-md-6"> 
+                      
+          <div class='form-group required'>
+            <label>Total Operating Exp-recoverable</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Operating Exp-recoverable">
+          </div> </div>
+            
+            
+            
+            
+            <div class="col-md-6"> 
+              <div class='form-group required'>
+            <label>Total Expenses</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Expenses">
+          </div></div></div>
+            
+            
+            
+            
+            
+            
+                        <div class="row">
+              <div class="col-md-6"> 
+                <div class='form-group required'>
+            <label>	Rental Income</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Rental Income">
+          </div> 
+             </div> 
+            
+            
+                  <div class="col-md-6"> 
+                <div class='form-group required'>
+            <label>	Parking Income</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Parking Income">
+          </div> 
+            </div> </div> 
+            
+            
+            
+            
+            
+            
+                        <div class="row">
+              <div class="col-md-6"> 
+            
+                <div class='form-group required'>
+            <label>Total Personnel</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Personnel">
+          </div>   </div> 
+            
+            
+            
+            
+            
+            
+            
+               <div class="col-md-6">
+                <div class='form-group required'>
+            <label>		Total Contracted Services</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Contracted Services">
+          </div>  </div>  </div> 
+            
+            
+            
+            
+                <div class="row">
+              <div class="col-md-6"> 
+            
+                <div class='form-group required'>
+            <label>	Total Administrative</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Administrative">
+          </div> </div> 
+            
+            
+            
+            
+            
+                  <div class="col-md-6"> 
+                <div class='form-group required'>
+            <label>	Total Taxes and Insurance</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Taxes and Insurance">
+          </div> 
+              </div>   </div> 
+            
+            
+            
+                
+                <div class="row">
+              <div class="col-md-6">
+                <div class='form-group required'>
+            <label>	Total Operating Exp-unrecoverable</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Total Operating Exp-unrecoverable">
+          </div> </div>
+             
+            
+            
+            
+              <div class="col-md-6">
+                    
+                <div class='form-group required'>
+            <label>	Cash Flow - Net Income</label>
+            <input class='form-control alldisable'  type='text' placeholder="Enter Cash Flow - Net Income">
+          </div> </div> </div> 
+             
+            
+            
+            
+            
+            
+            <br>
+            
+             <div class="clearfix"></div>
+                        
+                   
+         
+                                                
+
+                        
+<button onclick="location.href = '#';"  data-toggle="modal" data-target="#myModal" type="button" class="btn btn-user pull-right" style="margin: 12px; z-index:111; margin-top: -20px;" id="success-btn">Upload</button> 
+            
+            
+  
+<div class="alert-box successa text-center"> 
+   
+    <p style="text-algin: center !important;">
+       <i class="fa fa-3x fa-spinner text-center" aria-hidden="true"></i> <br>
+    AOTC is uploading your files to <a href="" style="color: #28ffbb; text-decoration: underline;     font-size: 15px;">  Task manager section </a> <br> meanwhile you can add more files or data. <br>
+    </p>
+   
+     
+ 
+    
+    
+    
+    
+            
+            </div>
+          
+            
+            
+            
+            
+            
+<button onclick="location.href = '#';"  type="button" class="btn btn-user pull-right" style="margin: 12px; z-index:111; margin-top: -20px;" id="success-btn">Reset</button> 
+            
+ 
+            
+ 
+        </form>
+      </div>
+    </div>
+      
+      
+      <script>
+      
+  
+
+      
+      
+      </script>
+      
+      
+      
+      
+      
+  </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center">Copyrights - 2017</footer>
+
+
+
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+
+
+
+
+
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.min.js"></script>
+
+
+
+
+    <script src="https://cdn.datatables.net/1.10.13/js/dataTables.jqueryui.min.js"></script>
+
+
+ 
+
+
+
+
+
+</body>
+
+</html>

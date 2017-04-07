@@ -306,7 +306,10 @@ $(function() {
 
 
 
-
+    
+$( "#success-btn" ).click(function() {
+  $( "div.successa" ).fadeIn( 1500 ).delay( 111500 ).fadeOut( 12500 );
+});
 
 
 
@@ -353,6 +356,10 @@ $( "#avc" ).click(function() {
 
 
 
+$( "#avc2" ).click(function() {
+    $( "#item2" ).toggle(400);
+});
+
 
 
 
@@ -372,6 +379,7 @@ function toggleIcon(e) {
 }
 $('.panel-group').on('hidden.bs.collapse', toggleIcon);
 $('.panel-group').on('shown.bs.collapse', toggleIcon);
+
 
 
 
