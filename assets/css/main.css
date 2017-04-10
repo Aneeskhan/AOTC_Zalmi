@@ -2360,3 +2360,13 @@ svg:not(:root) {
         height: 770px;
     overflow: auto
     }
+
+.key1 {
+       background: #c6e4ff !important;
+    color: #000000;
+}
+.key2 {background: #fbe0d7 !important; color: #000000;}
+
+.key3 {background:  #ffffff !important;}
+
+.legends {    padding: 17px 0px 50px 0px;}

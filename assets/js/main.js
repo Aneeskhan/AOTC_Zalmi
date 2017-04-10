@@ -1,5 +1,10 @@
-
-
+$('.MyCheckBox').click(function() {
+    if ($(this).is(':checked')) {
+        $("#ShowMeDIV").show();
+    } else {
+        $("#ShowMeDIV").hide();
+    }
+});
 
 
  

@@ -23,6 +23,28 @@
             padding: 0px;
             BACKGROUND: #f5f5f5;
         }
+        
+        
+        input[type="checkbox"] {
+    display: block !important;
+}
+        
+        
+      .toggle-button {    background-color: #f44336;
+    border: 2px solid #f44336; margin: 5px 0; border-radius: 20px; bor der: 2px solid #D0D0D0; height: 24px; cursor: pointer; width: 50px; position: relative; display: inline-block; user-select: none; -webkit-user-select: none; -ms-user-select: none; -moz-user-select: none; }
+.toggle-button span { position: absolute; left: 0; top: 0; border-radius: 100%; width: 26px; height: 26px; background-color: white; float: left; margin: -3px 0 0 -3px; border: 2px solid #D0D0D0; transition: left 0.3s; }
+.toggle-button-selected {
+    background-color: #009688;
+    border: 2px solid #009688;
+}
+.toggle-button-selected span { left: 26px; top: 0; margin: 0; border: none; width: 24px; height: 24px; box-shadow: 0 0 4px rgba(0,0,0,0.1); }
+
+.center { text-align:center; }
+        
+        
+        
+        
+        
     </style>
 
 
@@ -84,19 +106,19 @@
                 <div class="header-btn">
                     <ul>
                         <li id="prp" class="metro-header">
-                            <a href="#"> <span class="image-pr"></span> </span><span>Property</span></a>
+                            <a href="#"> <span class="image-pr"></span>  <span>Property</span></a>
                         </li>
                         <li class="metro-header">
-                            <a href="#"> <span class="image-de"></span> </span><span>Designee</span></a>
+                            <a href="#"> <span class="image-de"></span>  <span>Designee</span></a>
                         </li>
                         <li class="metro-header">
-                            <a href="#"> <span class="image-no"></span> </span><span>Notification</span></a>
+                            <a href="#"> <span class="image-no"></span>  <span>Notification</span></a>
                         </li>
                         <li class="metro-header">
-                            <a href="#"> <span class="image-lg"></span> </span><span>Logs</span></a>
+                            <a href="#"> <span class="image-lg"></span>  <span>Logs</span></a>
                         </li>
                         <li class="metro-header welcome">
-                            <a href="#" style="color: #fff;     padding: 0px 15px 0px 15px;"> <span class="image-ph"></span> </span><span>Welcome Annie</span></a>
+                            <a href="#" style="color: #fff;     padding: 0px 15px 0px 15px;"> <span class="image-ph"></span>  <span>Welcome Annie</span></a>
                         </li>
                     </ul>
                 </div>
@@ -112,12 +134,50 @@
 
 
 
-    <div class="container">
+    <div class="contai ner">
 
         <br> <br>
 
         <div class="row">
+<!--
 
+             <div class="col-md-2"> 
+            
+            
+            
+            
+                                    <div  class="pull-left" style="    margin-top: -19px; margin-right: 20px;">
+                                  
+              <span > Add to Multi Account </span>        
+    <div class="toggle-button toggle-button-selected">
+        <span></span>
+    </div>
+    
+            <span> Add to Multi Part  </span>                      
+                                  
+                                  
+                                  
+                                  
+</div>
+            
+            
+            
+            
+            
+           <button type="button" class="btn btn-primary">Move this to Multi Part</button>
+<button type="button" class="btn btn-success">Move this to Multi Account</button> 
+            
+            
+            
+            
+            
+            
+            </div>
+-->
+            
+            
+            
+            
 
 
             <div class="col-md-12">
@@ -125,7 +185,21 @@
 
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h5>   <strong> Income Expense Statement & Rent Role Report Data </strong></h5>
+                        <h5>   <strong>View Property Details </strong>
+                            
+                              <a class="pull-right fa fa-upload" style="cursor:pointer;   margin-left: 12px;    margin-top: 2px;    color: white;" ui-sref="multipleUploadIERR" href="#!/multipleUploadIERR"><strong style="font-family: Helvetica,Arial,sans-serif;font-size: 12px;"> Upload Multiple IE &amp; RR </strong></a>
+
+
+                        <span class="pull-right" style="cursor:pointer;      margin-top: 2px;    color: white;">|</span>
+
+                        <a class="pull-right fa fa-upload" style="cursor:pointer; margin-right: 12px;   margin-top: 2px;    color: white;" ui-sref="PropertiesData" href="#!/upload-properties-data"><strong style="font-family: Helvetica,Arial,sans-serif;font-size: 12px;"> Upload Properties</strong></a>
+
+
+                      
+                        </h5>
+                        
+                       
+                        
                     </div>
                     <div class="panel-body drop-file">
 
@@ -143,8 +217,39 @@
 
 
 
-                      
+  
+<!-- Modal -->
+<div id="myModalprpdetails" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-md">
 
+    <!-- Modal content-->
+    <div class="modal-content" style="    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    color: #545454;">
+     
+             <div class="modal-body text-center">
+			 
+        <h4>Are you sure to move these entries to [multi part/multi Acc] ?</h4>
+     
+          
+                 
+                           
+<button  data-dismiss="modal"   type="button" class="btn btn-user  pull-center" style="margin: 12px; z-index:111; background: #F44336; !Important">No</button>  
+                
+                                        
+<button data-dismiss="modal"  type="button" class="btn btn-user  pull-center" style="margin: 12px; z-index:111; ">Yes</button> 
+                
+                
+   
+                    <div class="clearfix"></div>
+                   
+                
+            </div>
+   
+    </div>
+
+  </div>
+</div>
 
 
 
@@ -153,18 +258,48 @@
 
                         <div class="user-reg">
                             <div class="row">
+  
+                          <div class="legends">
+                                
+                            
+                              
+                              
+        <div id="ShowMeDIV" class="pull-left" style="display: none;">
+                              
+                                          
+           <button  data-toggle="modal" data-target="#myModalprpdetails" type="button" class="key1 btn ">Move this to Multi Part</button>
+<button   data-toggle="modal" data-target="#myModalprpdetails" type="button" class=" key2 btn ">Move this to Multi Account</button> 
+            
+            
+                              </div> 
+                              
 
-<!--                                <h5><strong>Please validate the data below </strong></h5>-->
-
+                            
+                                 <span  class="pull-right" style="    margi n-top: -19px; margin-right: 20px;"> <span class="key2"> &nbsp &nbsp &nbsp</span>  Multi Account  </span>
+                              
+                              
+                                
+                               <span class="pull-right" style="    ma rgin-top: -19px; margin-right: 20px;"> <span class="key1"> &nbsp &nbsp &nbsp</span> Multi Part  </span>
+                        
+                      
+                        
+                      
+                                
+                               
+                                
+                                </div>     
+                                 
+                                
+                                
                                 <div class="col-md-12 well  up-sec parsefile">
 
 
 
-                                    <table  id="example" datatable="" dt-options="main.dtOptions" dt-column-defs="main.dtColumnDefs" class="display responsive no-wrap" cellspacing="0" width="100%">
+                                    <table  class="table" id="example" datatable="" dt-options="main.dtOptions" dt-column-defs="main.dtColumnDefs" class="display responsive no-wrap" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
 
-                                              
+                                                <th> </th>
                                                 <th>Property Number </th>
                                                 <th>Property Name</th>
                                                 <th>Owner Name</th>
@@ -176,84 +311,175 @@
                                         </thead>
 
                                         <tbody>
-                                               <tr>
-                                              
+                                               <tr class="key1">
+                                                <td>
+                                            <input   class="MyCheckBox" type="checkbox" ng-model="personalDetail.selected"/></td>
                                                 <td>C0487</td>
-                                                <td> Research Plaza </td>
+                                                <td> aaaaaaaResearch Plaza </td>
                                                 <td> The Realty Associates Fund VIII</td>
                                                 <td> Mary McCarthy </td>
-                                                <td> <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
                                                    </td>
                                                    
-                                                <td> <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
                                                 
-       
-                                            </tr>
-                                            
-                                            
-                                             <tr>
-                                              
-                                                <td>C0487</td>
-                                                <td> Research Plaza </td>
-                                                <td> The Realty Associates Fund VIII</td>
-                                                <td> Mary McCarthy </td>
-                                                <td> <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
-                                                   </td>
                                                    
-                                                <td> <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
-                                                
-       
-                                            </tr>
-                                            
-                                            
-                                             <tr>
-                                              
-                                                <td>C0487</td>
-                                                <td> Research Plaza </td>
-                                                <td> The Realty Associates Fund VIII</td>
-                                                <td> Mary McCarthy </td>
-                                                <td> <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
-                                                   </td>
                                                    
-                                                <td> <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
-                                                
-       
-                                            </tr>
-                                            
-                                            
-                                             <tr>
-                                              
-                                                <td>C0487</td>
-                                                <td> Research Plaza </td>
-                                                <td> The Realty Associates Fund VIII</td>
-                                                <td> Mary McCarthy </td>
-                                                <td> <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
-                                                   </td>
                                                    
-                                                <td> <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
-                                                
-       
-                                            </tr>
-                                            
-                                             <tr>
-                                              
-                                                <td>C0487</td>
-                                                <td> Research Plaza </td>
-                                                <td> The Realty Associates Fund VIII</td>
-                                                <td> Mary McCarthy </td>
-                                                <td> <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
-                                                   </td>
                                                    
-                                                <td> <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
-                                                
        
                                             </tr>
-                                            
                                            
                                              
-
-
-
+  
+  <tr class="key3">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>
+                                            
+                                            
+                          <tr class="key2">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>                    
+                                            
+        <tr class="key1">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>                                     
+                                            
+                                            
+        <tr class="key3">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>                                     
+                                            
+                                            
+               <tr class="key2">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>                               
+                                            
+                                            
+                        <tr class="key3">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>                     
+                                            
+                                            
+                                            
+                                            
+         <tr class="key3">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '17-UploadDataIE_RR.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>                                    
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
                                         </tbody>
                                     </table>
 
