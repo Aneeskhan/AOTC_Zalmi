@@ -2370,3 +2370,9 @@ svg:not(:root) {
 .key3 {background:  #ffffff !important;}
 
 .legends {    padding: 17px 0px 50px 0px;}
+
+
+
+.IE-cons ul li {  
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;}
