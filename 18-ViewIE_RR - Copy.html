@@ -69,18 +69,10 @@
  
               
         input[type="checkbox"] {
-      display: block !important;
-    z-index: 1111111; 
-    float: left !Important; 
-    margin: 16px 14px 0px 20px; 
-            
-            
+    display: block !important;
 }
          
- .btn-user:hover, .btn-user:focus, .btn-user.focus {
-    margin-right: 0px !important;
-    color: #eee !important;
-}
+        
         
     </style>
 
@@ -148,56 +140,22 @@
 
 
 
- 
 
 
 
-    <div class="container">
+
+
+    <div class="contai ner">
 
         <br> <br>
-        
-        
- 
-        
 
         <div class="row">
 
  
-            <div class="col-md-12">
+            <div class="col-md-9">
    <div class="panel panel-primary IE_RR">
                     <div class="panel-heading">
-                        <h5>  <strong> Property Details </strong>
-                        
-                        
-                        
-<!--
-                         <span class="pull-right" style="margin-top: -8px; margin-right: 20px;">
-                     
-                                       
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-user">Action</button>
-                    <button type="button" class="btn btn-user dropdown-toggle" data-toggle="dropdown">
-                    <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Consolidate</a></li>
-                    <li><a href="#">Valuate</a></li>
-                    <li><a href="#">Unlink</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Download</a></li>
-                    </ul>
-                    </div>
-                    
-                     
-                </span>   
--->
-   
-                        
-                        
-                        </h5>
-                        
-   
-                        
+                        <h5>  <strong> Property Details </strong></h5>
                     </div>
                
                         
@@ -215,8 +173,7 @@
      <li> <i class="fa fa-dot-circle-o" aria-hidden="true"></i><b> Property Manager:</b> 	Mary McCarthy</li>
 	 
 </ul>
-         <br>    <br>             
-  <ul>
+         <br>    <br>              <ul>
  <li> <i class="fa fa-dot-circle-o" aria-hidden="true"></i> <b>Tax Dist Number:</b> 14 </li>
  <li> <i class="fa fa-dot-circle-o" aria-hidden="true"></i><b> Property Address:</b>	8455 Colesville Road, Silver Spring, MD  20910</li>
      <li> <i class="fa fa-dot-circle-o" aria-hidden="true"></i><b> Reval Year:</b> 2013</li>
@@ -228,11 +185,7 @@
                 <br>
                    <div class="user-reg IE_RRR">
                             
-                           
-                       
-                 
-                       
-                       
+                            
                             
                             
                       <div class="row">
@@ -244,7 +197,8 @@
                             <li><a href="#tab2primary" data-toggle="tab">Rent Role Report Data</a></li>
                              
                                 </ul>
-                
+                            </li>
+                        </ul>
                 </div>
                 <div class="panel-body">
                     <div class="tab-content">
@@ -252,50 +206,18 @@
  
                      <div class="demo">
 
-            <span class="pull-right" style="margin-bottom: -8px; mar gin-right: 20px;">
-                     
-                                       
-                    <div class="btn-group">
-                   
-                    <button type="button" class="btn btn-user dropdown-toggle" data-toggle="dropdown">
-                   Action  &nbsp<span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Consolidate</a></li>
-                    <li><a href="#">Valuate</a></li>
-                    <li><a href="#">Unlink</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Download</a></li>
-                    </ul>
-                    </div>
-                    
-                     
-                </span> 
-                         
-                         
-                         
-                 <div class="clearfix"></div>        
-                                  
-                 <br>  
-                         
-                         
-    <div class="panel-group"  id="accordion" role="tablist" aria-multiselectable="true">
+    
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title">
-                     <input   class="MyCheckBox pull-right"  type="checkbox" ng-model="personalDetail.selected"/>
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <i class="more-less glyphicon glyphicon-minus"></i>
-                     
-                 Income Expense Statement 1 Data
+                      Income Expense Statement 1 Data
                     </a>
                 </h4>
             </div>
-            
-            
-            
-            
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                     
@@ -303,7 +225,18 @@
 
         <table class="table table-bordered table-st riped RR-Table" >
                   
-      
+                    
+<!--
+              <thead class="thead-inverse">
+                <tr>
+                  <th>Data Field</th>
+                  <th>Value</th>
+                  <th>Data Field</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+-->
+          
                     <tbody>
                       <tr>
                         <td>Base Rent</td>
@@ -427,10 +360,6 @@
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingTwo">
                 <h4 class="panel-title">
-                    
-                      <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
-                    
-                    
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <i class="more-less glyphicon glyphicon-plus"></i>
                         Income Expense Statement 2 Data
@@ -577,7 +506,6 @@
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingThree">
                 <h4 class="panel-title">
-                      <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <i class="more-less glyphicon glyphicon-plus"></i>
                         Income Expense Statement 3 Data
@@ -717,7 +645,6 @@
         </table>
  </div>
             </div>
-       
         </div>
 
     </div><!-- panel-group -->
@@ -919,8 +846,6 @@
                 </div>
             </div>
         </div>
-                 
-                          
 	</div>       
                             
                    
@@ -950,7 +875,199 @@
 
             </div>
 
- 
+
+<div class="col-md-3 IE-cons">
+   
+    
+                  
+               
+    <div class="panel-group">
+  <div class="panel panel-primary IE_RR">
+       <div class="panel-heading">
+                        <h5>  <strong> Select IE's for consolidation </strong></h5>
+                    </div>
+      <div class="panel-body">
+      
+      
+        <ul  style="padding:0px;">
+            <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+            
+                     <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+            
+                     <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+            
+                     <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+            
+                     <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+            
+                     <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+            
+                     <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+            
+                     <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+            
+                     <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+             
+                      <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+            
+                     <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+            
+                     <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+            
+                     <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+            
+                     <li>
+                <a href="#">IE Data 1</a>
+                
+                <input   class="MyCheckBox pull-right" type="checkbox" ng-model="personalDetail.selected"/>
+                
+                
+                
+                
+            </li>
+            
+        </ul>
+      
+      
+      
+      
+      
+      
+      
+      
+      </div>
+      
+      
+      <div class="panel-footer text-center btn-success">Submit Consolidate</div>
+      
+      
+      
+    </div>
+      </div>
+    
+    
+    
+    
+    
+    </div>
+
 
         </div>
 

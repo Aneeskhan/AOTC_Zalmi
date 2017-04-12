@@ -42,7 +42,10 @@
 .center { text-align:center; }
         
         
-        
+        table .collapse.in {
+	display:table-row;
+            backgro und: red !important;
+}
         
         
     </style>
@@ -72,25 +75,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-<style>
-.drop-file ul { list-style: none;}
-
-.drop-file li { position: relative;}
-
-.drop-file li:before {
-    position: absolute;
-    top: -2px;
-    margin: 8px 0 0 -12px;
-    vertical-align: middle;
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    background: #ccc;
-    content: "";
-}
-
-
-</style>
+ 
 </head>
 
 <body style="    background-color: #f5f5f5;">
@@ -295,7 +280,7 @@
 
 
 
-                                    <table  class="table" id="example" datatable="" dt-options="main.dtOptions" dt-column-defs="main.dtColumnDefs" class="display responsive no-wrap" cellspacing="0" width="100%">
+                                    <table table table-responsive table-hover id="example" datatable="" dt-options="main.dtOptions" dt-column-defs="main.dtColumnDefs" class="display responsive no-wrap" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
 
@@ -311,10 +296,13 @@
                                         </thead>
 
                                         <tbody>
-                                               <tr class="key1">
+                                            
+                                  
+                                            
+ <tr   class="clickable key1" data-toggle="collapse" id="row1" data-target=".row1">
                                                 <td>
                                             <input   class="MyCheckBox" type="checkbox" ng-model="personalDetail.selected"/></td>
-                                                <td>C0487</td>
+                                                <td><i class="glyphicon glyphicon-plus"></i> C0487</td>
                                                 <td> aaaaaaaResearch Plaza </td>
                                                 <td> The Realty Associates Fund VIII</td>
                                                 <td> Mary McCarthy </td>
@@ -328,14 +316,10 @@
                                                    
                                                    
        
-                                            </tr>
-                                           
-                                             
-  
-  <tr class="key3">
+                                            </tr>           <tr   class="collapse row1 key1">
                                                 <td>
                                             <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
-                                                <td>C0487</td>
+                                                <td>  C0487</td>
                                                 <td> Research Plaza </td>
                                                 <td> The Realty Associates Fund VIII</td>
                                                 <td> Mary McCarthy </td>
@@ -350,12 +334,10 @@
                                                    
        
                                             </tr>
-                                            
-                                            
-                          <tr class="key2">
+ <tr   class="collapse row1 key1">
                                                 <td>
                                             <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
-                                                <td>C0487</td>
+                                                <td>  C0487</td>
                                                 <td> Research Plaza </td>
                                                 <td> The Realty Associates Fund VIII</td>
                                                 <td> Mary McCarthy </td>
@@ -369,102 +351,11 @@
                                                    
                                                    
        
-                                            </tr>                    
-                                            
-        <tr class="key1">
-                                                <td>
-                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
-                                                <td>C0487</td>
-                                                <td> Research Plaza </td>
-                                                <td> The Realty Associates Fund VIII</td>
-                                                <td> Mary McCarthy </td>
-                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
-                                                   </td>
-                                                   
-                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
-                                                
-                                                   
-                                                   
-                                                   
-                                                   
-       
-                                            </tr>                                     
-                                            
-                                            
-        <tr class="key3">
-                                                <td>
-                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
-                                                <td>C0487</td>
-                                                <td> Research Plaza </td>
-                                                <td> The Realty Associates Fund VIII</td>
-                                                <td> Mary McCarthy </td>
-                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
-                                                   </td>
-                                                   
-                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
-                                                
-                                                   
-                                                   
-                                                   
-                                                   
-       
-                                            </tr>                                     
-                                            
-                                            
-               <tr class="key2">
-                                                <td>
-                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
-                                                <td>C0487</td>
-                                                <td> Research Plaza </td>
-                                                <td> The Realty Associates Fund VIII</td>
-                                                <td> Mary McCarthy </td>
-                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
-                                                   </td>
-                                                   
-                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
-                                                
-                                                   
-                                                   
-                                                   
-                                                   
-       
-                                            </tr>                               
-                                            
-                                            
-                        <tr class="key3">
-                                                <td>
-                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
-                                                <td>C0487</td>
-                                                <td> Research Plaza </td>
-                                                <td> The Realty Associates Fund VIII</td>
-                                                <td> Mary McCarthy </td>
-                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
-                                                   </td>
-                                                   
-                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
-                                                
-                                                   
-                                                   
-                                                   
-                                                   
-       
-                                            </tr>                     
-                                            
-                                            
-                                            
-                                            
-         <tr class="key3">
-                                                <td>
-                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
-                                                <td>C0487</td>
-                                                <td> Research Plaza </td>
-                                                <td> The Realty Associates Fund VIII</td>
-                                                <td> Mary McCarthy </td>
-                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
-                                                   </td>
-                                                   
-                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
-                                                
+                                            </tr>   
+                               
+ <tr   class="key4Spliter" >
+                                      <td></td>
+                                              <td></td>  <td></td>  <td></td>  <td></td>  <td></td>  <td></td>    
                                                    
                                                    
                                                    
@@ -472,13 +363,216 @@
        
                                             </tr>                                    
                                             
+       
+                               
+              <tr   class=" key3">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>   C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>     
+               <tr   class=" key3">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>   C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>                  
+                                            
+                                
+                                            
+ <tr   class="clickable key2" data-toggle="collapse" id="row2" data-target=".row2">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td><i class="glyphicon glyphicon-plus"></i> C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>            <tr   class="collapse row2 key2">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>  C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>                                     
+   <tr   class="collapse row2 key2">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>  C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>   
+                             
+ <tr   class="key4Spliter" >
+                                      <td></td>
+                                              <td></td>  <td></td>  <td></td>  <td></td>  <td></td>  <td></td>    
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>     
                                             
                                             
+                 
+                <tr   class=" key3">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>  C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>                 
+                 <tr   class=" key3">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>   C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>         
                                             
                                             
-                                            
-                                            
-                                            
+                                                             
+ <tr   class="clickable key2" data-toggle="collapse" id="row2" data-target=".row3">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td><i class="glyphicon glyphicon-plus"></i> C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>         
+    <tr   class="collapse row3 key2">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>  C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>                                     
+    <tr   class="collapse row3 key2">
+                                                <td>
+                                            <input type="checkbox" class="MyCheckBox" ng-model="personalDetail.selected"/></td>
+                                                <td>  C0487</td>
+                                                <td> Research Plaza </td>
+                                                <td> The Realty Associates Fund VIII</td>
+                                                <td> Mary McCarthy </td>
+                                                <td  > <button  class="btn-uploadIERR" type="button"  onclick="location.href = '22-UploadManual.html';" style="width: 100%;">Upload <i class="fa fa-upload" aria-hidden="true"></i>   </button>
+                                                   </td>
+                                                   
+                                                <td  > <button  class="btn-viewIERR" type="button"  onclick="location.href = '18-ViewIE_RR.html';"  style="width: 100%;">View <i class="fa fa-eye" aria-hidden="true"></i>   </button> </td>
+                                                
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>   
+    <tr   class="key4Spliter" >
+                                      <td></td>
+                                              <td></td>  <td></td>  <td></td>  <td></td>  <td></td>  <td></td>    
+                                                   
+                                                   
+                                                   
+                                                   
+       
+                                            </tr>                            
+                                           
                                             
                                         </tbody>
                                     </table>
@@ -487,10 +581,8 @@
 
 
                                 </div>
-<!--
 
                                 <button nclick="location.href = '12-Sent-Invites.html';" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-user pull-right" style="margin-right: 20px;">Save Data</button>
--->
 
                             </div>
 
