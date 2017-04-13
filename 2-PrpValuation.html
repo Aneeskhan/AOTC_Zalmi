@@ -34,106 +34,211 @@
     <div id="navbar" class="navbar-collapse collapse">
       <div class="header-btn">
         <ul>
-          <li id="prp" class="metro-header"> <a href="#"> <span class="image-pr"></span> </span><span>Property</span></a> </li>
-          <li class="metro-header"> <a href="#"> <span class="image-de"></span> </span><span>Designee</span></a> </li>
-          <li class="metro-header"> <a href="#"> <span class="image-no"></span> </span><span>Notification</span></a> </li>
-          <li class="metro-header"> <a href="#"> <span class="image-lg"></span> </span><span>Logs</span></a> </li>
-          <li class="metro-header welcome"> <a href="#" style="color: #fff;     padding: 0px 15px 0px 15px;"> <span class="image-ph"></span> </span><span>Welcome Annie</span></a> </li>
+          <li id="prp" class="metro-header"> <a href="#"> <span class="image-pr"></span>  <span>Property</span></a> </li>
+          <li class="metro-header"> <a href="#"> <span class="image-de"></span>  <span>Designee</span></a> </li>
+          <li class="metro-header"> <a href="#"> <span class="image-no"></span>  <span>Notification</span></a> </li>
+          <li class="metro-header"> <a href="#"> <span class="image-lg"></span>  <span>Logs</span></a> </li>
+          <li class="metro-header welcome"> <a href="#" style="color: #fff;     padding: 0px 15px 0px 15px;"> <span class="image-ph"></span>  <span>Welcome Annie</span></a> </li>
         </ul>
       </div>
     </div>
   </div>
 </nav>
 
-
-
-
-<h4 class="text-center table-head"> Property Valuation</h4>
-
-
-
-
-
-            <div class="row">
-
-                                  <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+<div class="prop-fixd text-center">
+<ul>
+	<li> <i class="fa fa-dot-circle-o" aria-hidden="true"></i> <b>Account Number:</b> 215491 </li>
+	<li> <i class="fa fa-location-arrow" aria-hidden="true"></i><b> Property:</b> MARLBORO INVESTORS LLC</li>
+	<li> <i class="fa fa-map-marker" aria-hidden="true"></i><b> Address:</b> 5700, CRAIN HYW, SE upper Marlboro, MD 20772 </li>
+</ul>
+</div>
 
 
 
 
+    <div class="container">
 
-                                 <h5>Property</h5>
-                                <span> Account Number: 219541</span><br>
-                                <span> Owner: MARLBORO INVESTORS LLC</span><br>
-                                <span> Address:5700, CRAIN HYW, SE. Upper Marlboro MD 20772 </span><br>
+        <br> <br>
 
-
+        <div class="row">
 
 
+
+            <div class="col-md-12">
+
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h5>  <strong> Property Valuation </strong></h5>
+                    </div>
+                    <div class="panel-body drop-file">
+
+ 
                                   <table class="table table-bordered table-striped">
-                                    <h3>Jurisdiction Valuation  <button onclick="location.href = '3-IncExpData.html';" type="button" class="btn btn-success" style="float: right;">Appeal Valuation</button> </h3>
-                                    <!--
-                              <thead>
-                                <tr>
-                                  <th>Firstname</th>
-                                  <th>Lastname</th>
-                                  <th>Email</th>
-                                </tr>
-                              </thead>
-                          --><br>
+                                      <thead>
+                                            <tr>
+
+                                         
+                                                <th>Data Fields </th>
+                                                <th>Assessor</th>
+                                                <th>Actual CY14</th>
+                                                <th>Petitioner</th>
+                                                   
+                                            
+                                            </tr>
+
+                                        </thead>
+                     
                                     <tbody>
                                       <tr>
-                                        <td>Leasable Square Feet</td>
+                                        <td>Leasable Sq Ft (SFL)</td>
                                         <td>129,878 sqft</td>
+                                          <td>129,878 sqft</td>
+                                          <td>129,878 sqft</td>
                                       </tr>
                                       <tr>
-                                        <td>Market Rent per Square Foot</td>
-                                        <td>$40.00</td>
+                                        <td>Market Rent per sf (MR)</td>
+                                        <td> <span class="pull-right">  $40</span></td>
+                                          <td> </td>
+                                          <td><input class='form-control'  type='text' placeholder="Enter Market Rent per Square Foot"></td>
                                       </tr>
                                       <tr>
-                                        <td>Annual Rent</td>
-                                        <td>$5,195,120</td>
+                                        <td>Annual Rent (AR)</td>
+                                          <td><span class="pull-right"> $5,195,120 </span> </td>
+                                           <td> </td>
+                                          <td><input class='form-control'  type='text' placeholder="Enter Annual Rent (AR)"></td>
                                       </tr>
                                       <tr>
-                                        <td>Gross Potential Rent</td>
-                                        <td>$5,195,20</td>
+                                        <td>Gross Potential Rent (GPR)</td>
+                                          <td><span class="pull-right">$5,195,20</span></td> <td> </td>
+                                            <td><input class='form-control'  type='text' placeholder="Enter Gross Potential Rent (GPR)"></td>
                                       </tr>
                                       <tr>
-                                        <td>Vacancy percentage (%)</td>
-                                        <td> 9%</td>
+                                        <td>Vacancy % (V%)</td>
+                                        <td> 9%</td> <td> </td>
+                                          <td><input class='form-control'  type='text' placeholder="Enter Vacancy % (V%)"></td>
                                       </tr>
                                       <tr>
-                                        <td>Vacancy percentage ($)</td>
-                                        <td>($ 467,561))</td>
+                                        <td>Vacancy $ (V$)</td>
+                                        <td>($ 467,561))</td> <td> </td>
+                                           <td><input class='form-control'  type='text' placeholder="Enter Vacancy $ (V$)"></td>
                                       </tr>
                                       <tr>
-                                        <td>Expense Ratio</td>
-                                        <td>-45 %</td>
+                                        <td>Effective Rent (ER)</td>
+                                        <td>-45 %</td> <td> </td>
+                                           <td><input class='form-control'  type='text' placeholder="Enter Effective Rent (ER)"></td>
                                       </tr>
                                       <tr>
-                                        <td>EBase Cap Rate</td>
-                                        <td>7.0000 %</td>
+                                        <td>Expenses % (E%)</td>
+                                        <td>7.0000 %</td> <td> </td>
+                                          <td> 8.000%</td>
                                       </tr>
                                       <tr>
-                                        <td>Effective Tax Rate</td>
-                                        <td>1.2830 %</td>
+                                        <td>Expenses $ (E$)</td>
+                                        <td>1.2830 %</td> <td> </td>
+                                           <td> 5.000%</td>
                                       </tr>
                                       <tr>
-                                        <td>Overall Cap Rate</td>
-                                        <td>8.2830 %</td>
+                                        <td>Expenses $ Per SF (E$/sf)</td>
+                                        <td>8.2830 %</td> <td> </td>
+                                          <td> 2.00%</td>
                                       </tr>
 
 
                                       <tr>
-                                        <td>Real Estate Taxes</td>
-                                        <td>$313,915</td>
+                                        <td>Other Income (OI)</td>
+                                          <td><span class="pull-right">$22,664</span></td> <td> </td>
+                                           <td><input class='form-control'  type='text' placeholder="Enter Other Income (OI)"></td>
                                       </tr>
 
+                                        
+                                         <tr>
+                                        <td>Net Operating Income (NOI)</td>
+                                        <td><span class="pull-right">$344,443</span></td> <td> </td>
+                                             <td><input class='form-control'  type='text' placeholder="Enter Net Operating Income (NOI)"></td>
+                                      </tr>
+                                        
+                                        
+                                        
+                                        
+                                         <tr>
+                                        <td>Base Cap Rate (BCR)</td>
+                                        <td><span class="pull-right">$11,454</span></td> <td> </td>
+                                              <td><input class='form-control'  type='text' placeholder="Enter Net Base Cap Rate (BCR)"></td>
+                                      </tr>
+                                        
+                                        
+                                        
+                                        
+                                         <tr>
+                                        <td>Effective RE Tax Rate (ETR)</td>
+                                        <td><span class="pull-right">$345,345</span></td> <td> </td>
+                                             <td><input class='form-control'  type='text' placeholder="Enter Effective RE Tax Rate (ETR)"></td>
+                                             
+                                      </tr>
+                                        
+                                        
+                                        
+                                        
+                                         <tr>
+                                        <td>Overall Cap Rate (OCR)</td>
+                                        <td><span class="pull-right">$62,234</span></td> <td> </td>
+                                             <td><input class='form-control'  type='text' placeholder="Enter Overall Cap Rate (OCR)"></td>
+                                      </tr>
+                                        
+                                        
+                                        
+                                          <tr>
+                                        <td>Value - Direct Cap (VDC)</td>
+                                        <td><span class="pull-right">$55,888</span></td> <td> </td>
+                                             <td><input class='form-control'  type='text' placeholder="Enter Value - Direct Cap (VDC)"></td>
+                                      </tr>
+                                        
+                                        
+                                        
+                                          <tr>
+                                        <td> Value per sq ft</td>
+                                        <td><span class="pull-right">$12,645</span></td> <td> </td>
+                                             <td><input class='form-control'  type='text' placeholder="Enter Value per sq ft"></td>
+                                      </tr>
+                                        
+                                        
+                                        
+                                        
+                                        
 
                                     </tbody>
                                   </table>
-                                </div>
-              </div>
+                        
+                        
+                        
+                        <button   type="button" class="btn btn-success" style="float: right;">Submit Data</button>
+              
+ 
+                     </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+ 
+
 
 
 
