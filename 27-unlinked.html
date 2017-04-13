@@ -28,6 +28,17 @@
     background-color: #3174ae;
     background-position: 0 -15px;
 }
+        
+        
+        .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 6px 16px;
+    color: #000d36;
+    width: 90%;
+    border-bottom: 1px solid #ff4757;
+    margin: 0px auto;
+}
     </style>
 
 
@@ -223,13 +234,19 @@
 
  
 
+
 <div class="container">
-    <br>
-    <br>
-    <div class="row">
-        
-        
-        <div class="col-md-12" ng-show="unlinkedProperties.IEtableData.length   0" >
+   
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home" style="width:100%;">UnLinked Files</a></li>
+    <li><a data-toggle="tab" href="#menu1" style="width:100%;">Courpt Files</a></li>
+    <li><a data-toggle="tab" href="#menu2" style="width:100%;">UnParsed Files</a></li> 
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <div class="col-md-12" ng-show="unlinkedProperties.IEtableData.length   0" >
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h5>   <strong>UnLinked Files</strong></h5>
@@ -295,41 +312,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12" ng-show="unlinkedProperties.RRtableData.length   0">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h5>   <strong>UnParsed Files</strong></h5>
-                </div>
-                <div class="panel-body drop-file">
-                    <div class="user-reg">
-                        <div class="row">
-                            <div class="col-md-12  up-sec parsefile">
-                        <table   class="table table-striped table-bordered table-condensed"  class="display responsive no-wrap" cellspacing="0" width="100%">
-                                        <thead>
-                                            <tr>
-                                                <th>File Name </th>
-                                                <th>Date Uploaded</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr ng-repeat="files in unlinkedProperties.IEtableData">
-                                                <td>Mail hall 2.00 chock city.xlcx</td>
-                                                <td>4/12/2017</td>
-                                                <td><a href="#"  data-toggle="modal" data-target="#myModalquestion" class="btn btn-danger" style="width:100px;"> Remove File</a></td>
-                                            </tr>
-                                            
-                                            
-                                            
-                                        </tbody>
-                                    </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12" ng-show="unlinkedProperties.RRtableData.length   0">
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <div class="col-md-12" ng-show="unlinkedProperties.RRtableData.length   0">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h5>   <strong>Courpt Files</strong></h5>
@@ -370,16 +355,46 @@
                 </div>
             </div>
         </div>
-        
-        
-        
-        
     </div>
+    <div id="menu2" class="tab-pane fade">
+      <div class="col-md-12" ng-show="unlinkedProperties.RRtableData.length   0">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h5>   <strong>UnParsed Files</strong></h5>
+                </div>
+                <div class="panel-body drop-file">
+                    <div class="user-reg">
+                        <div class="row">
+                            <div class="col-md-12  up-sec parsefile">
+                        <table   class="table table-striped table-bordered table-condensed"  class="display responsive no-wrap" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>File Name </th>
+                                                <th>Date Uploaded</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="files in unlinkedProperties.IEtableData">
+                                                <td>Mail hall 2.00 chock city.xlcx</td>
+                                                <td>4/12/2017</td>
+                                                <td><a href="#"  data-toggle="modal" data-target="#myModalquestion" class="btn btn-danger" style="width:100px;"> Remove File</a></td>
+                                            </tr>
+                                            
+                                            
+                                            
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  </div>
 </div>
-
-
-
-
 
 
 
