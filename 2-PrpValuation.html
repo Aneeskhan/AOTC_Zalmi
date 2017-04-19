@@ -7,824 +7,593 @@
 <!--<![endif]-->
 
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>AOTC</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="assets/css/main.css">
-<script src="js/vendor/modernizr-2.8.3.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    
-    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AOTC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style>
         .nav-tabs>li {
-    float: left;
-    margin-bottom: -1px;
-    width: 50%;
-   
-}
+            float: left;
+            margin-bottom: -1px;
+            width: 50%;
+        }
         
+        .with-nav-tabs.panel-default .nav-tabs>li>a,
+        .with-nav-tabs.panel-default .nav-tabs>li>a:hover,
+        .with-nav-tabs.panel-default .nav-tabs>li>a:focus {
+            color: #fff;
+        }
         
+        .nav>li>a {
+            position: relative;
+            display: block;
+            /* padding: 11px; */
+            color: #fff;
+            width: 100%;
+            border-bottom: none;
+            margin: 0px auto;
+        }
         
-   .with-nav-tabs.panel-default .nav-tabs>li>a, .with-nav-tabs.panel-default .nav-tabs>li>a:hover, .with-nav-tabs.panel-default .nav-tabs>li>a:focus {
-    color: #fff;
-}     
+        .panel.with-nav-tabs .panel-heading {
+            padding: 0px 0px 0px 0px;
+        }
         
+        .with-nav-tabs.panel-default .nav-tabs>li.active>a,
+        .with-nav-tabs.panel-default .nav-tabs>li.active>a:hover,
+        .with-nav-tabs.panel-default .nav-tabs>li.active>a:focus {
+            color: #555;
+            background-color: #fff;
+            border-color: #fff;
+            border-bottom-color: transparent;
+        }
         
+        .with-nav-tabs.panel-default .nav-tabs>.open>a,
+        .with-nav-tabs.panel-default .nav-tabs>.open>a:hover,
+        .with-nav-tabs.panel-default .nav-tabs>.open>a:focus,
+        .with-nav-tabs.panel-default .nav-tabs>li>a:hover,
+        .with-nav-tabs.panel-default .nav-tabs>li>a:focus {
+            color: #fff;
+            background-color: #000d36;
+            border-color: transparent;
+        }
         
-    .nav>li>a {
-    position: relative;
-    display: block;
-    /* padding: 11px; */
-    color: #fff;
-    width: 100%;
-    border-bottom: none;
-    margin: 0px auto;
-}
-        
-       .panel.with-nav-tabs .panel-heading {
-    padding: 0px 0px 0px 0px;
-}
-   .with-nav-tabs.panel-default .nav-tabs>li.active>a, .with-nav-tabs.panel-default .nav-tabs>li.active>a:hover, .with-nav-tabs.panel-default .nav-tabs>li.active>a:focus {
-    color: #555;
-    background-color: #fff;
-    border-color: #fff;
-    border-bottom-color: transparent;
-}   
-        
-        
-        
-        .with-nav-tabs.panel-default .nav-tabs>.open>a, .with-nav-tabs.panel-default .nav-tabs>.open>a:hover, .with-nav-tabs.panel-default .nav-tabs>.open>a:focus, .with-nav-tabs.panel-default .nav-tabs>li>a:hover, .with-nav-tabs.panel-default .nav-tabs>li>a:focus {
-    color: #fff;
-    background-color: #000d36;
-    border-color: transparent;
-}
-        
-        
-        .container-fluid-2 {width: 95%; margin: 0px auto;}     
+        .container-fluid-2 {
+            width: 95%;
+            margin: 0px auto;
+        }
         
         .panel-body {
-    padding: 15px;
-    overflow: auto;
-}
+            padding: 15px;
+            overflow: auto;
+        }
     </style>
-    
-    
 </head>
+
 <body>
-<!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-<nav class="navbar" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="#"><img src="assets/img/logo.png"></a> </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <div class="header-btn">
-        <ul>
-          <li id="prp" class="metro-header"> <a href="#"> <span class="image-pr"></span>  <span>Property</span></a> </li>
-          <li class="metro-header"> <a href="#"> <span class="image-de"></span>  <span>Designee</span></a> </li>
-          <li class="metro-header"> <a href="#"> <span class="image-no"></span>  <span>Notification</span></a> </li>
-          <li class="metro-header"> <a href="#"> <span class="image-lg"></span>  <span>Logs</span></a> </li>
-          <li class="metro-header welcome"> <a href="#" style="color: #fff;     padding: 0px 15px 0px 15px;"> <span class="image-ph"></span>  <span>Welcome Annie</span></a> </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<div class="prop-fixd text-center">
-<ul>
-	<li> <i class="fa fa-dot-circle-o" aria-hidden="true"></i> <b>Account Number:</b> 215491 </li>
-	<li> <i class="fa fa-location-arrow" aria-hidden="true"></i><b> Property:</b> MARLBORO INVESTORS LLC</li>
-	<li> <i class="fa fa-map-marker" aria-hidden="true"></i><b> Address:</b> 5700, CRAIN HYW, SE upper Marlboro, MD 20772 </li>
-</ul>
-</div>
-
-<br>
-    <div class="container-fluid-2">
-    
-    <div class="panel with-nav-tabs panel-default">
-                <div class="panel-heading">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#tab1default" data-toggle="tab">Property Valuation 
-<!--
-                                <span  style="width: 80px;" >
-         
-    <div class="input-group-btn" style="width: 80px;     margin-left: 50px !important;">
-        <select class="form-control btn btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type">
-
-            <option>2010</option>
-            <option>2011</option>
-            <option>2012</option>
-            <option>2013</option>
-            <option>2014</option>
-            <option>2015</option>
-            <option>2016</option>
-             <option selected>2017</option>
-        </select>
-    </div>
-    </span>
--->
-                                </a>
-                            
-                            
-                                
-                                
-                            
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                            
-                            
-                            
-                            </li>
-                            <li><a href="#tab2default" data-toggle="tab">IE Consolidated</a></li> 
-                            
-                        </ul>
+    <nav class="navbar" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="header-btn">
+                    <ul>
+                        <li id="prp" class="metro-header">
+                            <a href="#"> <span class="image-pr"></span> <span>Property</span></a>
+                        </li>
+                        <li class="metro-header">
+                            <a href="#"> <span class="image-de"></span> <span>Designee</span></a>
+                        </li>
+                        <li class="metro-header">
+                            <a href="#"> <span class="image-no"></span> <span>Notification</span></a>
+                        </li>
+                        <li class="metro-header">
+                            <a href="#"> <span class="image-lg"></span> <span>Logs</span></a>
+                        </li>
+                        <li class="metro-header welcome">
+                            <a href="#" style="color: #fff;     padding: 0px 15px 0px 15px;"> <span class="image-ph"></span> <span>Welcome Annie</span></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="panel-body">
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="tab1default">
-                            
-                                     <div class='col-md-4 form-group required' style="padding:0px;">
-        <label>  Choose year</label>
-    <div class="input-group-btn">
-        <select class="form-control btn btn-default" data-ng-options="t.name for t in vm.types" data-ng-model="vm.object.type">
-
-            <option>2010</option>
-            <option>2011</option>
-            <option>2012</option>
-            <option>2013</option>
-            <option>2014</option>
-            <option>2015</option>
-            <option>2016</option>
-             <option selected>2017</option>
-        </select>
+            </div>
+        </div>
+    </nav>
+    <div class="prop-fixd text-center">
+        <ul>
+            <li> <i class="fa fa-dot-circle-o" aria-hidden="true"></i> <b>Account Number:</b> 215491 </li>
+            <li> <i class="fa fa-location-arrow" aria-hidden="true"></i><b> Property:</b> MARLBORO INVESTORS LLC</li>
+            <li> <i class="fa fa-map-marker" aria-hidden="true"></i><b> Address:</b> 5700, CRAIN HYW, SE upper Marlboro, MD 20772 </li>
+        </ul>
     </div>
-    </div>
-                        <br>  <br>  <br>  <br>
-                          <table class="table table-bordered table-striped">
-                                      <thead>
-                                            <tr>
-
-                                         
-                                                <th>Data Fields </th>
-                                                <th>Assessor</th>
-                                                <th>Actual CY14</th>
-                                                <th>Petitioner</th>
-                                                   
-                                            
-                                            </tr>
-
-                                        </thead>
-                     
-                                    <tbody>
-                                      <tr>
-                                        <td>Leasable Sq Ft (SFL)</td>
-                                        <td>129,878 sqft</td>
-                                          <td>129,878 sqft</td>
-                                          <td>129,878 sqft</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Market Rent per sf (MR)</td>
-                                        <td> <span class="pull-right">  $40</span></td>
-                                          <td> </td>
-                                          <td><input class='form-control'  type='text' placeholder="Enter Market Rent per Square Foot"></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Annual Rent (AR)</td>
-                                          <td><span class="pull-right"> $5,195,120 </span> </td>
-                                           <td> </td>
-                                          <td><input class='form-control'  type='text' placeholder="Enter Annual Rent (AR)"></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Gross Potential Rent (GPR)</td>
-                                          <td><span class="pull-right">$5,195,20</span></td> <td> </td>
-                                            <td><input class='form-control'  type='text' placeholder="Enter Gross Potential Rent (GPR)"></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Vacancy % (V%)</td>
-                                        <td> 9%</td> <td> </td>
-                                          <td><input class='form-control'  type='text' placeholder="Enter Vacancy % (V%)"></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Vacancy $ (V$)</td>
-                                        <td>($ 467,561))</td> <td> </td>
-                                           <td><input class='form-control'  type='text' placeholder="Enter Vacancy $ (V$)"></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Effective Rent (ER)</td>
-                                        <td>-45 %</td> <td> </td>
-                                           <td><input class='form-control'  type='text' placeholder="Enter Effective Rent (ER)"></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Expenses % (E%)</td>
-                                        <td>7.0000 %</td> <td> </td>
-                                          <td> 8.000%</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Expenses $ (E$)</td>
-                                        <td>1.2830 %</td> <td> </td>
-                                           <td> 5.000%</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Expenses $ Per SF (E$/sf)</td>
-                                        <td>8.2830 %</td> <td> </td>
-                                          <td> 2.00%</td>
-                                      </tr>
-
-
-                                      <tr>
-                                        <td>Other Income (OI)</td>
-                                          <td><span class="pull-right">$22,664</span></td> <td> </td>
-                                           <td><input class='form-control'  type='text' placeholder="Enter Other Income (OI)"></td>
-                                      </tr>
-
-                                        
-                                         <tr>
-                                        <td>Net Operating Income (NOI)</td>
-                                        <td><span class="pull-right">$53,443</span></td> <td> </td>
-                                             <td><input class='form-control'  type='text' placeholder="Enter Net Operating Income (NOI)"></td>
-                                      </tr>
-                                        
-                                        
-                                        
-                                        
-                                         <tr>
-                                        <td>Base Cap Rate (BCR)</td>
-                                        <td><span class="pull-right">$11,454</span></td> <td> </td>
-                                              <td><input class='form-control'  type='text' placeholder="Enter Net Base Cap Rate (BCR)"></td>
-                                      </tr>
-                                        
-                                        
-                                        
-                                        
-                                         <tr>
-                                        <td>Effective RE Tax Rate (ETR)</td>
-                                        <td><span class="pull-right">$345,345</span></td> <td> </td>
-                                             <td><input class='form-control'  type='text' placeholder="Enter Effective RE Tax Rate (ETR)"></td>
-                                             
-                                      </tr>
-                                        
-                                        
-                                        
-                                        
-                                         <tr>
-                                        <td>Overall Cap Rate (OCR)</td>
-                                        <td><span class="pull-right">$62,234</span></td> <td> </td>
-                                             <td><input class='form-control'  type='text' placeholder="Enter Overall Cap Rate (OCR)"></td>
-                                      </tr>
-                                        
-                                        
-                                        
-                                          <tr>
-                                        <td>Value - Direct Cap (VDC)</td>
-                                        <td><span class="pull-right">$55,888</span></td> <td> </td>
-                                             <td><input class='form-control'  type='text' placeholder="Enter Value - Direct Cap (VDC)"></td>
-                                      </tr>
-                                        
-                                        
-                                        
-                                          <tr>
-                                        <td> Value per sq ft</td>
-                                        <td><span class="pull-right">$12,645</span></td> <td> </td>
-                                             <td><input class='form-control'  type='text' placeholder="Enter Value per sq ft"></td>
-                                      </tr>
-                                        
-                                        
-                                        
-                                        
-                                        
-
-                                    </tbody>
-                                  </table>
-                            
-                            <hr>
-                       <div class="row">   
-                           
-                           
-                           <div class="col-md-4 pull-right">
-                        <table class="table table-bordered table-striped">
-                                      <thead>
-                                            <tr>
-
-                                         
-                                                <th>Data Fields </th>
-                                                <th>Deduct Lease Up & CapEx Costs</th> 
-                                                   
-                                            
-                                            </tr>
-
-                                        </thead>
-                     
-                                    <tbody>
-                                      <tr>
-                                        <td>Free Rent</td>
-                                        <td><span class="pull-right">$0</span></td>
-                                     
-                                      </tr>
-                                    
-                                    
-                                        <tr>
-                                        <td>Leasing Commission</td>
-                                        <td><span class="pull-right">$0</span></td>
-                                     
-                                      </tr>
-                                        
-                                          <tr>
-                                        <td>Tenant Improvements</td>
-                                        <td><span class="pull-right">$0</span></td>
-                                     
-                                      </tr>
-                                        
-                                        <tr>
-                                        <td>Lost Rent</td>
-                                        <td><span class="pull-right">$0</span></td>
-                                     
-                                      </tr>
-                                        
-                                        
-                                          <tr>
-                                        <td>Add Back Excess Rent</td>
-                                        <td><span class="pull-right">$0</span></td>
-                                     
-                                      </tr>
-                                        
-                                        
-                                             <tr>
-                                        <td>Cap Ex</td>
-                                        <td><span class="pull-right">$0</span></td>
-                                     
-                                      </tr>
-                                        
-                                        
-                                             <tr>
-                                        <td>Total Deductions/Additions (TDA)</td>
-                                        <td><span class="pull-right">$0</span></td>
-                                     
-                                      </tr>
-                                        
-                                          <tr>
-                                        <td>VDC Post Deductions (VDC2)</td>
-                                        <td><span class="pull-right">$0</span></td>
-                                     
-                                      </tr>
-                                        
-                                        
-                                         <tr>
-                                        <td>VDC Post Deductions (VDC2)</td>
-                                        <td><span class="pull-right">$21,858,082</span></td>
-                                     
-                                      </tr>
-                                        
-                                         <tr>
-                                        <td> </td>
-                                        <td><span class="pull-right">$170</span></td>
-                                     
-                                      </tr>
-                                        
-                                        
-                                    </tbody>
-                                  </table>     
-                            </div>
-                            </div>  
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                        
-                        
-                        
-                        </div>
-                        <div class="tab-pane fade" id="tab2default">
-                        
-                        
-                            <label style="    background: #e6e6e6;
-    color: #333333;
-    padding: 6px;
-    border-radius: 4px;">Data Source: Yardi</label>
-                            
-                            
-                            
-                            
-                        <table   class="table table-striped table-bordered  "  class="display responsive no-wrap" cellspacing="0" width="100%">
-                    <thead>
-                        <tr>
-                            <th>Data Fields </th>
-                            <th>CY14</th>
-                            <th>CY16</th>
-                            <th>CY17</th> 
-                            
-                             
-                            
-
-                        </tr>
-                    </thead>
-        
-                    <tbody>
-                        <tr>
-                            <td>Total Revenues</td>
-                            <td>1,736,959.15</td>
-                            <td>1,702,853.69</td>
-                              <td>1,785,357.32</td>
-                         
-                         
-                        </tr>
-                        
-                           <tr>
-                            <td>Total Building Repairs & Maintenance</td>
-                            <td>140,813</td>
-                            <td>133,776</td>
-                              <td>133,995</td>
-                        
-
-                        </tr>
-                        
-                        
-                           <tr>
-                            <td>Total Janitorial</td>
-                            <td>102,034</td>
-                            <td>98,301</td>
-                              <td>109,457</td>
-                        
-                            
-
-                        </tr>
-                        
-
-
-
-                        
-                           <tr>
-                            <td>Total Common Area Maintenance</td>
-                            <td>92,285</td>
-                            <td>97,882</td>
-                              <td>73,770</td>
-                            
-
-                        </tr>
-                        
-                        
-                           <tr>
-                            <td>Total Utilities</td>
-                            <td>283,911</td>
-                            <td>278,998</td>
-                              <td>240,196</td>
-                      
-                            
-
-                        </tr>
-                        
-                        
-                        
-                        
-                        
-                             <tr>
-                            <td>Total Payroll</td>
-                            <td>100,795</td>
-                            <td>106,943</td>
-                              <td>110,800</td>
-                         
-                            
-
-                        </tr>
-                        
-                        
- 
-                        
-                             <tr>
-                            <td>Total Property Management Fees</td>
-                            <td>43,294</td>
-                            <td>42,309</td>
-                              <td>45,465</td>
-                         
-                            
-
-                        </tr>
-                        
-                        
-                        
-                        
-                        
-                        
-                             <tr>
-                            <td>Total Insurance</td>
-                            <td>15,783</td>
-                            <td>14,509</td>
-                              <td>13,752</td>
-                          
-                            
-
-                        </tr>
-                        
-                        
-                        
-                             <tr>
-                            <td>Total Other</td>
-                            <td>211</td>
-                            <td>110</td>
-                              <td>0</td>
-                                
-                            
-
-                        </tr>
-                        
-                        
-                             <tr>
-                            <td> TOTAL MARKETING EXPENSES</td>
-                            <td>4,053</td>
-                            <td>4,087</td>
-                              <td>3,663</td>
-                              
-                            
-
-                        </tr>
-                        
-                        
-                        
-                        
-                        
-                        
-                                <tr>
-                            <td>Total Administrative Expenses</td>
-                            <td>20,510</td>
-                            <td>15,555</td>
-                              <td>8,278</td>
-                                   
-                            
-
-                        </tr>
-                        
-                                <tr>
-                            <td>Total Property Expenses</td>
-                            <td>803,687</td>
-                            <td>792,469</td>
-                              <td>739,376</td>
-                                    
-                            
-
-                        </tr>
-                        
-                        
-                                      <tr>
-                            <td>Total Property Net Operating Income</td>
-                            <td>933,272</td>
-                            <td>910,385</td>
-                              <td>1,045,982</td>
-                                      
-                            
-
-                        </tr>
-                        
-
-                        
-                    </tbody>
-                </table>
-
-                        
-                        <hr>
-                            
-                         <label style="    background: #e6e6e6;
-    color: #333333;
-    padding: 6px;
-    border-radius: 4px;">Data Source: MRI</label>   
-                            
-                <table   class="table table-striped table-bordered  "  class="display responsive no-wrap" cellspacing="0" width="100%">
-                    <thead>
-                        <tr>
-                            <th>Data Fields</th>
-                            <th>CY13</th>
-                            <th>CY13</th>
-                          
-                            
-                             
-                            
-
-                        </tr>
-                    </thead>
-        
-                    <tbody>
-                        <tr>
-                            <td>Total Revenues</td>
-                            <td>1,736,959.15</td>
-                            <td>1,702,853.69</td>
-                            
-                         
-                         
-                        </tr>
-                        
-                           <tr>
-                            <td>Total Building Repairs & Maintenance</td>
-                            <td>140,813</td>
-                            <td>133,776</td>
-                           
-                        
-
-                        </tr>
-                        
-                        
-                           <tr>
-                            <td>Total Janitorial</td>
-                            <td>102,034</td>
-                            <td>98,301</td>
-                           
-                        
-                            
-
-                        </tr>
-                        
-
-
-
-                        
-                           <tr>
-                            <td>Total Common Area Maintenance</td>
-                            <td>92,285</td>
-                            <td>97,882</td>
-                      
-                            
-
-                        </tr>
-                        
-                        
-                           <tr>
-                            <td>Total Utilities</td>
-                            <td>283,911</td>
-                            <td>278,998</td>
-                       
-                      
-                            
-
-                        </tr>
-                        
-                        
-                        
-                        
-                        
-                             <tr>
-                            <td>Total Payroll</td>
-                            <td>100,795</td>
-                            <td>106,943</td>
-                           
-                         
-                            
-
-                        </tr>
-                        
-                        
- 
-                        
-                             <tr>
-                            <td>Total Property Management Fees</td>
-                            <td>43,294</td>
-                            <td>42,309</td>
-                         
-                         
-                            
-
-                        </tr>
-                        
-                        
-                        
-                        
-                        
-                        
-                             <tr>
-                            <td>TotalInsurance</td>
-                            <td>15,783</td>
-                            <td>14,509</td>
-                             
-                          
-                            
-
-                        </tr>
-                        
-                        
-                        
-                             <tr>
-                            <td>Total Other</td>
-                            <td>211</td>
-                            <td>110</td>
-                             
-                                
-                            
-
-                        </tr>
-                        
-                        
-                             <tr>
-                            <td> TOTAL MARKETING EXPENSES</td>
-                            <td>4,053</td>
-                            <td>4,087</td>
-                      
-                              
-                            
-
-                        </tr>
-                        
-                        
-                        
-                        
-                        
-                        
-                                <tr>
-                            <td>Total Administrative Expenses</td>
-                            <td>20,510</td>
-                            <td>15,555</td>
-                          
-                            
-
-                        </tr>
-                        
-                                <tr>
-                            <td>Total Property Expenses</td>
-                            <td>803,687</td>
-                            <td>792,469</td>
-                        
-                                    
-                            
-
-                        </tr>
-                        
-                        
-                                      <tr>
-                            <td>Total Property Net Operating Income</td>
-                            <td>933,272</td>
-                            <td>910,385</td>
-                             
-                            
-
-                        </tr>
-                        
-
-                        
-                    </tbody>
-                </table>             
-         
-                            
-                            
-                        </div> 
+    <br>
+    <div class="container-fluid-2">
+        <div class="panel-body data-red">
+            <div class="row">
+                <div class='col-md-4 form-group required'>
+                    <label> Choose Year</label>
+                    <div class="input-group-btn">
+                        <select class="form-control btn btn-default" ng-model="PropValuation.valuationYear" ng-change="PropValuation.selectedValuationYear()">
+                            <option value="selected" disabled selected="selected">Select Year</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option selected>2017</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='col-md-4 col-md-offset-2 ' ng-show="PropValuation.showYear">
+                    <div class="alert alert-info"> <strong><i class="fa fa-info-circle" aria-hidden="true"></i></strong>
+                        <label>Data Year:&nbsp <span style="color:red;"> 
+            2016
+            
+<!--            {{PropValuation.yearOfData}} -->
+            </span></label>
                     </div>
                 </div>
             </div>
-    
-    </div>
-    
-    
-    
-      
+            <hr>
+            <div class="row">
                 
-             
-    
-    
-    
-    
-    
-    
-     
+                
+                 <h5>Please select a valuation format.</h5>
+                    <button class="btn-formats btn-formats-active" id="for-1"> Format 1</button>
+                    <button class="btn-formats" id="for-2"> Format 2</button>
+                    <button class="btn-formats" id="for-3"> Format 3</button>
+                    <br>
+                    <br>
+                <div class="col-md-6">
+                   
+                    <div class="format1">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Data Fields </th>
+                                    <th> Assessor 
+                                        <span class="pull-right" style="display:flex;">                                             
+                                        <label class="switch">
+                                                <input type="checkbox" />
+                                                <span class="knob"></span> 
+                                        </label>
+                                        <input type="checkbox" class="webkit-switch" /> </span>
+                                    </th>
+                                    <th>Petitioner</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Leasable Sq Ft (SFL)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder="129,878 sqft">
+                                    </td>
+                                    <td>129,878 sqft</td>
+                                </tr>
+                                <tr>
+                                    <td>Market Rent per sf (MR)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td class="input-fields-nopad">
+                                        <input class='form-control' type='text' placeholder="Enter Market Rent per Square Foot">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Annual Rent (AR)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td class="input-fields-nopad">
+                                        <input class='form-control' type='text' placeholder="Enter Annual Rent (AR)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Gross Potential Rent (GPR)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td class="input-fields-nopad">
+                                        <input class='form-control' type='text' placeholder="Enter Gross Potential Rent (GPR)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Vacancy % (V%)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td>
+                                        <input class='form-control' type='text' placeholder="Enter Vacancy % (V%)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Vacancy $ (V$)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td>
+                                        <input class='form-control' type='text' placeholder="Enter Vacancy $ (V$)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Effective Rent (ER)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td>
+                                        <input class='form-control' type='text' placeholder="Enter Effective Rent (ER)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Expenses % (E%)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td>
+                                        <input class='form-control' id="dis_rm" value="" type='text' placeholder="Enter Expenses % (E%)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expenses $ (E$)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td> 5.000%</td>
+                                </tr>
+                                <tr>
+                                    <td>Expenses $ Per SF (E$/sf</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td>
+                                        <input class='form-control' id="dis_per" value="" type='text' placeholder="Enter Expenses $ Per SF (E$/sf)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Other Income (OI)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td>
+                                        <input class='form-control' type='text' placeholder="Enter Other Income (OI)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Net Operating Income (NOI)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td>
+                                        <input class='form-control' type='text' placeholder="Enter Net Operating Income (NOI)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Base Cap Rate (BCR)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td>
+                                        <input class='form-control' type='text' placeholder="Enter Net Base Cap Rate (BCR)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Effective RE Tax Rate (ETR)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td>
+                                        <input class='form-control' type='text' placeholder="Enter Effective RE Tax Rate (ETR)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Overall Cap Rate (OCR)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td>
+                                        <input class='form-control' type='text' placeholder="Enter Overall Cap Rate (OCR)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Value - Direct Cap (VDC)</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td>
+                                        <input class='form-control' type='text' placeholder="Enter Value - Direct Cap (VDC)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Value per sq ft</td>
+                                    <td>
+                                        <input class='form-control' value="" type='text' disabled placeholder=" --">
+                                    </td>
+                                    <td>
+                                        <input class='form-control' type='text' placeholder="Enter Value per sq ft">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Data Fields </th>
+                                    <th>Deduct Lease Up & CapEx Costs</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Free Rent</td>
+                                    <td><span class="pull-right">$0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Leasing Commission</td>
+                                    <td><span class="pull-right">$0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Tenant Improvements</td>
+                                    <td><span class="pull-right">$0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Lost Rent</td>
+                                    <td><span class="pull-right">$0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Add Back Excess Rent</td>
+                                    <td><span class="pull-right">$0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Cap Ex</td>
+                                    <td><span class="pull-right">$0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Deductions/Additions (TDA)</td>
+                                    <td><span class="pull-right">$0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>VDC Post Deductions (VDC2)</td>
+                                    <td><span class="pull-right">$0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>VDC Post Deductions (VDC2)</td>
+                                    <td><span class="pull-right">$21,858,082</span></td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td><span class="pull-right">$170</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="display: none" class="format2 ">
+                        <p> Format 2</p>
+                    </div>
+                    <div style="display: none" class="format3 ">
+                        <p> Format 3</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label style="    background: #e6e6e6;
+    color: #333333;
+    padding: 6px;
+    border-radius: 4px;">Data Source: Yardi</label>
+                    <table class="table table-striped table-bordered table-condensed " class="display responsive no-wrap" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Data Fields </th>
+                                <th class="StayOpen">CY14 <i class="fa fa-info-circle text-primary" aria-hidden="true"></i>
+                              
 
-      
-
-
-
-<footer class="text-center">Copyrights - 2017</footer>
-
-
-<!-- /container -->
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-<script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
-
+          <div id="theBox_2">
+                                    
+                               <label   style="border-bottom:1px solid #ccc; text-align:center !important;">  Year: CY14</label>    
+                                   <label ><a href="#"><i class="fa fa-eye" aria-hidden="true"></i> View data source</a></label>  <br>
+                                     <label><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download Data source </a> </label> 
+                                    
+                                    
+                                    
+                                    </div>
+                             
+                                
+                                </th>
+                               
+                                
+                             <th class="StayOpen">CY14 <i class="fa fa-info-circle text-primary" aria-hidden="true"></i>  </th>      
+                                
+                       
+                                
+                                  <th class="StayOpen">CY14 <i class="fa fa-info-circle text-primary" aria-hidden="true"></i> </th> 
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Total Revenues</td>
+                                <td>1,736,959.15</td>
+                                <td>1,702,853.69</td>
+                                <td>1,785,357.32</td>
+                            </tr>
+                            <tr>
+                                <td>Total Building Repairs & Maintenance</td>
+                                <td>140,813</td>
+                                <td>133,776</td>
+                                <td>133,995</td>
+                            </tr>
+                            <tr>
+                                <td>Total Janitorial</td>
+                                <td>102,034</td>
+                                <td>98,301</td>
+                                <td>109,457</td>
+                            </tr>
+                            <tr>
+                                <td>Total Common Area Maintenance</td>
+                                <td>92,285</td>
+                                <td>97,882</td>
+                                <td>73,770</td>
+                            </tr>
+                            <tr>
+                                <td>Total Utilities</td>
+                                <td>283,911</td>
+                                <td>278,998</td>
+                                <td>240,196</td>
+                            </tr>
+                            <tr>
+                                <td>Total Payroll</td>
+                                <td>100,795</td>
+                                <td>106,943</td>
+                                <td>110,800</td>
+                            </tr>
+                            <tr>
+                                <td>Total Property Management Fees</td>
+                                <td>43,294</td>
+                                <td>42,309</td>
+                                <td>45,465</td>
+                            </tr>
+                            <tr>
+                                <td>Total Insurance</td>
+                                <td>15,783</td>
+                                <td>14,509</td>
+                                <td>13,752</td>
+                            </tr>
+                            <tr>
+                                <td>Total Other</td>
+                                <td>211</td>
+                                <td>110</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td> TOTAL MARKETING EXPENSES</td>
+                                <td>4,053</td>
+                                <td>4,087</td>
+                                <td>3,663</td>
+                            </tr>
+                            <tr>
+                                <td>Total Administrative Expenses</td>
+                                <td>20,510</td>
+                                <td>15,555</td>
+                                <td>8,278</td>
+                            </tr>
+                            <tr>
+                                <td>Total Property Expenses</td>
+                                <td>803,687</td>
+                                <td>792,469</td>
+                                <td>739,376</td>
+                            </tr>
+                            <tr>
+                                <td>Total Property Net Operating Income</td>
+                                <td>933,272</td>
+                                <td>910,385</td>
+                                <td>1,045,982</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <label style="    background: #e6e6e6;
+    color: #333333;
+    padding: 6px;
+    border-radius: 4px;">Data Source: MRI</label>
+                    <table class="table table-striped table-bordered  table-condensed " class="display responsive no-wrap" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Data Fields</th>
+                                <th>CY13</th>
+                                <th>CY13</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Total Revenues</td>
+                                <td>1,736,959.15</td>
+                                <td>1,702,853.69</td>
+                            </tr>
+                            <tr>
+                                <td>Total Building Repairs & Maintenance</td>
+                                <td>140,813</td>
+                                <td>133,776</td>
+                            </tr>
+                            <tr>
+                                <td>Total Janitorial</td>
+                                <td>102,034</td>
+                                <td>98,301</td>
+                            </tr>
+                            <tr>
+                                <td>Total Common Area Maintenance</td>
+                                <td>92,285</td>
+                                <td>97,882</td>
+                            </tr>
+                            <tr>
+                                <td>Total Utilities</td>
+                                <td>283,911</td>
+                                <td>278,998</td>
+                            </tr>
+                            <tr>
+                                <td>Total Payroll</td>
+                                <td>100,795</td>
+                                <td>106,943</td>
+                            </tr>
+                            <tr>
+                                <td>Total Property Management Fees</td>
+                                <td>43,294</td>
+                                <td>42,309</td>
+                            </tr>
+                            <tr>
+                                <td>TotalInsurance</td>
+                                <td>15,783</td>
+                                <td>14,509</td>
+                            </tr>
+                            <tr>
+                                <td>Total Other</td>
+                                <td>211</td>
+                                <td>110</td>
+                            </tr>
+                            <tr>
+                                <td> TOTAL MARKETING EXPENSES</td>
+                                <td>4,053</td>
+                                <td>4,087</td>
+                            </tr>
+                            <tr>
+                                <td>Total Administrative Expenses</td>
+                                <td>20,510</td>
+                                <td>15,555</td>
+                            </tr>
+                            <tr>
+                                <td>Total Property Expenses</td>
+                                <td>803,687</td>
+                                <td>792,469</td>
+                            </tr>
+                            <tr>
+                                <td>Total Property Net Operating Income</td>
+                                <td>933,272</td>
+                                <td>910,385</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">Copyrights - 2017</footer>
+    <!-- /container -->
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

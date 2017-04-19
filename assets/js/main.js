@@ -1,6 +1,23 @@
 
 
 
+
+$(document).ready(function() {
+  
+    
+    
+    $(".StayOpen").hover(
+    function() {
+        $("#theBox_2").slideDown(10).delay(1200);
+    }, function() {
+        $("#theBox_2").fadeOut(10);
+    });
+});
+
+
+
+
+
 $(document).ready(function() {
     var table = $('#example').DataTable({
         "columnDefs": [
@@ -370,6 +387,56 @@ $(document).ready( function () {
 
 
 
+$('#asd').blur(function(){
+    if($(this).val().length != 0){
+        $('#dis_rm').attr('disabled', 'disabled');
+    }       
+});
+
+
+
+$('#dis_rm').blur(function(){
+    if($(this).val().length != 0){
+        $('#dis_per').attr('disabled', 'disabled');
+    }       
+});
+
+
+
+
+$("#for-1").click(function () {
+    $(" .format1 ").show("slow");
+    
+    $(" .format2 ").hide("slow");
+    $(" .format3").hide("slow");
+});
+
+$("#for-2").click(function () {
+    $(" .format2 ").show("slow");
+    
+    $(" .format1 ").hide("slow");
+    $(" .format3 ").hide("slow");
+});
+
+$("#for-3").click(function () {
+    $(" .format3 ").show("slow");
+    
+    $(" .format2 ").hide("slow");
+    $(" .format1 ").hide("slow");
+});
+
+
+$(".btn-formats").click(function (e) {
+$(this).addClass("btn-formats-active").siblings().removeClass("btn-formats-active");
+});
+ 
+
+
+
+
+
+
+
 
 
 
@@ -476,15 +543,6 @@ function toggleIcon(e) {
 }
 $('.panel-group').on('hidden.bs.collapse', toggleIcon);
 $('.panel-group').on('shown.bs.collapse', toggleIcon);
-
-
-
-
-
-
-
-
-
 
 
 
