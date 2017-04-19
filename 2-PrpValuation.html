@@ -20,9 +20,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    
-    
-   
     <style>
         .nav-tabs>li {
             float: left;
@@ -70,14 +67,12 @@
         }
         
         .container-fluid-2 {
-            width: 95%;
-            margin: 0px auto;
+            width: 92%;
+            margin: 0px auto; 
         }
         
-        .panel-body {
-            padding: 15px;
-            overflow: auto;
-        }
+        
+        
     </style>
 </head>
 
@@ -119,9 +114,9 @@
         </ul>
     </div>
     <br>
-    <div class="container-fluid-2">
-        <div class="panel-body data-red">
-            <div class="row">
+    <div class="container-fluid-2 data-red">
+         
+            <div class="row" style="border-bottom:1px solid #eee;">
                 <div class='col-md-4 form-group required'>
                     <label> Choose Year</label>
                     <div class="input-group-btn">
@@ -146,15 +141,26 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            
             <div class="row">
+            
+            <div class="col-md-12">
+                     <div class="row">
                 <h5>Please select a valuation format.</h5>
                 <button class="btn-formats btn-formats-active" id="for-1"> Format 1</button>
                 <button class="btn-formats" id="for-2"> Format 2</button>
                 <button class="btn-formats" id="for-3"> Format 3</button>
                 <br>
                 <br>
-                <div class="col-md-6">
+                
+                
+                </div>
+            </div>
+            
+            
+            <div class="row">
+            
+                <div class="col-md-7">
                     <div class="format1">
                         <table class="table table-bordered table-striped table-condensed">
                             <thead>
@@ -166,11 +172,7 @@
                                                 <span class="knob"></span> </label>
                                         <input type="checkbox" class="webkit-switch" /> </span>
                                     </th>
-                                    <th>Petitioner
-                                    
-                                    
-                                    
-                                     <span class="pull-right modalbtns" style="display:flex;">                    
+                                    <th>Petitioner <span class="pull-right modalbtns" style="display:flex;">                    
                                          
                                          
                                          <div class="toggle-btn-grp joint-toggle">
@@ -180,72 +182,23 @@
 <!-- Note: empty onclick attribue is there to fix iOS labels not being clickable to their input target -->
 
                                          
-                                         </span>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    </th>
+                                         </span> </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Leasable Sq Ft (SFL)</td>
-                                    
-                                    
-                                         <td class="input-fields-nopad">
-                                       <div class="input-group da-invalid"> 
-                               
-                                           
-               <input type="text" class="form-control"   placeholder="Enter Leasable Sq Ft (SFL) "  required="">
-                                           
-                        <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
+                                    <td class="input-fields-nopad">
+                                        <div class="input-group da-invalid">
+                                            <input type="text" class="form-control" placeholder="Enter Leasable Sq Ft (SFL) " required=""> <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
                             <i class="fa fa-paperclip fa" aria-hidden="true"></i>
-                         </span>
-                                           
-                                           
-                            </div>
-
-                                 
-                                    
+                         </span> </div>
                                     </td>
-                                           
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     <td>129,878 sqft</td>
                                 </tr>
                                 <tr>
                                     <td>Market Rent per sf (MR)</td>
-                                      <td class="input-fields-nopad">
+                                    <td class="input-fields-nopad">
                                         <div class="input-group da-invalid">
                                             <input type="text" class="form-control" placeholder="Enter Market Rent per sf (MR) " required=""> <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
                                                                 <i class="fa fa-paperclip fa" aria-hidden="true"></i>
@@ -256,9 +209,9 @@
                                 </tr>
                                 <tr>
                                     <td>Annual Rent (AR)</td>
-                                          <td class="input-fields-nopad">
+                                    <td class="input-fields-nopad">
                                         <div class="input-group da-invalid">
-                                            <input type="text" class="form-control" placeholder="Enter Annual Rent (AR) " required=""> <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
+                                            <input type="text" class="form-control" id="vqq" placeholder="Enter Annual Rent (AR) " required=""> <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
                                                                 <i class="fa fa-paperclip fa" aria-hidden="true"></i>
                                                              </span> </div>
                                     </td>
@@ -268,20 +221,10 @@
                                 <tr>
                                     <td>Gross Potential Rent (GPR)</td>
                                     <td class="input-fields-nopad">
-                                       <div class="input-group da-invalid"> 
-                               
-                                           
-               <input type="text" class="form-control"   placeholder=" "  required="">
-                                           
-                        <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
+                                        <div class="input-group da-invalid">
+                                            <input type="text" class="form-control" placeholder=" " required=""> <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
                             <i class="fa fa-paperclip fa" aria-hidden="true"></i>
-                         </span>
-                                           
-                                           
-                            </div>
-
-                                 
-                                    
+                         </span> </div>
                                     </td>
                                     <td class="input-fields-nopad">
                                         <input class='form-control' type='text' placeholder="Enter Gross Potential Rent (GPR)"> </td>
@@ -289,133 +232,103 @@
                                 <tr>
                                     <td>Vacancy % (V%)</td>
                                     <td class="input-fields-nopad">
-                                       <div class="input-group da-invalid"> 
-                               
-                                           
-               <input type="text" class="form-control"   placeholder=" "  required="">
-                                           
-                        <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
+                                        <div class="input-group da-invalid">
+                                            <input type="text" class="form-control" placeholder=" " required=""> <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
                             <i class="fa fa-paperclip fa" aria-hidden="true"></i>
-                         </span>
-                                           
-                                           
-                            </div>
-
-                                 
-                                    
+                         </span> </div>
                                     </td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' type='text' placeholder="Enter Vacancy % (V%)"> </td>
                                 </tr>
                                 <tr>
                                     <td>Vacancy $ (V$)</td>
-                                   <td class="input-fields-nopad">
-                                       <div class="input-group da-invalid"> 
-                               
-                                           
-               <input type="text" class="form-control"   placeholder=" "  required="">
-                                           
-                        <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
+                                    <td class="input-fields-nopad">
+                                        <div class="input-group da-invalid">
+                                            <input type="text" class="form-control" placeholder=" " required=""> <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
                             <i class="fa fa-paperclip fa" aria-hidden="true"></i>
-                         </span>
-                                           
-                                           
-                            </div>
-
-                                 
-                                    
+                         </span> </div>
                                     </td>
-                                    <td>
+                                   <td class="input-fields-nopad">
                                         <input class='form-control' type='text' placeholder="Enter Vacancy $ (V$)"> </td>
                                 </tr>
                                 <tr>
                                     <td>Effective Rent (ER)</td>
                                     <td class="input-fields-nopad">
-                                       <div class="input-group da-invalid"> 
-                               
-                                           
-               <input type="text" class="form-control"   placeholder=" "  required="">
-                                           
-                        <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
+                                        <div class="input-group da-invalid">
+                                            <input type="text" class="form-control" placeholder=" " required=""> <span class="input-group-addon" data-toggle="modal" data-target="#myModalevidence">
                             <i class="fa fa-paperclip fa" aria-hidden="true"></i>
-                         </span>
-                                           
-                                           
-                            </div>
-
-                                 
-                                    
+                         </span> </div>
                                     </td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' type='text' placeholder="Enter Effective Rent (ER)"> </td>
                                 </tr>
                                 <tr>
                                     <td> Expenses % (E%)</td>
-                                    <td>
+                                   <td class="input-fields-nopad">
                                         <input class='form-control' value="" type='text' disabled placeholder=" --"> </td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' id="dis_rm" value="" type='text' placeholder="Enter Expenses % (E%)"> </td>
                                 </tr>
                                 <tr>
                                     <td>Expenses $ (E$)</td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' value="" type='text' disabled placeholder=" --"> </td>
                                     <td> 5.000%</td>
                                 </tr>
                                 <tr>
                                     <td>Expenses $ Per SF (E$/sf</td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' value="" type='text' disabled placeholder=" --"> </td>
-                                    <td>
+                                   <td class="input-fields-nopad">
                                         <input class='form-control' id="dis_per" value="" type='text' placeholder="Enter Expenses $ Per SF (E$/sf)"> </td>
                                 </tr>
                                 <tr>
                                     <td>Other Income (OI)</td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' value="" type='text' disabled placeholder=" --"> </td>
-                                    <td>
+                                  <td class="input-fields-nopad">
                                         <input class='form-control' type='text' placeholder="Enter Other Income (OI)"> </td>
                                 </tr>
                                 <tr>
                                     <td>Net Operating Income (NOI)</td>
-                                    <td>
+                                   <td class="input-fields-nopad">
                                         <input class='form-control' value="" type='text' disabled placeholder=" --"> </td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' type='text' placeholder="Enter Net Operating Income (NOI)"> </td>
                                 </tr>
                                 <tr>
                                     <td>Base Cap Rate (BCR)</td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' value="" type='text' disabled placeholder=" --"> </td>
-                                    <td>
+                                   <td class="input-fields-nopad">
                                         <input class='form-control' type='text' placeholder="Enter Net Base Cap Rate (BCR)"> </td>
                                 </tr>
                                 <tr>
                                     <td>Effective RE Tax Rate (ETR)</td>
-                                    <td>
+                                   <td class="input-fields-nopad">
                                         <input class='form-control' value="" type='text' disabled placeholder=" --"> </td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' type='text' placeholder="Enter Effective RE Tax Rate (ETR)"> </td>
                                 </tr>
                                 <tr>
                                     <td>Overall Cap Rate (OCR)</td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' value="" type='text' disabled placeholder=" --"> </td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' type='text' placeholder="Enter Overall Cap Rate (OCR)"> </td>
                                 </tr>
                                 <tr>
                                     <td>Value - Direct Cap (VDC)</td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' value="" type='text' disabled placeholder=" --"> </td>
-                                    <td>
+                                  <td class="input-fields-nopad">
                                         <input class='form-control' type='text' placeholder="Enter Value - Direct Cap (VDC)"> </td>
                                 </tr>
                                 <tr>
                                     <td> Value per sq ft</td>
-                                    <td>
+                                    <td class="input-fields-nopad">
                                         <input class='form-control' value="" type='text' disabled placeholder=" --"> </td>
-                                    <td>
+                                   <td class="input-fields-nopad">
                                         <input class='form-control' type='text' placeholder="Enter Value per sq ft"> </td>
                                 </tr>
                             </tbody>
@@ -478,7 +391,7 @@
                         <p> Format 3</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <label style="    background: #e6e6e6;
     color: #333333;
     padding: 6px;
@@ -487,8 +400,6 @@
                         <thead>
                             <tr>
                                 <th>Data Fields </th>
-                                
-                                
                                 <th class="StayOpen">CY14 <i class="fa fa-info-circle text-primary" aria-hidden="true"></i>
                                     <div id="theBox_2">
                                         <label style="border-bottom:1px solid #ccc; text-align:center !important;"> Year: CY14</label>
@@ -497,9 +408,7 @@
                                         <label><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download Data source </a> </label>
                                     </div>
                                 </th>
-                                
-                                
-                              <th class="StayOpen">CY14 <i class="fa fa-info-circle text-primary" aria-hidden="true"></i>
+                                <th class="StayOpen">CY14 <i class="fa fa-info-circle text-primary" aria-hidden="true"></i>
                                     <div id="theBox_2">
                                         <label style="border-bottom:1px solid #ccc; text-align:center !important;"> Year: CY14</label>
                                         <label><a href="#"><i class="fa fa-eye" aria-hidden="true"></i> View data source</a></label>
@@ -507,9 +416,7 @@
                                         <label><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download Data source </a> </label>
                                     </div>
                                 </th>
-                                
-                                
-                                    <th class="StayOpen">CY14 <i class="fa fa-info-circle text-primary" aria-hidden="true"></i>
+                                <th class="StayOpen">CY14 <i class="fa fa-info-circle text-primary" aria-hidden="true"></i>
                                     <div id="theBox_2">
                                         <label style="border-bottom:1px solid #ccc; text-align:center !important;"> Year: CY14</label>
                                         <label><a href="#"><i class="fa fa-eye" aria-hidden="true"></i> View data source</a></label>
@@ -685,90 +592,54 @@
             </div>
         </div>
     </div>
-    
-    
-    
-     <div id="myModalevidence" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content" style="background-color: #ffffff; color: #555;">
-            <div class="modal-header" style=" background: #000c35 !important;">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h5 class="modal-title text-ce nter" style="color:#fff;"> Attach Evidence </h5> </div>
+    <div id="myModalevidence" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: #ffffff; color: #555;">
+                <div class="modal-header" style=" background: #000c35 !important;">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h5 class="modal-title text-ce nter" style="color:#fff;"> Attach Evidence </h5> </div>
                 <div class="modal-body">
-                
-                    
-                    
-                    
-                         <div class="input-group pull-right" style="    width: 180px; background:#47bcff; 
+                    <div class="input-group pull-right" style="    width: 180px; background:#47bcff; 
     border: none;">
-                                <label class="input-group-btn text-center"> <span class="btn" style="color:#fff; text-align: center;"> Upload Files from System&hellip;
+                        <label class="input-group-btn text-center"> <span class="btn" style="color:#fff; text-align: center;"> Upload Files from System&hellip;
               <input type="file" style="display: none;" multiple>
               </span> </label>
-                            </div>
-                    
-                    <br> <br>
+                    </div>
+                    <br>
+                    <br>
                     <label> Choose the file to attach as evidence</label>
-                      <table   class="table table-striped table-bordered table-condensed"  class="display responsive no-wrap" cellspacing="0" width="100%">
-                    <thead>
-                        <tr>
-                            <th>File Name</th> 
-                         
-
-                        </tr>
-                    </thead>
-        
-                    <tbody>
-                        <tr>
-                            <td> <input type="checkbox" class="MyCheckBox pull-left" ng-model="personalDetail.selected"/> &nbsp &nbsp Mail hall 2.00 chock city.xlcx</td>
-                  
-
-                        </tr>
-                        
-                           
-                        
- 
-                             <tr>
-                            <td> <input type="checkbox" class="MyCheckBox pull-left" ng-model="personalDetail.selected"/> &nbsp &nbsp Mail hall 2.00 chock city.xlcx</td>
-                  
-
-                        </tr>
-                        
-                        
-                             <tr>
-                            <td> <input type="checkbox" class="MyCheckBox pull-left" ng-model="personalDetail.selected"/> &nbsp &nbsp Mail hall 2.00 chock city.xlcx</td>
-                  
-
-                        </tr>
-                        
-                        
-                             <tr>
-                            <td> <input type="checkbox" class="MyCheckBox pull-left" ng-model="personalDetail.selected"/> &nbsp &nbsp Mail hall 2.00 chock city.xlcx</td>
-                  
-
-                        </tr>
-                        
-
-                        
-                    </tbody>
-                </table>
-                    
-                    
-                    
+                    <table class="table table-striped table-bordered table-condensed" class="display responsive no-wrap" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>File Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="MyCheckBox pull-left" ng-model="personalDetail.selected" /> &nbsp &nbsp Mail hall 2.00 chock city.xlcx</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="MyCheckBox pull-left" ng-model="personalDetail.selected" /> &nbsp &nbsp Mail hall 2.00 chock city.xlcx</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="MyCheckBox pull-left" ng-model="personalDetail.selected" /> &nbsp &nbsp Mail hall 2.00 chock city.xlcx</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="MyCheckBox pull-left" ng-model="personalDetail.selected" /> &nbsp &nbsp Mail hall 2.00 chock city.xlcx</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <div class="clearfix"></div>
-                     
                     <button data-toggle="modal" data-target="#myModalquestion" type="button" class="btn btn-user  pull-right" style="margin: 12px; z-index:111;  " id="success-btn">Done</button>
                     <div class="clearfix"></div>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    
-    
-    
     <footer class="text-center">Copyrights - 2017</footer>
     <!-- /container -->
     <script>
