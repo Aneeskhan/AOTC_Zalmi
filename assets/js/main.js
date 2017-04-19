@@ -16,7 +16,7 @@
 //
 
 
- 
+  
 
 
 
@@ -434,7 +434,9 @@ $(this).addClass("btn-formats-active").siblings().removeClass("btn-formats-activ
  
 
 
-
+$(".toggle-btn").click(function (e) {
+$(this).addClass("toggle-btn-active").siblings().removeClass("toggle-btn-active");
+});
 
 
 

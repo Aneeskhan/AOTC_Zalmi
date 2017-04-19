@@ -2238,30 +2238,30 @@ table .collapse.in {
 
 
 .btn-formats {
-    text-align:center; 
-    margin:5px 2px;
-    padding:0.4em 3em; 
-    color:#000; 
-    background-color:#FFF; 
-    border-radius:10px; 
+       text-align: center;
+    margin: 5px 2px;
+    padding: 0.2em 2em;
+    color: #2499dc;
+    background-color: #FFF;
+    border-radius: 3px;
     outline: 0px;
-    display:inline-block; 
-    border:solid 1px #CCC;     margin-right: -6px;
+    display: inline-block;
+    border: solid 1px #fff;
+    margin-right: -6px;
   
 }
 
 
 
-
 .btn-formats-active {
-    border: solid 1px #a0d5dc !important;
+    /* border: solid 1px #a0d5dc !important; */
     background: #f1fdfe;
     background: #47bcff;
     color: #fff;
-    border: solid 1px #47bcff !important;
+    background: #47bcff;
+    border-color: #ffffff;
+    /* border: solid 1px #47bcff !important; */
 }
-
-
 
  
 
@@ -2296,7 +2296,7 @@ table .collapse.in {
   -ms-user-select: none;
 }
 .switch:after, .switch:before {
-  background-color: #9bca3e;
+  background-color: #47bcff;
   color: #FFF;
   content: "Manual";
   display: block;
@@ -2312,7 +2312,7 @@ table .collapse.in {
   /* This is so the darker color doesn't show through the rounded corners of the knob */
 }
 .switch:before {
-  background-color: #999;
+  background-color: #47bcff;
   content: "Auto";
   left: auto;
   right: 0;
@@ -2521,5 +2521,114 @@ table .collapse.in {
 }
 
 
+#filtersubmit {
+    position: relative;
+    z-index: 1;
+    left: -25px;
+    top: 3px;
+    color: #7B7B7B;
+    cursor:pointer;
+    width: 0;
+    font-size: 18px;
+}
+
+
+
+#filter {    width: 98%;
+    display: -webkit-inline-box;
+    margin: 0px auto;}
+
+
+.input-group-addon {cursor: pointer;}
+
+
+
+
+
+
+   #myModalevidence input[type="checkbox"] {
+        display: block !important;
+    }
+
+
 
  
+.modalbtns .toggle-btn { 
+    text-align:center; 
+    margin:5px 2px;
+    padding:0.4em 3em; 
+    color:#000; 
+    background-color:#FFF; 
+    border-radius:10px; 
+    display:inline-block; 
+    border:solid 1px #CCC; 
+    cursor:pointer;
+}
+
+.modalbtns .toggle-btn-grp.joint-toggle .toggle-btn { 
+    margin:0px 0;     font-size: 11px;
+        font-weight: 100;
+    padding: 0.4em 0.7em;
+    border-radius:0;
+    border-right-color:white;
+}
+.modalbtns .toggle-btn-grp.joint-toggle .toggle-btn:first-child { 
+    margin-left:2px; 
+    border-radius: 10px 0px 0px 10px; 
+}
+.modalbtns .toggle-btn-grp.joint-toggle .toggle-btn:last-child { 
+    margin-right:2px;  
+    border-radius: 0px 10px 10px 0px;
+    border-right:solid 1px #CCC;
+}
+
+
+.modalbtns .toggle-btn:hover { 
+    border:solid 1px #a0d5dc !important; 
+    background:#f1fdfe;
+}
+
+
+.modalbtns .toggle-btn.success { 
+    background:lightgreen;
+    border:solid 1px green !important; 
+}
+
+
+.modalbtns .visuallyhidden { 
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    width: 1px; 
+}
+.modalbtns .visuallyhidden.focusable:active, .modalbtns .visuallyhidden.focusable:focus { 
+    clip: auto; 
+    height: auto; 
+    margin: 0; 
+    overflow: visible; 
+    position: static; 
+    width: auto; 
+}
+
+
+.toggle-btn-active {    text-align: center;
+    margin: 5px 2px;
+    padding: 0.4em 3em;
+    color: #fff !important;
+    background-color: #47bcff !important ;
+    border-radius: 10px;
+    display: inline-block;
+    border: solid 1px #CCC;
+    cursor: pointer;;}
+
+
+.alert-info-custome {
+    padding: 8px;
+    margin-top: 25px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
