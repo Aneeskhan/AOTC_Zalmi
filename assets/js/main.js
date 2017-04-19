@@ -1,20 +1,22 @@
 
 
 
+//
+//$(document).ready(function() {
+//  
+//    
+//    
+//    $(".StayOpen").hover(
+//    function() {
+//        $("#theBox_2").slideDown(10).delay(1200);
+//    }, function() {
+//        $("#theBox_2").fadeOut(10);
+//    });
+//});
+//
 
-$(document).ready(function() {
-  
-    
-    
-    $(".StayOpen").hover(
-    function() {
-        $("#theBox_2").slideDown(10).delay(1200);
-    }, function() {
-        $("#theBox_2").fadeOut(10);
-    });
-});
 
-
+ 
 
 
 
