@@ -2243,14 +2243,14 @@ table .collapse.in {
 
 .btn-formats {
        text-align: center;
-    margin: 5px 2px;
+    margin: 5px 3px;
     padding: 0.2em 2em;
-    color: #2499dc;
+    color: #b1b8c4;
     background-color: #FFF;
     border-radius: 3px;
     outline: 0px;
     display: inline-block;
-    border: solid 1px #fff;
+    border: solid 1px #ccc;
     margin-right: -6px;
   
 }
@@ -2724,3 +2724,61 @@ table .collapse.in {
     filter: alpha(opacity=50);
     opacity: .5;
 }
+
+
+
+
+
+
+/*SEARCH FORM*/
+.search-form {
+    border-radius: 30px 0px 0px 30px;
+    /*border-radius:Top-left, Top-right, Bottom-right, Bottom-left;*/
+}
+/*to cange only one form and not all give unique class name like  class="search-form" */
+ .search-btn {
+    border-radius: 0px 30px 30px 0px;
+    cursor:pointer;
+}
+
+
+
+
+
+
+.alert-info {
+    background-image: -webkit-linear-gradient(top,#d9edf7 0,#b9def0 100%);
+    background-image: -o-linear-gradient(top,#d9edf7 0,#b9def0 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#d9edf7),to(#b9def0));
+    background-image: linear-gradient(to bottom,#eaf7ff 0,#eaf7ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);
+    background-repeat: repeat-x;
+    border-color: #cce0ea;
+}
+
+
+
+
+.uploaded { color:gray;}
+
+.Failed {color: red;}
+
+.inprogress {color: blue;}
+
+.Processed {color: green;}
+
+
+
+
+/*
+
+
+.uploaded { color:#fff;; background: gray;}
+
+.Failed {color: #fff; background: red;;}
+
+.inprogress {color: #fff; background: blue;;}
+
+.Processed {color: #fff; background: green;}
+
+*/

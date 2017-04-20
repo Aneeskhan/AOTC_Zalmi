@@ -64,6 +64,11 @@ $(document).ready(function() {
 
 
 
+$('.carousel').carousel({
+    interval: false
+}); 
+
+
 
 
 
@@ -553,11 +558,6 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
 
 
-
-
-$('.carousel').carousel({
-    interval: false
-}); 
 
 
 
