@@ -555,7 +555,9 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
 
 
-
+$('.carousel').carousel({
+    interval: false
+}); 
 
 
 
