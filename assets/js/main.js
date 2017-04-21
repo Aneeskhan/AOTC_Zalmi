@@ -1,5 +1,6 @@
-
-
+jQuery(function(){
+    jQuery('#paragraphs').cascadingDivs();
+});
 
 //
 //$(document).ready(function() {

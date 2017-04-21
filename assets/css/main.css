@@ -1562,8 +1562,8 @@ fieldset[disabled] .form-control {
     display: none;
 }
 .successa {
-    color: #ffffff;
-    background-color: #E91E63;
+  color: #3170ab;
+    background-color: rgba(234, 247, 255, 0.91);
     position: fixed;
     top: 60px;
     padding: 8px;
@@ -2782,3 +2782,19 @@ table .collapse.in {
 .Processed {color: #fff; background: green;}
 
 */
+.list-group-item-success {
+    color: #3c763d;
+    background-color: #ececec;
+}
+
+
+
+
+
+#paragraphs .pak
+{
+    width: 75%;
+    cursor: pointer;
+    background: #ffffff; 
+    border: 2px solid #ccc;
+}
