@@ -1412,7 +1412,7 @@ fieldset[disabled] .form-control {
 }
 .prop-fixd {
     border: 1px solid #ddd;
-    background: #e6ebfb;
+    background: #f4f7ff;
     padding: 10px;
 }
 .visible-heading {
@@ -2796,7 +2796,10 @@ table .collapse.in {
     width: 75%;
     cursor: pointer;
     background: #ffffff; 
-    border: 2px solid #ccc;
+    border: 2px solid #e6e6e6;
+   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+
 }
 
  
@@ -2820,4 +2823,39 @@ table .collapse.in {
 
 
 
-.action-bottom {float: right; background: #eee; padding: 10px; border-radius: 10px;}
+.action-bottom {float: right; background: #47bcff; padding: 10px; border-radius: 2px;}
+
+
+
+.action-bottom   {color: #fff;}
+
+
+
+
+
+.custom-slider {
+    background: #f4f7ff;
+    float: right;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    color: #00568a;
+
+
+}
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
