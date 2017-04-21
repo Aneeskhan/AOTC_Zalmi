@@ -31,7 +31,7 @@ jQuery.prototype.cascadingDivs = function(options) {
     // Optional parameters
     var options = options || {};
     const DIV_SELECTOR = options.divSelector || 'div';
-    const SLIDE_TIME = options.slideTime || 0.5;
+    const SLIDE_TIME = options.slideTime || 1;
     
     // Initial variables
     var divsContainer = jQuery(this);
