@@ -2798,3 +2798,26 @@ table .collapse.in {
     background: #ffffff; 
     border: 2px solid #ccc;
 }
+
+ 
+.header-btn ul li:hover {
+    color: #ff4757;
+    display: inline-flex;
+    padding: 12px 5px 12px 5px;
+    background: #fff;
+}
+
+
+
+.dropdown-menu {
+  
+    min-width: 140px;}
+
+
+.pak .more-less {
+    color: #fff;
+}
+
+
+
+.action-bottom {float: right; background: #eee; padding: 10px; border-radius: 10px;}
